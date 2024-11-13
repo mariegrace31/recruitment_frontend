@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 function Navbar() {
   return (
-    <nav className="w-[75%] bg-tertiary sticky mx-auto z-30 rounded-b-2xl flex justify-between items-center p-3">
+    <nav className="w-[75%] bg-tertiary fixed top-0 left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center p-3">
       <div className="flex gap-5 items-center">
         <Image
           src={logo}

@@ -1,8 +1,11 @@
-/* Tailwind imports should come after */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.bg-gradient-center {
+  background: radial-gradient(circle, #F5F5FF 50%, #1A77B9 250%);
 }
