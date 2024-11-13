@@ -1,7 +1,7 @@
+/* Tailwind imports should come after */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;

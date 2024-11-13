@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative bg-cover bg-center bg-[url('./assets/hero.png')] h-[100vh]">
+    <div className="relative bg-cover bg-center bg-[url('./assets/hero.png')] h-[100vh] -mt-[65px]">
       <div className="absolute inset-0 bg-primary opacity-85 z-0"></div>
        <div className="relative z-10 h-[100vh] flex flex-col justify-center">
         <div className="flex flex-col gap-14 justify-center text-center w-[60%] mx-auto">
