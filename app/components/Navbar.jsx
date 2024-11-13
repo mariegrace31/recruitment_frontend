@@ -25,8 +25,8 @@ function Navbar() {
           About us <FaCaretDown />
         </Link>
         <Link href="#" className="text-secondary font-medium text-[15px]">Candidates</Link>
-        <Link href="#" className="text-secondary font-medium text-[15px]">Contact</Link>
         <Link href="#" className="text-secondary font-medium text-[15px]">Recruiters</Link>
+        <Link href="#" className="text-secondary font-medium text-[15px]">Contact</Link>
         <Image src={line} width={5} height={10} alt='svg' />
       </div>
       <div className="flex gap-5">
