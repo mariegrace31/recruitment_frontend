@@ -60,7 +60,10 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <button className="flex items-center gap-3 mx-auto font-medium text-lg mb-16 p-3 hover:bg-secondary hover:text-white rounded-3xl">See customers stories <BsArrowDownRightCircleFill className="text-secondary hover:text-white text-lg" /> </button>
+    <button className="flex items-center gap-3 mx-auto font-medium text-lg mb-16 p-3 hover:bg-secondary hover:text-white rounded-3xl group">
+  See customers stories 
+  <BsArrowDownRightCircleFill className="text-secondary text-lg group-hover:text-white" /> 
+</button>
     </section>
    
   );
