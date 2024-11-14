@@ -4,6 +4,7 @@ import "./globals.css";
 import candidate from './assets/candidate.png';
 import { BsArrowDownRightCircleFill } from "react-icons/bs";
 import Jobs from "./components/Jobs";
+import AvailableJobs from "./components/AvailableJobs";
 
 export default function Home() {
   return (
@@ -66,6 +67,7 @@ export default function Home() {
   <BsArrowDownRightCircleFill className="text-secondary text-lg group-hover:text-white" /> 
 </button>
 <Jobs />
+<AvailableJobs />
     </section>
    
   );
