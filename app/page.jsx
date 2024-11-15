@@ -6,6 +6,7 @@ import { BsArrowDownRightCircleFill } from "react-icons/bs";
 import Jobs from "./components/Jobs";
 import AvailableJobs from "./components/AvailableJobs";
 import Brands from "./components/Brands";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
@@ -70,6 +71,7 @@ export default function Home() {
 <Jobs />
 <AvailableJobs />
 <Brands />
+<Services />
     </section>
    
   );
