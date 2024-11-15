@@ -8,6 +8,8 @@ import AvailableJobs from "./components/AvailableJobs";
 import Brands from "./components/Brands";
 import Services from "./components/Services";
 import Suscribe from "./components/Suscribe";
+import Testimonials from "./components/Testimonials";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -65,15 +67,16 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <button className="flex items-center gap-3 mx-auto font-medium text-lg mb-16 p-3 hover:bg-secondary hover:text-white rounded-3xl group">
+    <Link href='#testimonials'  className="flex items-center gap-3 mx-auto w-[20%] justify-center font-medium text-lg mb-16 p-3 hover:bg-secondary hover:text-white rounded-3xl group">
   See customers stories 
   <BsArrowDownRightCircleFill className="text-secondary text-lg group-hover:text-white" /> 
-</button>
+</Link>
 <Jobs />
 <AvailableJobs />
 <Brands />
 <Services />
 <Suscribe />
+<Testimonials />
     </section>
    
   );
