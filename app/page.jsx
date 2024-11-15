@@ -5,6 +5,7 @@ import candidate from './assets/candidate.png';
 import { BsArrowDownRightCircleFill } from "react-icons/bs";
 import Jobs from "./components/Jobs";
 import AvailableJobs from "./components/AvailableJobs";
+import Brands from "./components/Brands";
 
 export default function Home() {
   return (
@@ -68,6 +69,7 @@ export default function Home() {
 </button>
 <Jobs />
 <AvailableJobs />
+<Brands />
     </section>
    
   );
