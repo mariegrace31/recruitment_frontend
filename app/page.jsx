@@ -11,6 +11,7 @@ import Suscribe from "./components/Suscribe";
 import Testimonials from "./components/Testimonials";
 import Link from "next/link";
 import Hr from "./components/Hr";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -79,6 +80,7 @@ export default function Home() {
 <Suscribe />
 <Testimonials />
 <Hr />
+<Footer />
     </section>
    
   );
