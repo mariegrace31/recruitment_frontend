@@ -10,6 +10,7 @@ import Services from "./components/Services";
 import Suscribe from "./components/Suscribe";
 import Testimonials from "./components/Testimonials";
 import Link from "next/link";
+import Hr from "./components/Hr";
 
 export default function Home() {
   return (
@@ -77,6 +78,7 @@ export default function Home() {
 <Services />
 <Suscribe />
 <Testimonials />
+<Hr />
     </section>
    
   );
