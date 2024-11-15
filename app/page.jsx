@@ -7,6 +7,7 @@ import Jobs from "./components/Jobs";
 import AvailableJobs from "./components/AvailableJobs";
 import Brands from "./components/Brands";
 import Services from "./components/Services";
+import Suscribe from "./components/Suscribe";
 
 export default function Home() {
   return (
@@ -72,6 +73,7 @@ export default function Home() {
 <AvailableJobs />
 <Brands />
 <Services />
+<Suscribe />
     </section>
    
   );

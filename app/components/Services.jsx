@@ -63,7 +63,7 @@ function Services() {
       <div className='bg-[#D6E4FF]/50 border border-secondary w-[97%] mx-auto rounded-2xl p-10'>
       <div className='text-center'>
         <h1 className='font-semibold text-4xl uppercase'>Our Services</h1>
-        <Image src={hr} width={220} height={100} alt="hr" className='mx-auto mt-5'/>
+        <Image src={hr} width={226} height={100} alt="hr" className='mx-auto mt-5'/>
       </div>
       <div className='flex flex-wrap justify-center gap-4 my-10 '>
         {services.map((service, index) => (
