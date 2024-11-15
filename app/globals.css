@@ -9,3 +9,7 @@ body {
 .bg-gradient-center {
   background: radial-gradient(circle, #F5F5FF 50%, #1A77B9 250%);
 }
+
+.bg-coverr {
+  background-image: url('./assets/imageMail.png');
+}
