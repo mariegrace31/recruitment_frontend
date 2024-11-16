@@ -21,7 +21,7 @@ function Navbar() {
       <div className="flex gap-8 items-center">
         <Image src={line} width={5} height={10} alt='svg' />
         <Link href="#" className="text-secondary font-medium text-[15px]">Job Board</Link>
-        <Link href="#" className="flex items-center gap-1 text-secondary font-medium text-[15px]">
+        <Link href="./about" className="flex items-center gap-1 text-secondary font-medium text-[15px]">
           About us <FaCaretDown />
         </Link>
         <Link href="#" className="text-secondary font-medium text-[15px]">Candidates</Link>
