@@ -13,8 +13,8 @@ import last from '../assets/lasthr.png';
 
 function Footer() {
   return (
-    <div className='bg-[#333872] p-16 pb-7'>
-      <div className='flex gap-14'>  
+    <div className='bg-[#333872] p-[67px] pb-7'>
+      <div className='flex gap-14 ml-8'>  
         <p className='border border-gray-500 p-2 rounded-sm flex items-center gap-2 text-white text-xs w-[25%]'> <TiLocation className='p-1 text-4xl bg-secondary rounded-r-lg text-white' />4th floor La Bonne Addresse House, Nyarugenge Kiyovu, Kigali City</p>
         <p className='border border-gray-500 p-2 rounded-sm flex items-center gap-2 text-white text-xs w-'><MdOutlineEmail className='p-1 text-3xl bg-secondary rounded-r-lg text-white' />office@lkrecruitmentrw.com</p>
         <p className='border border-gray-500 p-2 rounded-sm flex items-center gap-2 text-white text-xs'><IoCall className='p-1 text-3xl bg-secondary rounded-r-lg text-white' />+250 795 460 410</p>

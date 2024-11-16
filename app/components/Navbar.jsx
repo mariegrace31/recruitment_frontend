@@ -1,13 +1,18 @@
+"use client";
+
 import Image from 'next/image';
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import logo from '../assets/navLogo.png';
 import { FaCaretDown } from "react-icons/fa";
 import Link from 'next/link';
 import line from '../assets/navline.svg';
 
 function Navbar() {
+  const pathname = usePathname();
+
   return (
-    <nav className="w-[75%] bg-tertiary fixed top-0 left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center p-3">
+    <nav className="w-[80%] bg-tertiary fixed top-0 left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center p-3">
       <div className="flex gap-5 items-center">
         <Image
           src={logo}
@@ -20,13 +25,32 @@ function Navbar() {
       </div>
       <div className="flex gap-8 items-center">
         <Image src={line} width={5} height={10} alt='svg' />
-        <Link href="#" className="text-secondary font-medium text-[15px]">Job Board</Link>
-        <Link href="./about" className="flex items-center gap-1 text-secondary font-medium text-[15px]">
+
+        {/* Updated Home Link */}
+        <Link href="/" className={`text-secondary font-medium text-[15px] ${pathname === '/' ? 'underline' : ''}`}>
+          Home
+        </Link>
+        
+        <Link href="/jobboard" className={`text-secondary font-medium text-[15px] ${pathname === '/jobboard' ? 'underline' : ''}`}>
+          Job Board
+        </Link>
+
+        <Link href="/about" className={`flex items-center gap-1 text-secondary font-medium text-[15px] ${pathname === '/about' ? 'underline' : ''}`}>
           About us <FaCaretDown />
         </Link>
-        <Link href="#" className="text-secondary font-medium text-[15px]">Candidates</Link>
-        <Link href="#" className="text-secondary font-medium text-[15px]">Recruiters</Link>
-        <Link href="#" className="text-secondary font-medium text-[15px]">Contact</Link>
+
+        <Link href="/candidates" className={`text-secondary font-medium text-[15px] ${pathname === '/candidates' ? 'underline' : ''}`}>
+          Candidates
+        </Link>
+
+        <Link href="/recruiters" className={`text-secondary font-medium text-[15px] ${pathname === '/recruiters' ? 'underline' : ''}`}>
+          Recruiters
+        </Link>
+
+        <Link href="/contact" className={`text-secondary font-medium text-[15px] ${pathname === '/contact' ? 'underline' : ''}`}>
+          Contact
+        </Link>
+
         <Image src={line} width={5} height={10} alt='svg' />
       </div>
       <div className="flex gap-5">
