@@ -12,7 +12,7 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="w-[80%] bg-tertiary fixed top-0 left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center p-3">
+    <nav className="w-[80%] bg-[#C6C6E2] fixed top-0 left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center p-3">
       <div className="flex gap-5 items-center">
         <Image
           src={logo}
@@ -27,7 +27,7 @@ function Navbar() {
         <Image src={line} width={5} height={10} alt='svg' />
 
         {/* Updated Home Link */}
-        <Link href="/" className={`text-secondary font-medium text-[15px] ${pathname === '/' ? 'underline' : ''}`}>
+        <Link href="/" className={`text-secondary font-medium text-[15px] ${pathname === '/' ? 'underline ' : ''}`}>
           Home
         </Link>
         
