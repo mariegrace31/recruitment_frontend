@@ -26,7 +26,6 @@ function Navbar() {
       <div className="flex gap-8 items-center">
         <Image src={line} width={5} height={10} alt='svg' />
 
-        {/* Updated Home Link */}
         <Link href="/" className={`text-secondary font-medium text-[15px] ${pathname === '/' ? 'underline ' : ''}`}>
           Home
         </Link>
