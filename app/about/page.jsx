@@ -12,6 +12,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
 import ig from '../assets/instagram.png';
 import Link from 'next/link';
+import whitehr from '../assets/hrwhite.png';
+import image from '../assets/hrImage.png';
+import candidate from '../assets/candidate.png';
+import employer from '../assets/employer.png';
+import Footer from '../components/Footer';
 
 function TypingEffect() {
   const text = "Learn the story behind LK Recruitment";
@@ -152,6 +157,52 @@ function TypingEffect() {
    </div>
 
    </div>
+
+   <div className='bg-[#F5F5FF] p-24'>
+    <div className='flex w-[80%] mx-auto'>
+    <div className='bg-secondary p-4 flex flex-col rounded-l-lg'>
+      <h1 className='text-[120px] text-white'>&ldquo;</h1>
+      <p className='text-white font-light -mt-20'>Manage an efficient and effective CX operation Manage an efficient and effective CX operation, Manage an efficient and effective CX operation Manage an efficient and effective CX operation
+       Manage an efficient and effective CX operation, Manage an efficient and effective CX operation, Manage an efficient and effective CX operation, Manage an efficient and effective CX operation</p>
+       <Image src={whitehr} width={100} height={1} alt='white hr' className='my-10' />
+    </div>
+    <Image src={image} width={500} height={100} alt='hr image'  />
+    </div>
+   </div>
+
+   <div className="grid grid-cols-2 bg-white p-20 gap-32 mt-16 ">
+      <div className="p-4 bg-gray-100 py-5 rounded-lg">
+        <div className="flex bg-gradient-center p-8 rounded-lg ">
+          <div className="flex flex-col gap-5 w-[60%]">
+          <h1 className="font-bold text-xl">For employers</h1>
+          <p className="text-lg font-light">Investing in people shaping in better future investing in people shaping in better future</p>
+          <button className="bg-primary text-white font-bold w-[50%] rounded-3xl p-3">Post Your Job</button>
+          </div>
+          <Image
+           src={employer}
+           width={170}
+           height={100}
+           alt="Employer png"
+          />
+        </div>
+      </div>
+      <div className="p-4 bg-gray-100 py-5 rounded-lg">
+        <div className="flex bg-gradient-center p-8 rounded-lg ">
+          <div className="flex flex-col gap-5 w-[60%]">
+          <h1 className="font-bold text-xl">For candidates</h1>
+          <p className="text-lg font-light">Investing in people shaping in better future investing in people shaping in better future</p>
+          <button className="bg-primary text-white font-bold w-[40%] rounded-3xl p-3">Register</button>
+          </div>
+          <Image
+           src={candidate}
+           width={170}
+           height={100}
+           alt="Candidate png"
+          />
+        </div>
+      </div>
+    </div>
+    <Footer />
     </div>
   );
 }
