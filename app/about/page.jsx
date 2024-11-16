@@ -118,8 +118,40 @@ function TypingEffect() {
     </div>
   </div>
 </div>
+   </div>
 
+   <div className='relative bg-coverr bg-cover bg-center p-16 '>
+   <div className="absolute inset-0 bg-gradient-to-b from-[#1A77B9] to-[#333872] opacity-90 z-0"></div>
+   <div className='relative z-10 flex flex-col justify-center'>
+   <h1 className='uppercase font-semibold text-3xl text-white text-center'>why choose us</h1>
+    <Image src={hr} width={200} height={1} alt='hr' className='mx-auto mt-2' />
+    <p className='text-white font-light text-xs w-[30%] text-center mx-auto mt-7'>Empowering job seekers and employers alike, we connect talent with opportunities.</p>
+   
+    <div className='grid grid-cols-3 gap-10 w-[70%] mx-auto mt-14'>
+
+      <div className='flex flex-col gap-3 bg-white p-3 rounded-lg'>
+        <h1 className='text-right font-bold text-secondary text-3xl'>01</h1>
+        <h4 className='font-semibold text-[14px] text-black'>Tailored Staffing Solutions</h4>
+        <p className='text-black font-light text-[12px]'>LK RECRUITMENT provides customized hiring options, from temporary roles to permanent
+         positions, ensuring the best match for your business needs.</p>
       </div>
+
+      <div className='flex flex-col gap-3 bg-white p-3 rounded-lg'>
+        <h1 className='text-right font-bold text-secondary text-3xl'>02</h1>
+        <h4 className='font-semibold text-[14px] text-black'>Expertise and Efficiency</h4>
+        <p className='text-black font-light text-[12px]'>With deep industry knowledge and a fast, streamlined hiring process, we make recruitment smooth and hassle-free.</p>
+      </div>
+
+      <div className='flex flex-col gap-3 bg-white p-3 rounded-lg'>
+        <h1 className='text-right font-bold text-secondary text-3xl'>03</h1>
+        <h4 className='font-semibold text-[14px] text-black'>Commitment to Diversity and Responsibility</h4>
+        <p className='text-black font-light text-[12px]'>We prioritize diversity, inclusion, and social responsibility, helping you build a strong, socially conscious workforce.</p>
+      </div>
+
+    </div>
+   </div>
+
+   </div>
     </div>
   );
 }
