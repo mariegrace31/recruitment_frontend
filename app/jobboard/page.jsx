@@ -5,6 +5,7 @@ import Image from 'next/image';
 import dot from '../assets/dothr.png';
 import { TbBriefcase } from "react-icons/tb";
 import Footer from '../components/Footer';
+import Link from 'next/link';
 
 function page() {
   return (
@@ -29,8 +30,12 @@ function page() {
             <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
-        </div>
+          <Link href="/jobdetail">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+         </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
           <h1 className='font-bold text-sm'>Software Engineer</h1>
           <div className='flex gap-9'>
@@ -38,8 +43,12 @@ function page() {
             <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
-        </div>
+          <Link href="/jobdetail">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+           </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
           <h1 className='font-bold text-sm'>Software Engineer</h1>
           <div className='flex gap-9'>
@@ -47,8 +56,12 @@ function page() {
             <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
-        </div>
+          <Link href="/jobdetail">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+              </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
           <h1 className='font-bold text-sm'>Software Engineer</h1>
           <div className='flex gap-9'>
@@ -56,8 +69,12 @@ function page() {
             <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
-        </div>
+          <Link href="/jobdetail">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+           </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
           <h1 className='font-bold text-sm'>Software Engineer</h1>
           <div className='flex gap-9'>
@@ -65,8 +82,12 @@ function page() {
             <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
-        </div>
+          <Link href="/jobdetail">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+              </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
           <h1 className='font-bold text-sm'>Software Engineer</h1>
           <div className='flex gap-9'>
@@ -74,8 +95,12 @@ function page() {
             <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
-        </div>
+          <Link href="/jobdetail">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+               </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
           <h1 className='font-bold text-sm'>Software Engineer</h1>
           <div className='flex gap-9'>
@@ -83,8 +108,12 @@ function page() {
             <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
-        </div>
+          <Link href="/jobdetail">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+              </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
           <h1 className='font-bold text-sm'>Software Engineer</h1>
           <div className='flex gap-9'>
@@ -92,8 +121,12 @@ function page() {
             <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
-        </div>
+          <Link href="/jobdetail">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+               </div>
       </div>
       </div>
 
