@@ -45,10 +45,10 @@ function TypingEffect() {
       <div className='bg-gray-300 p-[5px] mt-20 rounded-lg'>
       <div className="relative bg-cover bg-coverr bg-center rounded-lg ">
       <div className="absolute inset-0 bg-primary opacity-85 z-0 rounded-lg "></div>
-      <div className='relative z-10 p-16 flex flex-col justify-center gap-5'>
-      <h1 className='uppercase font-semibold text-2xl text-white text-center'>about us</h1>
+      <div className='relative z-10 p-16 flex flex-col justify-center gap-7'>
+      <h1 className='uppercase font-semibold text-3xl text-white text-center'>about us</h1>
         <Image src={hr} width={100} height={1} alt='hr' className='mx-auto -mt-4' />
-        <p className='text-white font-light text-[16px] leading-7 mt-10 text-center w-[85%] mx-auto'>LK RECRUITMENT is a staffing and recruitment agency based in Rwanda. Our mission focuses on investing in people and shaping a better
+        <p className='text-white font-light text-lg leading-7 mt-10 text-center w-[85%] mx-auto'>LK RECRUITMENT is a staffing and recruitment agency based in Rwanda. Our mission focuses on investing in people and shaping a better
            future through empowerment, social responsibility, and promoting diversity, equity, and inclusion. The agency offers a talent-focused 
            approach, providing the right training, competitive salaries, and a strong commitment to making a positive social impact.
         </p>
