@@ -11,14 +11,41 @@ import { PiShareFatFill } from "react-icons/pi";
 import logo from '../assets/navLogo.png';
 import gray from '../assets/grayhr.png';
 import Footer from '../components/Footer';
+import emoji from '../assets/emoji.png';
+import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
 function Jobdetail() {
   const [isAtBottom, setIsAtBottom] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
+
+  const [uploadedFileName, setUploadedFileName] = useState("");
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setUploadedFileName(file.name);
+    }
+  };
 
   const handleScroll = (e) => {
     const element = e.target;
     setIsAtBottom(element.scrollHeight - element.scrollTop === element.clientHeight);
+  };
+
+  const handleModalToggle = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setIsModalOpen(false);
+    setIsSubmittedModalOpen(true);
+  };
+
+  const closeSubmittedModal = () => {
+    setIsSubmittedModalOpen(false);
   };
 
   return (
@@ -100,10 +127,108 @@ function Jobdetail() {
           </div>
           <hr className='text-[#ECEDF2]' />
           <div className='text-center'>
-          <button className='bg-white text-black p-2 w-[80%] mt-16 mb-12 border border-black/80 hover:bg-yellow-500 hover:text-white hover:border-gray-400 font-medium rounded-3xl'>Apply now</button>
+          <button className='bg-white text-black p-2 w-[80%] mt-16 mb-12 border border-black/80 hover:bg-yellow-500 hover:text-white hover:border-gray-400 font-medium rounded-3xl' onClick={handleModalToggle}>Apply now</button>
           </div>
          
         </div>
+
+        {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary/60 backdrop-blur-sm">
+          <div className="bg-secondary border border-gray-400 w-[90%] max-w-lg p-6 rounded-lg relative">
+            <button
+              className="absolute top-2 right-2 text-secondary bg-white/50 text-4xl p-1 px-3 rounded-3xl"
+              onClick={handleModalToggle}
+            >
+              &times;
+            </button>
+            <h2 className="text-[38px] my-4 text-center text-white">Apply for this Job</h2>
+            <Image src={hr} width={310} height={1} alt='hr' className='mx-auto mt-4' />
+            <form onSubmit={handleFormSubmit} className="space-y-4 mt-10">
+              <div>
+                <label htmlFor="email" className="block text-[20px] text-gray-100 font-light mb-3">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  className="w-full border border-gray-300 bg-secondary rounded-md p-3 text-white placeholder:text-gray-300 placeholder:text-[15px] placeholder:font-light"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-[20px] text-gray-100 font-light mb-3 mt-8">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Your Phone Number"
+                  className="w-full border  bg-secondary  text-white border-gray-300 rounded-md p-3 placeholder:text-gray-200 placeholder:text-[15px] placeholder:font-light"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-[20px] text-white font-light mb-3 mt-8 ">Why should we hire you?</label>
+                <textarea
+                  id="message"
+                  rows="3"
+                  placeholder="Type your message"
+                  className="w-full border  bg-secondary h-28  border-gray-300 text-white rounded-md p-3 placeholder:text-gray-200 placeholder:text-[15px] placeholder:font-light"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-3 border border-gray-300 rounded-md p-2 cursor-pointer">
+            <input
+              type="file"
+              id="cv"
+              accept=".doc,.docx,.pdf"
+              className="hidden"
+              onChange={handleFileChange}
+            />
+            <label
+              htmlFor="cv"
+              className="flex items-center justify-center h-16 gap-2 w-full"
+            >
+              <BsFillCloudUploadFill className="text-gray-200 text-xl" />
+              <span className="text-gray-200 text-[15px] font-light">
+                {uploadedFileName || "Upload CV (doc, docx, pdf)"}
+              </span>
+            </label>
+          </div>
+        </div>
+
+              <button
+                type="submit"
+                className="bg-white text-black  text-[20px] w-full py-2 border border-black/80 hover:bg-yellow-500 hover:text-white hover:border-gray-400 font-medium rounded-3xl"
+              >
+                Apply Now
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
+
+          {/* Submitted Confirmation Modal */}
+          {isSubmittedModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary/60 backdrop-blur-sm">
+          <div className="bg-white w-[100%] max-w-md p-6 rounded-lg text-center">
+            <div className="flex items-center gap-1 justify-center">
+            <h2 className="text-4xl text-secondary mb-4">Great Job </h2>
+            <Image src={emoji} width={40} height={20} alt="emoji" className="mb-2" />
+            </div>
+            
+            <p className="text-gray-800 mt-5 mb-6">
+            This to confirm that We have received your Application, and we will get back to you as soon as possible. Thank you!
+            </p>
+            <button
+              className="text-black"
+              onClick={closeSubmittedModal}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
         <div className='p-5 border border-gray-400 rounded-lg '>
           <div className='flex justify-between'>

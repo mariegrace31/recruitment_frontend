@@ -24,118 +24,118 @@ function page() {
       <div>
        <div className='grid grid-cols-4 gap-7 w-[100%] p-24 mx-auto'>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-sm'>Software Engineer</h1>
+          <h1 className='font-bold text-lg'>Software Engineer</h1>
           <div className='flex gap-9'>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
-          <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
+          <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
           <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
                   More Details
                 </button>
               </Link>
          </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-sm'>Software Engineer</h1>
+          <h1 className='font-bold text-lg'>Software Engineer</h1>
           <div className='flex gap-9'>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
-          <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
+          <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
           <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
                   More Details
                 </button>
               </Link>
            </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-sm'>Software Engineer</h1>
+          <h1 className='font-bold text-lg'>Software Engineer</h1>
           <div className='flex gap-9'>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
-          <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
+          <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
           <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
                   More Details
                 </button>
               </Link>
               </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-sm'>Software Engineer</h1>
+          <h1 className='font-bold text-lg'>Software Engineer</h1>
           <div className='flex gap-9'>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
-          <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
+          <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
           <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
                   More Details
                 </button>
               </Link>
            </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-sm'>Software Engineer</h1>
+          <h1 className='font-bold text-lg'>Software Engineer</h1>
           <div className='flex gap-9'>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
-          <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
+          <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
           <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
                   More Details
                 </button>
               </Link>
               </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-sm'>Software Engineer</h1>
+          <h1 className='font-bold text-lg'>Software Engineer</h1>
           <div className='flex gap-9'>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+          </div>
+          <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
+          <Link href="/jobdetail">
+            <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+              More Details
+            </button>
+            </Link>
+            </div>
+          <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+          <h1 className='font-bold text-lg'>Software Engineer</h1>
+          <div className='flex gap-9'>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
           <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
-                  More Details
-                </button>
-              </Link>
-               </div>
-        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-sm'>Software Engineer</h1>
-          <div className='flex gap-9'>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
-          </div>
-          <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
+            <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+              More Details
+            </button>
+          </Link>
+            </div>
+         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+           <h1 className='font-bold text-lg'>Software Engineer</h1>
+           <div className='flex gap-9'>
+             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+           </div>
+           <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
           <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
-                  More Details
-                </button>
-              </Link>
-              </div>
-        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-sm'>Software Engineer</h1>
-          <div className='flex gap-9'>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[10px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
-          </div>
-          <p className='text-xs'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[43%] ml-auto text-[12px] text-secondary group-hover:bg-secondary group-hover:text-white'>
-                  More Details
-                </button>
-              </Link>
-               </div>
-      </div>
+            <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+              More Details
+            </button>
+          </Link>
+           </div>
+        </div>
       </div>
 
-      <div className='bg-primary p-12 flex justify-between items-center rounded-lg w-[95%] my-14 mx-auto'>
+      <div className='bg-primary p-16 flex justify-between items-center rounded-lg w-[94%] my-14 mx-auto'>
         <div className='flex flex-col gap-10 w-[50%]'>
-          <h1 className='font-medium text-white text-lg'>Ready to hire an employee?</h1>
-          <p className='font-extralight text-white'>Ready to take the next step in your career? Explore our diverse range of available jobs and find the perfect opportunity that aligns with your skills and aspirations</p>
+          <h1 className='font-medium text-white text-[30px]'>Ready to hire an employee?</h1>
+          <p className='font-extralight text-white text-[20px]'>Ready to take the next step in your career? Explore our diverse range of available jobs and find the perfect opportunity that aligns with your skills and aspirations</p>
         </div>
-        <button className='bg-secondary text-white p-2 px-3 rounded-3xl font-medium'>Contact Us Today</button>
+        <button className='bg-secondary text-[16px] text-white p-2 px-3 rounded-3xl font-medium'>Contact Us Today</button>
       </div>
     </div>
     <Footer />
