@@ -130,12 +130,12 @@ function page() {
       </div>
       </div>
 
-      <div className='bg-primary p-12 flex justify-between items-center rounded-lg w-[95%] my-14 mx-auto'>
+      <div className='bg-primary p-16 flex justify-between items-center rounded-lg w-[94%] my-14 mx-auto'>
         <div className='flex flex-col gap-10 w-[50%]'>
-          <h1 className='font-medium text-white text-lg'>Ready to hire an employee?</h1>
-          <p className='font-extralight text-white'>Ready to take the next step in your career? Explore our diverse range of available jobs and find the perfect opportunity that aligns with your skills and aspirations</p>
+          <h1 className='font-medium text-white text-[30px]'>Ready to hire an employee?</h1>
+          <p className='font-extralight text-white text-[20px]'>Ready to take the next step in your career? Explore our diverse range of available jobs and find the perfect opportunity that aligns with your skills and aspirations</p>
         </div>
-        <button className='bg-secondary text-white p-2 px-3 rounded-3xl font-medium'>Contact Us Today</button>
+        <button className='bg-secondary text-[16px] text-white p-2 px-3 rounded-3xl font-medium'>Contact Us Today</button>
       </div>
     </div>
     <Footer />
