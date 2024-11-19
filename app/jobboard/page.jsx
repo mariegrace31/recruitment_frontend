@@ -11,10 +11,10 @@ function page() {
   return (
     <div className='bg-[#F8FAFF]'>
       <div className='p-20'>
-      <div className='bg-gray-300 p-2 rounded-lg w-[90%] mt-20 mx-auto'>
-        <div className='bg-primary rounded-lg p-44'>
+      <div className='bg-gray-300 relative p-2 rounded-lg w-[90%] mt-20 mx-auto'>
+        <div className='bg-primary relative rounded-lg p-44'>
           <h1 className='text-white text-center text-6xl'>Available Jobs</h1>
-          <Image src={hr} width={300} height={1} alt='hr' className='mx-auto mt-4' />
+          <Image src={hr} width={300} height={1} alt='hr' className='mx-auto mt-4 z-10' />
         </div>
       </div>
       <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-24 z-10 object-cover'/>
@@ -31,10 +31,10 @@ function page() {
           </div>
           <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
           <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
-                  More Details
-                </button>
-              </Link>
+              <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                More Details
+              </button>
+          </Link>
          </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
           <h1 className='font-bold text-lg'>Software Engineer</h1>

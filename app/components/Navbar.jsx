@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import logo from '../assets/navLogo.png';
+import logo from '../assets/secondlogo.png';
 import { FaCaretDown } from "react-icons/fa";
 import Link from 'next/link';
 import line from '../assets/navline.svg';
@@ -29,21 +29,17 @@ function Navbar() {
         <Link href="/" className={`text-secondary font-medium text-[15px] ${pathname === '/' ? 'underline ' : ''}`}>
           Home
         </Link>
+
+        <Link href="/about" className={`flex items-center gap-1 text-secondary font-medium text-[15px] ${pathname === '/about' ? 'underline' : ''}`}>
+          About us <FaCaretDown />
+        </Link>
         
         <Link href="/jobboard" className={`text-secondary font-medium text-[15px] ${pathname === '/jobboard' ? 'underline' : ''}`}>
           Job Board
         </Link>
 
-        <Link href="/about" className={`flex items-center gap-1 text-secondary font-medium text-[15px] ${pathname === '/about' ? 'underline' : ''}`}>
-          About us <FaCaretDown />
-        </Link>
-
-        <Link href="/candidates" className={`text-secondary font-medium text-[15px] ${pathname === '/candidates' ? 'underline' : ''}`}>
-          Candidates
-        </Link>
-
-        <Link href="/recruiters" className={`text-secondary font-medium text-[15px] ${pathname === '/recruiters' ? 'underline' : ''}`}>
-          Recruiters
+        <Link href="/hrnews" className={`text-secondary font-medium text-[15px] ${pathname === '/hrnews' ? 'underline' : ''}`}>
+          HR News & Tips
         </Link>
 
         <Link href="/contact" className={`text-secondary font-medium text-[15px] ${pathname === '/contact' ? 'underline' : ''}`}>
