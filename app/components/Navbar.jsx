@@ -15,7 +15,7 @@ function Navbar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="w-[44%] md:w-[80%] bg-[#C6C6E2] fixed top-0 left-48 md:left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center px-3 py-2 md:p-3">
+    <nav className="w-[78%] md:w-[80%] bg-[#C6C6E2] fixed top-0 left-[188px] md:left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center px-3 py-2 md:p-3">
       
       <div className="flex items-center gap-2">
         <Image src={logo} width={40} height={40} alt="Logo" priority />
