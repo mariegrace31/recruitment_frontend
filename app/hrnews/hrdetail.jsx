@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/recruiterImage.png';
+import image from '../assets/recruiterImage.jpeg';
 import Image from 'next/image';
 import lines from '../assets/linegroup.png';
 import dot from '../assets/dothr.png';
@@ -10,7 +10,7 @@ function Hrdetail() {
     <div>
       <div className='p-20'>
         <div className='relative'>
-        <Image src={image} width={950} height={100} alt='recruiter'  className='relative mx-auto  mt-9'/>
+        <Image src={image} width={950} height={60} alt='recruiter'  className='relative mx-auto bg-gray-300 p-2 rounded-3xl  mt-9'/>
         <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-24  object-cover'/>
         </div>
 

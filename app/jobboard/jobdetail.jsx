@@ -71,14 +71,30 @@ function Jobdetail() {
       } py-5 p-3 mt-10 rounded-lg h-[251px] overflow-y-auto`}
       onScroll={handleScroll}
     >
+      <div>
       <h1 className="text-xl">Job Description</h1>
       <p className="text-[14px]">
         Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
          aliquip ex ea commodo consequat. Duis aute irure dolor in elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <p className='text-[14px]'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
-          <p className='text-[14px]'>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore</p>
-    </div>
+     
+      <h1 className="text-xl">Responsabilities</h1>
+      <p className="text-[14px]">
+        Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+         aliquip ex ea commodo consequat. Duis aute irure dolor in elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p className='text-[14px]'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+     
+      <h1 className="text-xl">Required Skills</h1>
+      <p className="text-[14px]">
+        Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+         aliquip ex ea commodo consequat. Duis aute irure dolor in elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p className='text-[14px]'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+  
+      </div> 
+      </div>
 
       </div>
 
