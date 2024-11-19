@@ -13,13 +13,13 @@ import last from '../assets/lasthr.png';
 
 function Footer() {
   return (
-    <div className='bg-[#333872] pt-[67px] py-14 pb-7'>
-      <div className='flex gap-12 ml-8'>  
-        <p className='border border-gray-500 p-2 rounded-sm flex items-center gap-2 text-white text-[14px] w-[23%]'> <TiLocation className='p-1 px-2 text-5xl bg-secondary rounded-r-lg text-white' />4th floor La Bonne Addresse House, Nyarugenge Kiyovu, Kigali City</p>
-        <p className='border border-gray-500 p-2 rounded-sm flex items-center gap-2 text-white text-[14px]'><MdOutlineEmail className='p-1 text-4xl bg-secondary rounded-r-lg text-white' />office@lkrecruitmentrw.com</p>
-        <p className='border border-gray-500 p-2 rounded-sm flex items-center gap-2 text-white text-[14px]'><IoCall className='p-1 text-4xl bg-secondary rounded-r-lg text-white' />+250 795 460 410</p>
-        <p className='border border-gray-500 p-2 rounded-sm flex items-center gap-2 text-white text-[14px]'><LiaHandsHelpingSolid className='p-1 text-4xl bg-secondary rounded-r-lg text-white' />Become a partner</p>
-        <p className='border border-gray-500 p-2 rounded-sm flex items-center gap-2 text-white text-[14px]'><FaWhatsapp className='p-1 text-4xl bg-secondary rounded-r-lg text-white' />Chat with us now</p>
+    <div className='bg-[#333872] pt-[50px] lg:pt-[67px] py-14 pb-7'>
+      <div className='grid grid-cols-2 lg:flex gap-3 lg:gap-12 ml-2 lg:ml-8'>  
+        <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px] w-[50%] lg:w-[23%]'> <TiLocation className='p-1 px-2 text-xl lg:text-5xl bg-secondary rounded-r-lg text-white' />4th floor La Bonne Addresse House, Nyarugenge Kiyovu, Kigali City</p>
+        <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px]'><MdOutlineEmail className='p-1 text-lg lg:text-4xl bg-secondary rounded-r-lg text-white' />office@lkrecruitmentrw.com</p>
+        <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px]'><IoCall className='p-1 text-lg lg:text-4xl bg-secondary rounded-r-lg text-white' />+250 795 460 410</p>
+        <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px]'><LiaHandsHelpingSolid className='p-1 text-lg lg:text-4xl bg-secondary rounded-r-lg text-white' />Become a partner</p>
+        <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px]'><FaWhatsapp className='p-1 text-lg lg:text-4xl bg-secondary rounded-r-lg text-white' />Chat with us now</p>
       </div>
 
       <div className='flex gap-5 mt-10 p-12'>

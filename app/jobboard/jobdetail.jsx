@@ -50,20 +50,20 @@ function Jobdetail() {
 
   return (
     <div>
-      <div className='bg-primary p-52'>
-        <h1 className='text-white text-center text-6xl'>Job Details</h1>
+      <div className='bg-primary p-11 lg:p-52'>
+        <h1 className='text-white text-center text-3xl lg:text-6xl'>Job Details</h1>
         <Image src={hr} width={250} height={1} alt='hr' className='mx-auto mt-4' />
       </div>
 
-      <div className='bg-white p-32 flex gap-32'>
+      <div className='bg-white p-7 lg:p-32 flex gap-12 lg:gap-32'>
       <div className='w-[50%]'>
-        <h1 className='text-3xl font-medium'>Software Dev</h1>
-        <div className='flex flex-col gap-11 border border-gray-400 py-5 p-3 mt-10 rounded-lg'>
-          <h1 className='text-xl'>Overview</h1>
-          <p className='text-[14px]'>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labogggris nisi ut galiquip ex ea commodo consequat.
+        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <div className='flex flex-col gap-6 lg:gap-11 border border-gray-400 py-5 p-3 mt-10 rounded-lg'>
+          <h1 className='text-sm lg:text-xl'>Overview</h1>
+          <p className='text-[12px] lg:text-[14px]'>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labogggris nisi ut galiquip ex ea commodo consequat.
              Duis aute irure dolor inelit esse cillum dolore eu fugiat nu sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p className='text-[14px]'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
-          <p className='text-[14px]'>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore</p>
+          <p className='text-[12px] lg:text-[14px]'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+          <p className='text-[12px] lg:text-[14px]'>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore</p>
         </div>
         <div
       className={`flex flex-col gap-8 border border-gray-400 ${
@@ -73,25 +73,25 @@ function Jobdetail() {
     >
       <div>
       <h1 className="text-xl">Job Description</h1>
-      <p className="text-[14px] mt-6">
+      <p className="text-[12px] lg:text-[14px] mt-6">
         Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
          aliquip ex ea commodo consequat. Duis aute irure dolor in elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <p className='text-[14px] mt-7'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+      <p className='text-[12px] lg:text-[14px] mt-7'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
      
       <h1 className="text-xl mt-7">Responsabilities</h1>
-      <p className="text-[14px] mt-7">
+      <p className="text-[12px] lg:text-[14px] mt-7">
         Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
          aliquip ex ea commodo consequat. Duis aute irure dolor in elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <p className='text-[14px] mt-7'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+      <p className='text-[12px] lg:text-[14px] mt-7'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
      
       <h1 className="text-xl mt-7">Required Skills</h1>
-      <p className="text-[14px] mt-7">
+      <p className="text-[12px] lg:text-[14px] mt-7">
         Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
          aliquip ex ea commodo consequat. Duis aute irure dolor in elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <p className='text-[14px] mt-7'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+      <p className='text-[12px] lg:text-[14px] mt-7'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
   
       </div> 
       </div>
