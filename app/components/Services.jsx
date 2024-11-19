@@ -59,15 +59,15 @@ const services = [
 
 function Services() {
   return (
-    <div className='bg-white p-28 py-40'>
-      <div className='bg-[#D6E4FF]/50 border border-secondary w-[97%] mx-auto rounded-2xl p-10'>
+    <div className='bg-white p-3 lg:p-28 py-16 lg:py-40'>
+      <div className='bg-[#D6E4FF]/50 border border-secondary w-[97%] mx-auto rounded-2xl p-3 lg:p-10'>
       <div className='text-center'>
-        <h1 className='font-semibold text-4xl uppercase'>Our Services</h1>
+        <h1 className='font-semibold text-3xl lg:text-4xl uppercase'>Our Services</h1>
         <Image src={hr} width={226} height={100} alt="hr" className='mx-auto mt-5'/>
       </div>
-      <div className='flex flex-wrap justify-center gap-4 my-10 '>
+      <div className='grid grid-cols-2 lg:flex lg:flex-wrap justify-center gap-4 my-10 '>
         {services.map((service, index) => (
-          <div key={index} className='border w-[18%] mt-6 hover:bg-white cursor-pointer border-black/50 rounded-lg p-2'>
+          <div key={index} className='border w-[100%] lg:w-[18%] mt-6 hover:bg-white cursor-pointer border-black/50 rounded-lg p-2'>
             <h3 className='text-[#05264E] font-semibold text-[13px]'>{service.title}</h3>
             <p className='text-[#4F5E64] text-[9px] p-1 mt-2'>{service.description}</p>
           </div>
