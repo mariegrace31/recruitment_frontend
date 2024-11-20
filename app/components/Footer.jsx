@@ -22,7 +22,7 @@ function Footer() {
         <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px]'><FaWhatsapp className='p-1 text-lg lg:text-4xl bg-secondary rounded-r-lg text-white' />Chat with us now</p>
       </div>
 
-      <div className='flex gap-5 mt-10 p-12'>
+      <div className='flex gap-5 mx-auto mt-10 p-12'>
 
       <div className='grid grid-cols-2 h-[450px]'>
       <div className='grid grid-cols-2'>
@@ -114,7 +114,7 @@ function Footer() {
       </div>
 
       <div className='flex flex-col px-7 gap-5'>
-        <Image src={last} width={1400} height={1} alt='last hr'/>
+        <Image src={last} width={1400} height={1} alt='last hr mx-auto'/>
         <div className='flex justify-between'>
           <p className='text-white text-[15px] font-light'>Do not use or Sale Our Data</p>
           <p className='text-white text-[15px] font-light'>© 2024 LK Recruitment Ltd | All-Right Reserved.</p>

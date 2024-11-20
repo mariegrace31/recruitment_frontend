@@ -59,7 +59,7 @@ export default function Home() {
           <div className="flex bg-gradient-center p-3 md:p-8 rounded-lg ">
             <div className="flex flex-col gap-2 lg:gap-5 w-[70%] md:w-[60%]">
               <h1 className="font-bold text-[14px] lg:text-xl">For employers</h1>
-              <p className="text-sm lg:text-lg font-light">Investing in people shaping in better future investing in people shaping in better future</p>
+              <p className="text-sm lg:text-lg font-light">Post your job today & connect with skilled candidates ready to make an impact. Let's build a strong team together.</p>
               <button className="bg-primary text-white font-bold w-[90%] lg:w-[50%] text-[12px] lg:text-sm rounded-3xl p-2 lg:p-3">Post Your Job</button>
             </div>
             <Image src={employer} width={170} height={100} alt="Employer png" />
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="flex bg-gradient-center p-8 rounded-lg ">
             <div className="flex flex-col gap-2 lg:gap-5 w-[60%]">
               <h1 className="font-bold text-[14px] lg:text-xl">For candidates</h1>
-              <p className="text-sm lg:text-lg font-light">Investing in people shaping in better future investing in people shaping in better future</p>
+              <p className="text-sm lg:text-lg font-light">Apply & join a team that values talent, growth, & opportunity. We're excited to see what you can bring to the table.</p>
               <button className="bg-primary text-white font-bold w-[90%] lg:w-[50%] rounded-3xl text-[12px] lg:text-sm p-3">Register</button>
             </div>
             <Image src={candidate} width={170} height={100} alt="Candidate png" />
