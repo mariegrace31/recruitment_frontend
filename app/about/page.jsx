@@ -13,10 +13,10 @@ import { GrFacebookOption } from "react-icons/gr";
 import ig from '../assets/instagram.png';
 import Link from 'next/link';
 import whitehr from '../assets/hrwhite.png';
-import image from '../assets/hrImage.png';
 import candidate from '../assets/candidate.png';
 import employer from '../assets/employer.png';
 import Footer from '../components/Footer';
+import team from '../assets/teamm.jpg.png';
 
 function TypingEffect() {
   const text = "Learn the story behind LK Recruitment";
@@ -62,8 +62,7 @@ function TypingEffect() {
       <div className='bg-white flex flex-col gap-6 lg:gap-10 justify-center text-center my-10 lg:my-28'>
         <h1 className='uppercase font-semibold text-xl lg:text-5xl'>our amazing team</h1>
         <Image src={bHr} width={450} height={1} alt='black hr' className='mx-auto -mt-6 w-[50%] md:w-[450px]'/>
-        <p className='w-[70%] lg:w-[45%] mx-auto font-light text-[15px] lg:text-[20px]'>Ready to take the next step in your career? Explore our diverse range of available jobs and find 
-          the perfect opportunity that aligns with your skills and aspirations</p>
+        <p className='w-[70%] lg:w-[45%] mx-auto font-light text-[15px] lg:text-[20px]'>A Group of Passionate, Talented Individuals Committed to Your Success!Together, we bring diverse skills, creativity, and dedication to deliver outstanding results</p>
           <div className='flex gap-7 justify-center'>
  
   <div className="relative group">
@@ -130,7 +129,7 @@ function TypingEffect() {
    <div className='relative z-10 flex flex-col justify-center'>
    <h1 className='uppercase font-semibold text-[25px] lg:text-[50px] text-white text-center'>why choose us</h1>
     <Image src={hr} width={200} height={1} alt='hr' className='mx-auto mt-2' />
-    <p className='text-white font-light text-[16px] lg:text-[20px] w-[90%] lg:w-[50%] text-center mx-auto mt-7'>Empowering job seekers and employers alike, we connect talent with opportunities.</p>
+    <p className='text-white font-light text-[16px] lg:text-[20px] w-[90%] lg:w-[50%] text-center mx-auto mt-7'>Choose us for unmatched expertise, personalized solutions, and a commitment to your success.</p>
    
     <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 w-[90%] mx-auto mt-14'>
 
@@ -161,12 +160,14 @@ function TypingEffect() {
    <div className='bg-[#F5F5FF] p-5 lg:p-32'>
     <div className='flex flex-col lg:flex-row w-[90%] mx-auto'>
     <div className='bg-secondary p-4 flex flex-col rounded-none lg:rounded-l-lg'>
-      <h1 className='text-[80px] lg:text-[120px] text-white'>&ldquo;</h1>
-      <p className='text-white text-[18px] lg:text-[22px] font-light -mt-11 lg:-mt-20'>Manage an efficient and effective CX operation Manage an efficient and effective CX operation, Manage an efficient and effective CX operation Manage an efficient and effective CX operation
-       Manage an efficient and effective CX operation, Manage an efficient and effective CX operation, Manage an efficient and effective CX operation, Manage an efficient and effective CX operation</p>
+      <div className='flex gap-8 items-center'>
+      <h1 className='text-[80px] lg:text-[190px] text-white'>&ldquo;</h1>
+      <p className='text-white text-3xl font-medium -mt-20'>Stay Ahead with Industry Insights.</p>
+      </div>
+      <p className='text-white text-[18px] lg:text-[22px] font-light -mt-24'>Our team stays on top of the latest trends, innovations, and best practices in the industry to provide you with valuable insights. On this page, we share expert advice, market updates, and in-depth analysis to help you make informed decisions and stay ahead of the competition. Whether you're looking for the latest industry trends, tips for growth, or guidance on challenges you may face, we've got you covered.</p>
        <Image src={whitehr} width={100} height={1} alt='white hr' className='my-10' />
     </div>
-    <Image src={image} width={500} height={100} alt='hr image'  />
+    <Image src={team} width={500} height={100} alt='hr image'  />
     </div>
    </div>
 
@@ -175,8 +176,8 @@ function TypingEffect() {
         <div className="flex bg-gradient-center p-8 rounded-lg ">
           <div className="flex flex-col gap-2 lg:gap-5 w-[90%] lg:w-[60%]">
           <h1 className="font-bold text-[15px] lg:text-xl">For employers</h1>
-          <p className="text-sm lg:text-lg font-light">Investing in people shaping in better future investing in people shaping in better future</p>
-          <button className="bg-primary text-white font-bold w-[100%] text-sm lg:text-lg lg:w-[50%] rounded-3xl p-2 lg:p-3">Post Your Job</button>
+          <p className="text-sm lg:text-lg font-light">Post your job today & connect with skilled candidates ready to make an impact. Let's build a strong team together.</p>
+          <button className="bg-primary text-white font-bold w-[100%] text-sm lg:text-lg lg:w-[65%] rounded-3xl p-2 lg:p-3">Post Your Job</button>
           </div>
           <Image
            src={employer}
@@ -190,7 +191,7 @@ function TypingEffect() {
         <div className="flex bg-gradient-center p-8 rounded-lg ">
           <div className="flex flex-col gap-2 lg:gap-5 w-[90%] lg:w-[60%]">
           <h1 className="font-bold text-[15px] lg:text-xl">For candidates</h1>
-          <p className="text-sm lg:text-lg font-light">Investing in people shaping in better future investing in people shaping in better future</p>
+          <p className="text-sm lg:text-lg font-light">Apply & join a team that values talent, growth, & opportunity. We're excited to see what you can bring to the table.</p>
           <button className="bg-primary text-white w-[100%] font-bold lg:w-[40%] rounded-3xl p-2 lg:p-3">Register</button>
           </div>
           <Image

@@ -8,11 +8,10 @@ function Suscribe() {
 
       <div className="relative z-10 flex flex-col gap-2 lg:gap-4 items-center justify-center text-white mt-1 lg:mt-24 p-2 lg:p-5">
         <h1 className="text-xl lg:text-5xl font-bold mb-4">
-          Subscribe to our Newsletter to get Information
+        Stay Informed and Ahead of the Curve.
         </h1>
         <p className="mb-6 text-sm lg:text-lg">
-          Aenean quam tortor ullamcorper at aliquet at bibendum sit amet magna
-          praesent eu tincidunt
+        Subscribe to our newsletter for the latest updates, exclusive insights, and valuable information delivered straight to your inbox.
         </p>
 
         <div className="w-full max-w-md p-4 bg-opacity-100">

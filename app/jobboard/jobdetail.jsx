@@ -56,7 +56,10 @@ function Jobdetail() {
       </div>
 
       <div className='bg-white p-7 lg:p-32 flex gap-12 lg:gap-32'>
-      <div className='w-[50%]'>
+      <div className={`w-[50%] h-[800px] overflow-y-auto ${
+            isAtBottom ? "border-b-gray-400" : "border-b-0"
+          }`}
+          onScroll={handleScroll}>
         <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
         <div className='flex flex-col gap-6 lg:gap-11 border border-gray-400 py-5 p-3 mt-10 rounded-lg'>
           <h1 className='text-sm lg:text-xl'>Overview</h1>
@@ -68,7 +71,7 @@ function Jobdetail() {
         <div
       className={`flex flex-col gap-8 border border-gray-400 ${
         isAtBottom ? "border-b-gray-400" : "border-b-0"
-      } py-5 p-3 mt-10 rounded-lg h-[251px] overflow-y-auto`}
+      } py-5 p-3 mt-10 rounded-lg h-[852px] overflow-y-auto`}
       onScroll={handleScroll}
     >
       <div>

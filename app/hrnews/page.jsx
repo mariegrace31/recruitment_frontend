@@ -7,6 +7,9 @@ import { GoArrowRight } from "react-icons/go";
 import Footer from '../components/Footer';
 import Link from 'next/link';
 import { RiLoader2Line } from 'react-icons/ri';
+import hrImage from '../assets/recru.png';
+import resume from '../assets/resume.png';
+import skill from '../assets/sico.png';
 
 function page() {
   return (
@@ -23,7 +26,7 @@ function page() {
       <div className='grid grid-cols-3 gap-6 mt-32 p-16 px-3'>
 
         <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-        <Image src={image} width={401} height={100} alt='hr image' className='rounded-t-xl' />
+        <Image src={hrImage} width={401} height={100} alt='hr image' className='rounded-t-xl' />
         <h3 className='px-3 text-[16px]'>How to Prepare for a Job Interview</h3>
         <p className='px-3 text-[14px] font-light leading-6'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
         <Link href='/hrdetail'>
@@ -32,19 +35,19 @@ function page() {
       </div>
 
        <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-       <Image src={image} width={401} height={100} alt='hr image' className='rounded-t-xl' />
-       <h3 className='px-3 text-[16px]'>How to Prepare for a Job Interview</h3>
-       <p className='px-3 text-[14px] font-light leading-6'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
-       <Link href='/hrdetail'>
+       <Image src={resume} width={401} height={100} alt='hr image' className='rounded-t-xl' />
+       <h3 className='px-3 text-[16px]'>Resume Writing - Do's and Don's</h3>
+       <p className='px-3 text-[14px] font-light leading-6'>Your resume is your first chance to make a good impression. Learn the key do's and don'ts that can make your resume stand out from the competition...</p>
+       <Link href='#'>
        <button className='flex items-center gap-1 px-3 text-[14px]'>Learn more <GoArrowRight className='bg-secondary  rounded-2xl p-1 text-white text-2xl' /></button>
        </Link>
        </div>
 
       <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-      <Image src={image} width={401} height={100} alt='hr image' className='rounded-t-xl' />
-      <h3 className='px-3 text-[16px]'>How to Prepare for a Job Interview</h3>
+      <Image src={skill} width={401} height={100} alt='hr image' className='rounded-t-xl' />
+      <h3 className='px-3 text-[16px]'>Top 5 Soft Skills Employers Look For</h3>
        <p className='px-3 text-[14px] font-light leading-6'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
-       <Link href='/hrdetail'>
+       <Link href='#'>
        <button className='flex items-center gap-1 px-3 text-[14px]'>Learn more <GoArrowRight className='bg-secondary  rounded-2xl p-1 text-white text-2xl' /></button>
        </Link>
        </div>
