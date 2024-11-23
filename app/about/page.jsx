@@ -4,19 +4,20 @@ import hr from '../assets/abouthr.png';
 import Image from 'next/image';
 import lines from '../assets/linegroup.png';
 import bHr from '../assets/blackhr.png';
-import Kelly from '../assets/kelly.png';
+import Kelly from '../assets/team1.png';
 import Socrate from '../assets/socrate.png';
 import Djasmine from '../assets/Djasmine.png';
 import Henry from '../assets/henry.png';
-import { FaLinkedinIn } from "react-icons/fa";
-import { GrFacebookOption } from "react-icons/gr";
-import ig from '../assets/instagram.png';
 import Link from 'next/link';
 import whitehr from '../assets/hrwhite.png';
 import candidate from '../assets/candidate.png';
 import employer from '../assets/employer.png';
 import Footer from '../components/Footer';
 import team from '../assets/teamm.jpg.png';
+import { LuArrowRight } from "react-icons/lu";
+import { FaUser } from "react-icons/fa6";
+import liine from '../assets/Line61.png';
+import { GrUserManager } from "react-icons/gr";
 
 function TypingEffect() {
   const text = "Learn the story behind LK Recruitment";
@@ -65,62 +66,26 @@ function TypingEffect() {
         <p className='w-[70%] lg:w-[45%] mx-auto font-light text-[15px] lg:text-[20px]'>A Group of Passionate, Talented Individuals Committed to Your Success!Together, we bring diverse skills, creativity, and dedication to deliver outstanding results</p>
           <div className='flex gap-7 justify-center'>
  
-  <div className="relative group">
-    <Image src={Kelly} width={300} height={100} alt="kelly" className="object-cover transition-all duration-300 group-hover:opacity-50" />
-    <div className="absolute inset-0 rounded-md cursor-pointer bg-secondary bg-opacity-70 flex gap-3 flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-      <h2 className="text-white text-[30px] font-medium">LONETE Kelly</h2>
-      <Image src={hr} width={190} height={1} alt='hr' className='-mt-2' />
-      <p className="text-white text-2xl w-[80%]">Chief Executive Officer</p>
-      <div className='flex items-center gap-5'>
-        <Link href='#'><FaLinkedinIn   className='p-1 text-xl bg-[#0076B2] text-white'/></Link>
-        <Link href='#'><GrFacebookOption className='bg-[#1877F2] text-white text-2xl p-1 rounded-3xl' /></Link>
-        <Image src={ig} width={20} height={18} alt='instagram' />
+  <div className="flex gap-6 mx-auto px-20 mt-9">
+    <Image src={Kelly} width={500} height={1} alt="kelly" className="bg-[#1A77B9]/10 p-2 rounded-xl" />
+    <div className="p-5 rounded-xl bg-[#1A77B9]/10 ">
+      <div className='flex justify-between'>
+        <h3 className='flex gap-2 items-center bg-white p-3 rounded-xl'><FaUser className='text-xl'/>LONETE Kelly</h3>
+        <h3 className='flex gap-2 items-center bg-white p-3 rounded-xl'> <GrUserManager className='text-xl' />Chief Executive Ofiicer</h3>
       </div>
+      <div className='flex flex-col gap-5 bg-white p-3 mt-6 rounded-xl'>
+        <p className='text-left'>Welcome! My name is LONETE Kelly, and I'm the CEO of LK RECRUITMENT. For over 15 years, I've been driven by a simple yet powerful belief: Every individual has the potential to achieve amazing things, and every organization deserves the talent to make that happen.</p>
+        <p className='text-left'>My journey has been a thrilling adventure of connecting people with opportunities, witnessing careers blossom, and seeing businesses soar to new heights. It's a passion that fuels everything we do at LK RECRUITMENT. At LK RECRUITMENT, we believe in a world where talent flourishes.
+           We're not just about filling a vacancy; we're about building a future where individuals and organizations achieve their full potential together.</p>
+           <p className='text-left'>We embrace diversity in all its forms because we know that a world where unique skills and backgrounds are valued is a world full of possibilities. My career has been an incredible journey of learning, exploration, and growth. From bustling cities to diverse cultures, I've witnessed
+            the power of human connection and the incredible potential within every individual. <span className='text-secondary underline cursor-pointer'>Read More</span> </p>
+      </div>
+
+      <LuArrowRight className='text-4xl text-white rounded-3xl mt-4 ml-auto bg-black p-2' />
+      
     </div>
   </div>
 
- 
-  <div className="relative group">
-    <Image src={Socrate} width={300} height={100} alt="kelly" className="object-cover transition-all duration-300 group-hover:opacity-50" />
-    <div className="absolute inset-0 rounded-md cursor-pointer bg-secondary bg-opacity-70 flex gap-3 flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-      <h2 className="text-white text-[30px] font-medium">AYIVUGWE Socrate</h2>
-      <Image src={hr} width={190} height={1} alt='hr' className='-mt-2' />
-      <p className="text-white text-2xl w-[80%]">Hiring Manager</p>
-      <div className='flex items-center gap-5'>
-        <Link href='#'><FaLinkedinIn   className='p-1 text-xl bg-[#0076B2] text-white'/></Link>
-        <Link href='#'><GrFacebookOption className='bg-[#1877F2] text-white text-2xl p-1 rounded-3xl' /></Link>
-        <Image src={ig} width={20} height={18} alt='instagram' />
-      </div>
-    </div>
-  </div>
- 
-  <div className="relative group">
-    <Image src={Henry} width={300} height={100} alt="kelly" className="object-cover transition-all duration-300 group-hover:opacity-50" />
-    <div className="absolute inset-0 rounded-md cursor-pointer bg-secondary bg-opacity-70 flex gap-3 flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-      <h2 className="text-white text-[30px] font-medium">HIRWA Heritier</h2>
-      <Image src={hr} width={190} height={1} alt='hr' className='-mt-2' />
-      <p className="text-white text-2xl w-[80%]">Social Media Manager</p>
-      <div className='flex items-center gap-5'>
-        <Link href='#'><FaLinkedinIn   className='p-1 text-xl bg-[#0076B2] text-white'/></Link>
-        <Link href='#'><GrFacebookOption className='bg-[#1877F2] text-white text-2xl p-1 rounded-3xl' /></Link>
-        <Image src={ig} width={20} height={18} alt='instagram' />
-      </div>
-    </div>
-  </div>
-
-  <div className="relative group">
-    <Image src={Djasmine} width={300} height={100} alt="kelly" className="object-cover transition-all duration-300 group-hover:opacity-50" />
-    <div className="absolute inset-0 rounded-md cursor-pointer bg-secondary bg-opacity-70 flex gap-3 flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-      <h2 className="text-white text-[30px] font-medium">Keza Djasmine</h2>
-      <Image src={hr} width={190} height={1} alt='hr' className='-mt-2' />
-      <p className="text-white text-2xl w-[80%]">Social Media Manager</p>
-      <div className='flex items-center gap-5'>
-        <Link href='#'><FaLinkedinIn   className='p-1 text-xl bg-[#0076B2] text-white'/></Link>
-        <Link href='#'><GrFacebookOption className='bg-[#1877F2] text-white text-2xl p-1 rounded-3xl' /></Link>
-        <Image src={ig} width={20} height={18} alt='instagram' />
-      </div>
-    </div>
-  </div>
 </div>
    </div>
 
@@ -156,6 +121,48 @@ function TypingEffect() {
    </div>
 
    </div>
+
+   <div className='bg-white flex flex-col gap-6 lg:gap-10 justify-center text-center my-10 lg:my-28 '>
+    <h1 className='font-semibold text-xl lg:text-5xl'>OUR VALUES</h1>
+    <Image src={bHr} width={150} height={1} alt='black hr' className='mx-auto -mt-6 w-[50%] md:w-[250px]'/>
+    <p className='w-[70%] lg:w-[45%] mx-auto font-light text-[15px] lg:text-[20px]'>Guided by integrity, driven by innovation, and committed to excellence - our values define who we are and how we serve you</p>
+    
+    <div className='grid grid-cols-3 p-20 w-[85%] mx-auto justify-center items-center gap-10'>
+      <div className='border border-gray-500 p-3 rounded-lg'>
+        <h3 className='font-semibold text-[20px] text-left'>Integrity</h3>
+        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Doing the right thing"</p>
+        <p className='font-light text-left text-[15px]'>Be transparent with clients and candidates, treat everyone fairly, and act with integrity.</p>
+      </div>
+      <div className='border border-gray-500 p-3 rounded-lg'>
+        <h3 className='font-semibold text-[20px] text-left'>Innovation</h3>
+        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Finding new ways to connect"</p>
+        <p className='font-light text-left text-[15px]'>Utilize technology to develop new recruitment methods and stay ahead of trends.</p>
+      </div>
+      <div className='border border-gray-500 p-3 rounded-lg'>
+        <h3 className='font-semibold text-[20px] text-left'>Ubuntu</h3>
+        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Humanity towards others"</p>
+        <p className='font-light text-left text-[15px]'>Utilize technology to develop new recruitment methods and stay ahead of trends.</p>
+      </div>
+      <div div className='border border-gray-500 p-3 rounded-lg'>
+        <h3 className='font-semibold text-[20px] text-left'>Empowerment</h3>
+        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Supporting individual growth"</p>
+        <p className='font-light text-left text-[15px]'>Offer career coaching and development programs to support growth.</p>
+      </div>
+      <div div className='border border-gray-500 p-3 rounded-lg'>
+        <h3 className='font-semibold text-[20px] text-left'>Community Engagement</h3>
+        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Giving back and making a difference"</p>
+        <p className='font-light text-left text-[15px]'>Partner with organizations focused on education and social justice.</p>
+      </div>
+      <div div className='border border-gray-500 p-3 rounded-lg'>
+        <h3 className='font-semibold text-[20px] text-left'>Empowerment</h3>
+        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Supporting individual growth"</p>
+        <p className='font-light text-left text-[15px]'>Offer career coaching and development programs to support growth.</p>
+      </div>
+      
+    </div>
+
+   </div>
+
 
    <div className='bg-[#F5F5FF] p-5 lg:p-32'>
     <div className='flex flex-col lg:flex-row w-[90%] mx-auto'>

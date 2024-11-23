@@ -9,8 +9,8 @@ import skill from '../assets/sico.png';
 function Hr() {
   return (
     <div className='mt-16 lg:mt-20'>
-      <h1 className='font-normal text-xl lg:text-3xl text-center '>How to Prepare for a Job Interview</h1>
-      <p className='text-center text-xs mt-3'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
+      <h1 className='font-normal text-xl lg:text-3xl text-center '>Explore HR News & Tips</h1>
+      <p className='text-center text-xs mt-3'>Bring all your employee and customer experiences together with LK Recruitment</p>
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 p-16 px-5 lg:px-32'>
 
         <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
