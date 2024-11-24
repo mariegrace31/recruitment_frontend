@@ -208,22 +208,23 @@ function TypingEffect() {
         <p className='text-secondary font-light text-left text-[15px] mt-4'>"Humanity towards others"</p>
         <p className='font-light text-left text-[15px]'>Utilize technology to develop new recruitment methods and stay ahead of trends.</p>
       </div>
+
+      <div className='mx-auto'>
+
       <div div className='border border-gray-500 p-3 rounded-lg'>
         <h3 className='font-semibold text-[20px] text-left'>Empowerment</h3>
         <p className='text-secondary font-light text-left text-[15px] mt-4'>"Supporting individual growth"</p>
         <p className='font-light text-left text-[15px]'>Offer career coaching and development programs to support growth.</p>
       </div>
+
       <div div className='border border-gray-500 p-3 rounded-lg'>
         <h3 className='font-semibold text-[20px] text-left'>Community Engagement</h3>
         <p className='text-secondary font-light text-left text-[15px] mt-4'>"Giving back and making a difference"</p>
         <p className='font-light text-left text-[15px]'>Partner with organizations focused on education and social justice.</p>
       </div>
-      <div div className='border border-gray-500 p-3 rounded-lg'>
-        <h3 className='font-semibold text-[20px] text-left'>Empowerment</h3>
-        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Supporting individual growth"</p>
-        <p className='font-light text-left text-[15px]'>Offer career coaching and development programs to support growth.</p>
-      </div>
       
+      </div>
+     
     </div>
 
    </div>

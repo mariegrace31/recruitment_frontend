@@ -10,10 +10,4 @@ function Brands() {
       <p className='text-white text-xs lg:text-lg'>We're proud to collaborate with top brands to bring you exceptional opportunities, innovative solutions, and mutual success. Together, we're creating strong partnerships that drive growth, deliver value, and pave the way for future achievements.</p>
       <button className='text-white border border-gray-500 w-[100%] lg:w-[38%] p-1 lg:p-2 text-xs lg:text-lg rounded-3xl hover:bg-secondary'>View all Brands</button>
       </div>
-      <Image src={companies} width={600} height={20} alt='companies' />
-     
-    </div>
-  )
-}
-
-export default Brands;
+    

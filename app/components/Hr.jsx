@@ -14,7 +14,7 @@ function Hr() {
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 p-16 px-5 lg:px-32'>
 
         <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-          <Image src={hrImage} width={377} height={100} alt='hr image' className='rounded-t-xl' />
+          <Image src={hrImage} width={377} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
           <h3 className='px-3'>How to Prepare for a Job Interview</h3>
           <p className='px-3 text-[12px] font-light leading-6'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
           <Link href='/hrdetail'>
@@ -23,22 +23,15 @@ function Hr() {
         </div>
 
          <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-          <Image src={resume} width={377} height={100} alt='hr image' className='rounded-t-xl' />
+          <Image src={resume} width={377} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
           <h3 className='px-3'>Resume Writing - Do's and Don's</h3>
           <p className='px-3 text-[12px] font-light leading-6'>Your resume is your first chance to make a good impression. Learn the key do's and don'ts that can make your resume stand out from the competition...</p>
           <button className='flex items-center gap-1 px-3 text-[13px]'>Learn more <GoArrowRight className='bg-secondary  rounded-2xl p-1 text-white text-2xl' /></button>
         </div>
 
         <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-          <Image src={skill} width={377} height={100} alt='hr image' className='rounded-t-xl' />
+          <Image src={skill} width={377} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
           <h3 className='px-3'>Top 5 Soft Skills Employers Look For</h3>
           <p className='px-3 text-[12px] font-light leading-6'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
           <button className='flex items-center gap-1 px-3 text-[13px]'>Learn more <GoArrowRight className='bg-secondary  rounded-2xl p-1 text-white text-2xl' /></button>
-        </div>
-
-      </div>
-    </div>
-  )
-}
-
-export default Hr;
+      

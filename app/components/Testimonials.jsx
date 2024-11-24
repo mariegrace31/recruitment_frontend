@@ -40,7 +40,7 @@ function Testimonials() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 5000); // 5-second interval
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -59,12 +59,12 @@ function Testimonials() {
               key={index}
               className='bg-white flex flex-col lg:flex-row rounded-3xl w-full shrink-0'
             >
-              <div className='p-3 lg:p-5'>
+              <div className='p-3 lg:p-5 flex flex-col gap-1 justify-center'>
                 <p className='text-lg leading-9'>{testimonial.text}</p>
                 <Image src={testimonial.hrImg} width={500} height={100} alt='hr' className='mt-8' />
                 <div className='flex gap-6 mt-4 items-center'>
                   <h3 className='text-xs'>{testimonial.name}</h3>
-                  <p className='text-[8px] lg:text-[10px] bg-secondary/15 p-1 rounded-xl px-2'>
+                  <p className='text-[8px] text-left lg:text-[10px] bg-secondary/15 p-1 rounded-xl px-2'>
                     {testimonial.role}
                   </p>
                 </div>

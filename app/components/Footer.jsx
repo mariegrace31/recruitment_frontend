@@ -57,7 +57,7 @@ function Footer() {
      
       </div>
 
-      <hr className='border border-b-gray-400 w-[97%] mx-auto' />
+      <hr className='border border-b-gray-300 w-[90%] mx-auto' />
 
         <div className='flex justify-between py-5 px-20'>
           <p className='text-white text-[15px] font-light'>Do not use or Sale Our Data</p>
