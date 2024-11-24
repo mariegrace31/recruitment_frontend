@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 function Jobs() {
   return (
-    <div className='flex flex-col lg:flex-row bg-tertiary p-10 lg:p-16 gap-12 lg:gap-28'>
+    <div className='flex flex-col lg:flex-row mx-auto justify-center bg-tertiary p-10 lg:p-16 gap-12 lg:gap-28'>
       <Image src={icon} width={650} height={100} alt='job illustrator' />
-      <div className='flex flex-col gap-4 w-[100%] lg:w-[40%]'>
+      <div className='flex flex-col gap-4 w-[100%]'>
       <h1 className='text-sm font-medium'>JOB OPPORTUNITIES</h1>
       <h3 className='font-semibold text-2xl'>Unlock Your Potential with Career Pathways</h3>
         <div className='flex flex-col gap-3 mt-4'>

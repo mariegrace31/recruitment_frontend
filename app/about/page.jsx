@@ -1,13 +1,15 @@
 "use client";
+
 import React, { useState, useEffect } from 'react';
 import hr from '../assets/abouthr.png';
+import { FcManager } from "react-icons/fc";
 import Image from 'next/image';
 import lines from '../assets/linegroup.png';
 import bHr from '../assets/blackhr.png';
 import Kelly from '../assets/team1.png';
-import Socrate from '../assets/socrate.png';
-import Djasmine from '../assets/Djasmine.png';
-import Henry from '../assets/henry.png';
+import Socrate from '../assets/socr.png';
+import Djasmine from '../assets/djas.png';
+import Henry from '../assets/henr.png';
 import Link from 'next/link';
 import whitehr from '../assets/hrwhite.png';
 import candidate from '../assets/candidate.png';
@@ -16,13 +18,51 @@ import Footer from '../components/Footer';
 import team from '../assets/teamm.jpg.png';
 import { LuArrowRight } from "react-icons/lu";
 import { FaUser } from "react-icons/fa6";
-import liine from '../assets/Line61.png';
 import { GrUserManager } from "react-icons/gr";
+
+const cards = [
+  {
+    image: Kelly,
+    name: 'LONETE Kelly',
+    position: 'Chief Executive Officer',
+    description1: `Welcome! My name is LONETE Kelly, and I'm the CEO of LK RECRUITMENT. 
+      For over 15 years, I've been driven by a simple yet powerful belief: 
+      Every individual has the potential to achieve amazing things, and every organization deserves the talent to make that happen.`,
+    description2: `My journey has been a thrilling adventure of connecting people with opportunities, witnessing careers blossom, and seeing businesses soar to new heights. It's a passion that fuels everything we do at LK RECRUITMENT. At LK RECRUITMENT, we believe in a world where talent flourishes. We're not just about filling a vacancy; we're about building a future where individuals and organizations achieve their full potential together.`,
+      description3:`We embrace diversity in all its forms because we know that a world where unique skills and backgrounds are valued is 
+      a world full of possibilities. My career has been an incredible journey of learning, exploration, and growth. From bustling cities to diverse cultures, I've witnessed the power of human connection and the incredible potential within every individual.`
+  },
+  {
+    image: Socrate ,
+    name: 'Socrate',
+    position: 'Hiring Manager',
+    description1: `"Live by lifting others" - Davido Adeleke This quote deeply resonates with me.`,
+      description2: `I believe in building a world where everyone has the opportunity to shine. I'm AYIVUGWE Socrate, and I'm passionate about organizing, coordinating, and learning. I've been working professionally for 5 years, and I truly believe in the power of strong communication and teamwork. `,
+      description3: `I've learned that everyone has unique skills and potential, and I'm dedicated to helping others find their stage to shine. I understand the challenges of professional life firsthand.
+       I once had to step away from my job and had to work hard to find a new one.This experience solidified my belief that everyone deserves support and guidance, especially during difficult times. I'm excited to contribute my passion and skills to LK RECRUITMENT RWANDA Ltd. and to help create a positive and supportive environment for everyone to thrive. `,
+  },
+  {
+    image: Djasmine,
+    name: 'Djasmine',
+    position: 'Administrative Assistant',
+    description1: `My name is Keza Djasmine, `,
+      description2: `I am an administrative assistant at LK Recruitment. With a passion for efficient organization and a strong attention to detail, I  am specialize in providing exceptional support in administrative tasks, ensuring smooth operations in a fast-paced environment.`,
+      description3: `At LK Recruitment, I work closely with the team to streamline processes and assist in recruitment efforts, always striving to deliver top-notch services to clients and candidates.
+      I am committed to personal and professional growth and always eager to take on new challenges.I am committed to personal and professional growth and always eager to take on new challenges.`,
+  },
+  {
+    image: Henry,
+    name: 'Henry',
+    position: 'Social Media Manager',
+    description1: `As the Social Media Manager for LK RECRUITMENT, I oversee our digital presence, crafting content that connects with clients and candidates alike.`,
+    description2: `I manage campaigns, job postings, and updates while ensuring our brand reflects our commitment to diversity, inclusion, and social impact.  `,
+    description3: `By analyzing engagement, I continuously optimize our strategy to enhance visibility and interaction across platforms. `,
+  },
+];
 
 function TypingEffect() {
   const text = "Learn the story behind LK Recruitment";
   const [displayedText, setDisplayedText] = useState("");
-
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
@@ -35,6 +75,15 @@ function TypingEffect() {
     }, 130);
     return () => clearInterval(interval);
   }, []);
+
+  const [currentCard, setCurrentCard] = useState(0);
+
+  const handleNext = () => {
+    setCurrentCard((prev) => (prev + 1) % cards.length);
+  };
+
+  const { image, name, position, description1, description2, description3 } = cards[currentCard];
+
 
   return (
     <div className="">
@@ -66,25 +115,41 @@ function TypingEffect() {
         <p className='w-[70%] lg:w-[45%] mx-auto font-light text-[15px] lg:text-[20px]'>A Group of Passionate, Talented Individuals Committed to Your Success!Together, we bring diverse skills, creativity, and dedication to deliver outstanding results</p>
           <div className='flex gap-7 justify-center'>
  
-  <div className="flex gap-6 mx-auto px-20 mt-9">
-    <Image src={Kelly} width={500} height={1} alt="kelly" className="bg-[#1A77B9]/10 p-2 rounded-xl" />
-    <div className="p-5 rounded-xl bg-[#1A77B9]/10 ">
-      <div className='flex justify-between'>
-        <h3 className='flex gap-2 items-center bg-white p-3 rounded-xl'><FaUser className='text-xl'/>LONETE Kelly</h3>
-        <h3 className='flex gap-2 items-center bg-white p-3 rounded-xl'> <GrUserManager className='text-xl' />Chief Executive Ofiicer</h3>
-      </div>
-      <div className='flex flex-col gap-5 bg-white p-3 mt-6 rounded-xl'>
-        <p className='text-left'>Welcome! My name is LONETE Kelly, and I'm the CEO of LK RECRUITMENT. For over 15 years, I've been driven by a simple yet powerful belief: Every individual has the potential to achieve amazing things, and every organization deserves the talent to make that happen.</p>
-        <p className='text-left'>My journey has been a thrilling adventure of connecting people with opportunities, witnessing careers blossom, and seeing businesses soar to new heights. It's a passion that fuels everything we do at LK RECRUITMENT. At LK RECRUITMENT, we believe in a world where talent flourishes.
-           We're not just about filling a vacancy; we're about building a future where individuals and organizations achieve their full potential together.</p>
-           <p className='text-left'>We embrace diversity in all its forms because we know that a world where unique skills and backgrounds are valued is a world full of possibilities. My career has been an incredible journey of learning, exploration, and growth. From bustling cities to diverse cultures, I've witnessed
-            the power of human connection and the incredible potential within every individual. <span className='text-secondary underline cursor-pointer'>Read More</span> </p>
-      </div>
+          <div className="flex gap-6 mx-auto px-20 mt-9">
+      <Image
+        src={image}
+        width={500}
+        height={1}
+        alt={name}
+        className="bg-[#1A77B9]/10 p-2 rounded-xl"
+      />
 
-      <LuArrowRight className='text-4xl text-white rounded-3xl mt-4 ml-auto bg-black p-2' />
-      
+      <div className="p-5 rounded-xl bg-[#1A77B9]/10">
+        <div className="flex justify-between">
+          <h3 className="flex gap-2 items-center bg-white p-3 rounded-xl">
+            <FaUser className="text-xl" />
+            {name}
+          </h3>
+          <h3 className="flex gap-2 items-center bg-white p-3 rounded-xl">
+            <GrUserManager className="text-xl" />
+            {position}
+          </h3>
+        </div>
+
+        <div className="flex flex-col gap-5 bg-white p-3 mt-6 justify-center rounded-xl">
+          <p className="text-left">{description1}</p>
+          <p className="text-left">{description2}</p>
+          <p className="text-left">{description3}  {currentCard === 0 && (
+                    <span className="text-secondary underline cursor-pointer"> Read More</span>
+                  )}</p>
+        </div>
+
+        <LuArrowRight
+          className="text-4xl text-white rounded-3xl mt-4 ml-auto bg-black p-2 cursor-pointer"
+          onClick={handleNext}
+        />
+      </div>
     </div>
-  </div>
 
 </div>
    </div>
@@ -183,8 +248,8 @@ function TypingEffect() {
         <div className="flex bg-gradient-center p-8 rounded-lg ">
           <div className="flex flex-col gap-2 lg:gap-5 w-[90%] lg:w-[60%]">
           <h1 className="font-bold text-[15px] lg:text-xl">For employers</h1>
-          <p className="text-sm lg:text-lg font-light">Post your job today & connect with skilled candidates ready to make an impact. Let's build a strong team together.</p>
-          <button className="bg-primary text-white font-bold w-[100%] text-sm lg:text-lg lg:w-[65%] rounded-3xl p-2 lg:p-3">Post Your Job</button>
+          <p className="text-sm lg:text-lg font-light">Contact us & connect with skilled candidates ready to make an impact. Let's build a strong team together.</p>
+          <button className="bg-primary text-white font-bold w-[100%] text-sm lg:text-lg lg:w-[65%] rounded-3xl p-2 lg:p-3">Contact Us</button>
           </div>
           <Image
            src={employer}
@@ -213,7 +278,7 @@ function TypingEffect() {
     <Footer />
     </div>
   );
-}
+ }
 
 export default TypingEffect;
 
@@ -232,5 +297,3 @@ export default TypingEffect;
     animation: blink 1s step-end infinite;
   }
 `}</style>
-
-

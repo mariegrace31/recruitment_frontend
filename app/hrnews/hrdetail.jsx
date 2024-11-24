@@ -1,11 +1,23 @@
-import React from 'react';
+"use client"
+import React, {useState} from 'react';
 import image from '../assets/recruiterImage.jpeg';
 import Image from 'next/image';
 import lines from '../assets/linegroup.png';
 import dot from '../assets/dothr.png';
 import Footer from '../components/Footer';
+import { FaTimes } from 'react-icons/fa';
 
 function Hrdetail() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleSubmit = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div>
       <div className='p-20'>
@@ -42,10 +54,25 @@ function Hrdetail() {
         <div className='p-7 border border-gray-300 flex flex-col gap-5 rounded-2xl m-16'>
           <h1 className='font-medium text-3xl'>Leave a comment</h1>
           <input type="text" placeholder='Your comment' className='border border-gray-300 p-3 bg-[#C6C6E2]/20 placeholder:align-text-top pb-36 rounded-3xl' />
-          <button className='bg-secondary text-white p-3 w-[10%] rounded-3xl'>Submit</button>
+          <button onClick={handleSubmit} className='bg-secondary text-white p-3 w-[10%] rounded-3xl'>Submit</button>
         </div>
-
       </div>
+
+        {/* Modal */}
+        {isModalOpen && (
+        <div className='fixed inset-0 flex items-center justify-center bg-primary/50 z-50'>
+          <div className='bg-white p-5 rounded-2xl shadow-lg w-[100%] max-w-md'>
+          <button onClick={closeModal} className='text-gray-600 hover:text-black'>
+                <FaTimes className='text-2xl' />
+              </button>
+            <div className='flex flex-col gap-5 items-center'>
+              <h2 className='font-medium text-secondary text-xl'>Oops</h2>
+              <p className='text-[18px] text-black text-center'>Sorry! You need to log in to share your thoughts. Log in now and let us know what you think!</p>
+              <button className='font-semibold underline text-secondary text-[18px]'>Login</button>
+            </div>
+          </div>
+        </div>
+      )}
       <Footer />
     </div>
   )

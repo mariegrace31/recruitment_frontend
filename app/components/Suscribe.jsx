@@ -16,7 +16,12 @@ function Suscribe() {
 
         <div className="w-full max-w-md p-4 bg-opacity-100">
           <div className="bg-white/0 backdrop-brightness-100 p-4 rounded-lg shadow-md">
-            <h3 className="text-[13px] mb-2 text-gray-400">Enter Your Email</h3>
+          <input
+                 type="email"
+                 id="email"
+                 className=" border-none focus:outline-none border-b-gray-400 bg-transparent p-3 text-white placeholder:text-gray-300 placeholder:text-[15px] placeholder:font-light"
+                 placeholder='Enter Your Email'
+               />
             <hr className="mb-4" />
             <button className="w-full bg-secondary text-white py-2 px-4 rounded-sm text-sm lg:text-lg font-medium">
               SUBSCRIBE NOW

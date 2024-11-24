@@ -16,7 +16,6 @@ import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
 function Jobdetail() {
-  const [isAtBottom, setIsAtBottom] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -27,11 +26,6 @@ function Jobdetail() {
     if (file) {
       setUploadedFileName(file.name);
     }
-  };
-
-  const handleScroll = (e) => {
-    const element = e.target;
-    setIsAtBottom(element.scrollHeight - element.scrollTop === element.clientHeight);
   };
 
   const handleModalToggle = () => {
@@ -56,10 +50,7 @@ function Jobdetail() {
       </div>
 
       <div className='bg-white p-7 lg:p-32 flex gap-12 lg:gap-32'>
-      <div className={`w-[50%] h-[800px] overflow-y-auto ${
-            isAtBottom ? "border-b-gray-400" : "border-b-0"
-          }`}
-          onScroll={handleScroll}>
+      <div className='w-[50%] h-[800px] overflow-y-auto border-b-gray-400'>
         <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
         <div className='flex flex-col gap-6 lg:gap-11 border border-gray-400 py-5 p-3 mt-10 rounded-lg'>
           <h1 className='text-sm lg:text-xl'>Overview</h1>
@@ -69,10 +60,7 @@ function Jobdetail() {
           <p className='text-[12px] lg:text-[14px]'>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore</p>
         </div>
         <div
-      className={`flex flex-col gap-8 border border-gray-400 ${
-        isAtBottom ? "border-b-gray-400" : "border-b-0"
-      } py-5 p-3 mt-10 rounded-lg h-[852px] overflow-y-auto`}
-      onScroll={handleScroll}
+      className='flex flex-col gap-8 border border-gray-400border-b-gray-400 py-5 p-3 mt-10 rounded-lg h-[852px]'
     >
       <div>
       <h1 className="text-xl">Job Description</h1>

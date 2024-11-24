@@ -26,7 +26,7 @@ function page() {
       <div className='grid grid-cols-3 gap-6 mt-32 p-16 px-3'>
 
         <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-        <Image src={hrImage} width={401} height={100} alt='hr image' className='rounded-t-xl' />
+        <Image src={hrImage} width={401} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
         <h3 className='px-3 text-[16px]'>How to Prepare for a Job Interview</h3>
         <p className='px-3 text-[14px] font-light leading-6'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
         <Link href='/hrdetail'>
@@ -35,7 +35,7 @@ function page() {
       </div>
 
        <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-       <Image src={resume} width={401} height={100} alt='hr image' className='rounded-t-xl' />
+       <Image src={resume} width={401} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
        <h3 className='px-3 text-[16px]'>Resume Writing - Do's and Don's</h3>
        <p className='px-3 text-[14px] font-light leading-6'>Your resume is your first chance to make a good impression. Learn the key do's and don'ts that can make your resume stand out from the competition...</p>
        <Link href='#'>
@@ -44,7 +44,7 @@ function page() {
        </div>
 
       <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-      <Image src={skill} width={401} height={100} alt='hr image' className='rounded-t-xl' />
+      <Image src={skill} width={401} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
       <h3 className='px-3 text-[16px]'>Top 5 Soft Skills Employers Look For</h3>
        <p className='px-3 text-[14px] font-light leading-6'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
        <Link href='#'>
