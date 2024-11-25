@@ -59,24 +59,24 @@ function Hrdetail() {
           <button onClick={handleSubmit} className='bg-secondary text-white p-3 w-[10%] rounded-3xl'>Submit</button>
           <div className='border border-gray-300 rounded-xl p-6'>
             <div className='flex justify-between'>
-              <div className='flex gap-2'>
+              <div className='flex gap-2 items-center'>
               <Image src={profile1} width={30} height={2} alt='profile' />
-              <h3 className='text-[13px]'>Sarah Brenda </h3>
+              <h3 className='text-[14px]'>Sarah Brenda </h3>
               </div>
               <h3 className='text-black/50 text-[13px]'>November 23, 2024</h3>
             </div>
-            <p className='mt-3'>Great insights! Networking has been a game-changer for my career. Attending industry events helped me land my current job. Thanks for sharing this!</p>
+            <p className='mt-3 font-light'>Great insights! Networking has been a game-changer for my career. Attending industry events helped me land my current job. Thanks for sharing this!</p>
           </div>
 
           <div className='border border-gray-300 rounded-xl p-6'>
             <div className='flex justify-between'>
-              <div className='flex gap-2'>
+              <div className='flex gap-2 items-center'>
               <Image src={profile2} width={30} height={2} alt='profile' />
-              <h4 className='text-[13px]'>Djasmine Keza </h4>
+              <h4 className='text-[14px]'>Djasmine Keza </h4>
               </div>
               <h3 className='text-black/50 text-[13px]'>November 23, 2024</h3>
             </div>
-            <p className='mt-3'>Such a helpful read! I've underestimated LinkedIn activity before, but engaging with posts really does make a difference. Will definitely try these tips. </p>
+            <p className='mt-3 font-light'>Such a helpful read! I've underestimated LinkedIn activity before, but engaging with posts really does make a difference. Will definitely try these tips. </p>
           </div>
         </div>
 

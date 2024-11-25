@@ -319,6 +319,4 @@ export default TypingEffect;
 
   .animate-blink {
     display: inline-block;
-    animation: blink 1s step-end infinite;
-  }
-`}</style>
+    animation: blink 1s 
