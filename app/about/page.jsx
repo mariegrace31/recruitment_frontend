@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import hr from '../assets/abouthr.png';
-import { FcManager } from "react-icons/fc";
 import Image from 'next/image';
 import lines from '../assets/linegroup.png';
 import bHr from '../assets/blackhr.png';
@@ -319,4 +318,6 @@ export default TypingEffect;
 
   .animate-blink {
     display: inline-block;
-    animation: blink 1s 
+    animation: blink 1s step-end infinite;
+  }
+`}</style>
