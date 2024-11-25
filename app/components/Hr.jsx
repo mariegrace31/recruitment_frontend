@@ -34,4 +34,11 @@ function Hr() {
           <h3 className='px-3'>Top 5 Soft Skills Employers Look For</h3>
           <p className='px-3 text-[12px] font-light leading-6'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
           <button className='flex items-center gap-1 px-3 text-[13px]'>Learn more <GoArrowRight className='bg-secondary  rounded-2xl p-1 text-white text-2xl' /></button>
-      
+        </div>
+
+      </div>
+    </div>
+  )
+}
+
+export default Hr;

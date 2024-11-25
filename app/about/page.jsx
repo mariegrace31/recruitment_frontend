@@ -8,9 +8,8 @@ import lines from '../assets/linegroup.png';
 import bHr from '../assets/blackhr.png';
 import Kelly from '../assets/team1.png';
 import Socrate from '../assets/socr.png';
-import Djasmine from '../assets/djas.png';
+import Djasmine from '../assets/dja.jpeg';
 import Henry from '../assets/henr.png';
-import Link from 'next/link';
 import whitehr from '../assets/hrwhite.png';
 import candidate from '../assets/candidate.png';
 import employer from '../assets/employer.png';
@@ -37,7 +36,7 @@ const cards = [
     name: 'Socrate',
     position: 'Hiring Manager',
     description1: `"Live by lifting others" - Davido Adeleke This quote deeply resonates with me.`,
-      description2: `I believe in building a world where everyone has the opportunity to shine. I'm AYIVUGWE Socrate, and I'm passionate about organizing, coordinating, and learning. I've been working professionally for 5 years, and I truly believe in the power of strong communication and teamwork. `,
+      description2: `I believe in building a world where everyone has the opportunity to shine.I'm AYIVUGWE Socrate, and I'm passionate about organizing, coordinating, and learning. I've been working professionally for 5 years, and I truly believe in the power of strong communication and teamwork. `,
       description3: `I've learned that everyone has unique skills and potential, and I'm dedicated to helping others find their stage to shine. I understand the challenges of professional life firsthand.
        I once had to step away from my job and had to work hard to find a new one.This experience solidified my belief that everyone deserves support and guidance, especially during difficult times. I'm excited to contribute my passion and skills to LK RECRUITMENT RWANDA Ltd. and to help create a positive and supportive environment for everyone to thrive. `,
   },
@@ -83,6 +82,10 @@ function TypingEffect() {
   };
 
   const { image, name, position, description1, description2, description3 } = cards[currentCard];
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded);
+  };
 
 
   return (
@@ -116,15 +119,17 @@ function TypingEffect() {
           <div className='flex gap-7 justify-center'>
  
           <div className="flex gap-6 mx-auto px-20 mt-9">
-      <Image
-        src={image}
-        width={500}
-        height={1}
-        alt={name}
-        className="bg-[#1A77B9]/10 p-2 rounded-xl"
-      />
+          {!isExpanded && (
+           <Image
+           src={image}
+           width={500}
+           height={1}
+           alt={name}
+           className="bg-[#1A77B9]/10 p-2 rounded-xl"
+          />
+          )}
 
-      <div className="p-5 rounded-xl bg-[#1A77B9]/10">
+      <div className={`p-5 rounded-xl bg-[#1A77B9]/10 ${isExpanded ? 'w-full' : ''}`}>
         <div className="flex justify-between">
           <h3 className="flex gap-2 items-center bg-white p-3 rounded-xl">
             <FaUser className="text-xl" />
@@ -139,15 +144,36 @@ function TypingEffect() {
         <div className="flex flex-col gap-5 bg-white p-3 mt-6 justify-center rounded-xl">
           <p className="text-left">{description1}</p>
           <p className="text-left">{description2}</p>
-          <p className="text-left">{description3}  {currentCard === 0 && (
-                    <span className="text-secondary underline cursor-pointer"> Read More</span>
-                  )}</p>
-        </div>
+          <p className="text-left">{description3} {!isExpanded && currentCard === 0 && (
+                    <span className="text-secondary underline cursor-pointer" onClick={toggleReadMore}> Read More</span>
+                  )}
+          </p>
 
+          {isExpanded && (
+            <div>
+               <p className="text-left mt-3">These experiences have shaped my vision for LK RECRUITMENT: a company that connects talent across borders, understands the unique needs of global businesses, and empowers individuals to reach their full potential.I'm driven by a deep passion for human resources, recruitment, training, and communication - fields that are all about building strong relationships and unlocking potential.</p>
+               <p className="text-left mt-3">My leadership style is built on collaboration, open communication, and a genuine belief in empowering my team to achieve their dreams. I'm passionate about creating a workplace where everyone feels valued and empowered to make a difference.At LK RECRUITMENT, we believe in building relationships, not just transactions. We get to know both our clients and candidates deeply, understanding their unique needs and aspirations.We're committed to crafting personalized recruitment strategies that match the right talent with the right opportunities, creating a win-win for everyone involved.</p>
+               <p className="text-left mt-3">We believe that a truly thriving workforce is one that reflects the rich diversity of our world. We actively seek out and celebrate talent from all walks of life, creating a workplace that fosters inclusion and embraces the power of diverse perspectives.We're committed to creating equal opportunities for everyone, because we believe that a world where talent is recognized and valued, regardless of background, is a world that's ready to reach its full potential.</p>
+               <p className="text-left mt-3">"The world of work is changing rapidly, but one thing remains constant: the need for exceptional talent to drive innovation and success. At LK RECRUITMENT, we're constantly evolving to embrace new technologies and trends, providing our clients with the innovative recruitment solutions they need to thrive in today's dynamic landscape.We're passionate about helping our clients build strong, diverse, and successful teams, ready to tackle the challenges and opportunities of the future.</p>
+               <p className="text-left mt-3">
+                Are you ready to unlock the potential of your organization? Contact us today to discuss your recruitment needs and explore how LK RECRUITMENT can partner with you to achieve your goals.We look forward to connecting with you and helping you build a brighter future! 
+               <span
+               className="text-secondary underline cursor-pointer ml-2"
+               onClick={toggleReadMore}
+               >
+               Show Less
+               </span>
+               </p>
+            </div>
+       
+      )}
+        </div>
+        {!isExpanded && (
         <LuArrowRight
           className="text-4xl text-white rounded-3xl mt-4 ml-auto bg-black p-2 cursor-pointer"
           onClick={handleNext}
         />
+      )}
       </div>
     </div>
 
@@ -187,42 +213,38 @@ function TypingEffect() {
 
    </div>
 
-   <div className='bg-white flex flex-col gap-6 lg:gap-10 justify-center text-center my-10 lg:my-28 '>
+   <div className='bg-white flex flex-col gap-6 lg:gap-10 justify-center items-center mx-auto text-center my-10 lg:my-28 '>
     <h1 className='font-semibold text-xl lg:text-5xl'>OUR VALUES</h1>
     <Image src={bHr} width={150} height={1} alt='black hr' className='mx-auto -mt-6 w-[50%] md:w-[250px]'/>
     <p className='w-[70%] lg:w-[45%] mx-auto font-light text-[15px] lg:text-[20px]'>Guided by integrity, driven by innovation, and committed to excellence - our values define who we are and how we serve you</p>
     
-    <div className='grid grid-cols-3 p-20 w-[85%] mx-auto justify-center items-center gap-10'>
-      <div className='border border-gray-500 p-3 rounded-lg'>
+    <div className='flex flex-wrap gap-10 justify-center w-[80%] mt-10'>
+      <div className='border border-gray-500 p-3 rounded-lg w-[30%] transform transition duration-300 hover:scale-95'>
         <h3 className='font-semibold text-[20px] text-left'>Integrity</h3>
-        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Doing the right thing"</p>
+        <p className='text-secondary font-light text-left text-[15px] mt-3'>"Doing the right thing"</p>
         <p className='font-light text-left text-[15px]'>Be transparent with clients and candidates, treat everyone fairly, and act with integrity.</p>
       </div>
-      <div className='border border-gray-500 p-3 rounded-lg'>
+      <div className='border border-gray-500 p-3 rounded-lg w-[30%] transform transition duration-300 hover:scale-95'>
         <h3 className='font-semibold text-[20px] text-left'>Innovation</h3>
-        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Finding new ways to connect"</p>
+        <p className='text-secondary font-light text-left text-[15px] mt-3'>"Finding new ways to connect"</p>
         <p className='font-light text-left text-[15px]'>Utilize technology to develop new recruitment methods and stay ahead of trends.</p>
       </div>
-      <div className='border border-gray-500 p-3 rounded-lg'>
+      <div className='border border-gray-500 p-3 rounded-lg w-[30%] transform transition duration-300 hover:scale-95'>
         <h3 className='font-semibold text-[20px] text-left'>Ubuntu</h3>
-        <p className='text-secondary font-light text-left text-[15px] mt-4'>"Humanity towards others"</p>
+        <p className='text-secondary font-light text-left text-[15px] mt-3'>"Humanity towards others"</p>
         <p className='font-light text-left text-[15px]'>Utilize technology to develop new recruitment methods and stay ahead of trends.</p>
       </div>
 
-      <div className='mx-auto'>
-
-      <div div className='border border-gray-500 p-3 rounded-lg'>
+      <div div className='border border-gray-500 p-3 rounded-lg w-[30%] transform transition duration-300 hover:scale-95'>
         <h3 className='font-semibold text-[20px] text-left'>Empowerment</h3>
         <p className='text-secondary font-light text-left text-[15px] mt-4'>"Supporting individual growth"</p>
-        <p className='font-light text-left text-[15px]'>Offer career coaching and development programs to support growth.</p>
+        <p className='font-light text-left text-[15px] mt-1'>Offer career coaching and development programs to support growth.</p>
       </div>
 
-      <div div className='border border-gray-500 p-3 rounded-lg'>
+      <div div className='border border-gray-500 p-3 rounded-lg w-[30%] transform transition duration-300 hover:scale-95'>
         <h3 className='font-semibold text-[20px] text-left'>Community Engagement</h3>
         <p className='text-secondary font-light text-left text-[15px] mt-4'>"Giving back and making a difference"</p>
-        <p className='font-light text-left text-[15px]'>Partner with organizations focused on education and social justice.</p>
-      </div>
-      
+        <p className='font-light text-left text-[15px] mt-1'>Partner with organizations focused on education and social justice.</p>
       </div>
      
     </div>
@@ -257,6 +279,7 @@ function TypingEffect() {
            width={170}
            height={100}
            alt="Employer png"
+           className='ml-6'
           />
         </div>
       </div>
@@ -272,6 +295,7 @@ function TypingEffect() {
            width={170}
            height={100}
            alt="Candidate png"
+           className='ml-7'
           />
         </div>
       </div>
@@ -280,7 +304,7 @@ function TypingEffect() {
     </div>
   );
  }
-
+ 
 export default TypingEffect;
 
 <style jsx>{`

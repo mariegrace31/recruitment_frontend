@@ -56,23 +56,23 @@ export default function Home() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 bg-white p-4 lg:p-20 gap-9 lg:gap-32 mt-16 ">
         <div className="p-4 bg-gray-100 py-5 rounded-lg">
-          <div className="flex bg-gradient-center p-3 md:p-8 rounded-lg ">
-            <div className="flex flex-col gap-2 lg:gap-5 w-[70%] md:w-[60%]">
+          <div className="flex bg-gradient-center p-8 rounded-lg ">
+            <div className="flex flex-col gap-2 lg:gap-7 h-[31vh] w-[70%] lg:w-[60%]">
               <h1 className="font-bold text-[14px] lg:text-xl">For employers</h1>
               <p className="text-sm lg:text-lg font-light">Contact & connect with skilled candidates ready to make an impact. Let's build a strong team together.</p>
               <button className="bg-primary text-white font-bold w-[90%] lg:w-[50%] text-[12px] lg:text-sm rounded-3xl p-2 lg:p-3">Contact Us</button>
             </div>
-            <Image src={employer} width={170} height={100} alt="Employer png" />
+            <Image src={employer} width={170} height={100} alt="Employer png" className='ml-16' />
           </div>
         </div>
         <div className="p-4 bg-gray-100 py-5 rounded-lg">
           <div className="flex bg-gradient-center p-8 rounded-lg ">
-            <div className="flex flex-col gap-2 lg:gap-5 w-[60%]">
+            <div className="flex flex-col gap-2 lg:gap-5 h-[31vh] w-[60%]">
               <h1 className="font-bold text-[14px] lg:text-xl">For candidates</h1>
               <p className="text-sm lg:text-lg font-light">Apply & join a team that values talent, growth, & opportunity. We're excited to see what you can bring to the table.</p>
               <button className="bg-primary text-white font-bold w-[90%] lg:w-[50%] rounded-3xl text-[12px] lg:text-sm p-3">Register</button>
             </div>
-            <Image src={candidate} width={170} height={100} alt="Candidate png" />
+            <Image src={candidate} width={170} height={100} alt="Candidate png" className='ml-16' />
           </div>
         </div>
       </div>

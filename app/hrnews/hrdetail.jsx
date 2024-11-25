@@ -6,6 +6,8 @@ import lines from '../assets/linegroup.png';
 import dot from '../assets/dothr.png';
 import Footer from '../components/Footer';
 import { FaTimes } from 'react-icons/fa';
+import profile1 from '../assets/profile1.png';
+import profile2 from '../assets/profile2.png';
 
 function Hrdetail() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,7 +35,7 @@ function Hrdetail() {
 
         <div className='flex flex-col gap-9 mt-12 px-20'>
           <p className='text-[20px]'>Networking is one of the most powerful tools you can use during a job search. Whether you're looking to 
-          change careers, find a new opportunity, or advance in your current position, building connections within your industry can significantly impact your chances of success.
+           change careers, find a new opportunity, or advance in your current position, building connections within your industry can significantly impact your chances of success.
           </p>
           <h3 className='text-[27px] font-bold'>Why Networking Matters</h3>
           <p className='text-[20px]'>Many jobs are not publicly advertised, meaning that word-of-mouth, personal referrals, and connections can open doors that might otherwise remain closed. Networking allows you to learn about these hidden
@@ -55,7 +57,29 @@ function Hrdetail() {
           <h1 className='font-medium text-3xl'>Leave a comment</h1>
           <input type="text" placeholder='Your comment' className='border border-gray-300 p-3 bg-[#C6C6E2]/20 placeholder:align-text-top pb-36 rounded-3xl' />
           <button onClick={handleSubmit} className='bg-secondary text-white p-3 w-[10%] rounded-3xl'>Submit</button>
+          <div className='border border-gray-300 rounded-xl p-6'>
+            <div className='flex justify-between'>
+              <div className='flex gap-2'>
+              <Image src={profile1} width={30} height={2} alt='profile' />
+              <h3 className='text-[13px]'>Sarah Brenda </h3>
+              </div>
+              <h3 className='text-black/50 text-[13px]'>November 23, 2024</h3>
+            </div>
+            <p className='mt-3'>Great insights! Networking has been a game-changer for my career. Attending industry events helped me land my current job. Thanks for sharing this!</p>
+          </div>
+
+          <div className='border border-gray-300 rounded-xl p-6'>
+            <div className='flex justify-between'>
+              <div className='flex gap-2'>
+              <Image src={profile2} width={30} height={2} alt='profile' />
+              <h4 className='text-[13px]'>Djasmine Keza </h4>
+              </div>
+              <h3 className='text-black/50 text-[13px]'>November 23, 2024</h3>
+            </div>
+            <p className='mt-3'>Such a helpful read! I've underestimated LinkedIn activity before, but engaging with posts really does make a difference. Will definitely try these tips. </p>
+          </div>
         </div>
+
       </div>
 
         {/* Modal */}
