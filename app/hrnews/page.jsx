@@ -2,7 +2,7 @@ import React from 'react';
 import hr from '../assets/abouthr.png';
 import lines from '../assets/linegroup.png';
 import Image from 'next/image';
-import image from '../assets/hrImage.png';
+import blog2 from '../assets/blog2.png';
 import { GoArrowRight } from "react-icons/go";
 import Footer from '../components/Footer';
 import Link from 'next/link';
@@ -35,10 +35,10 @@ function page() {
       </div>
 
        <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-       <Image src={resume} width={401} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
-       <h3 className='px-3 text-[16px]'>Resume Writing - Do's and Don's</h3>
-       <p className='px-3 text-[14px] font-light leading-6'>Your resume is your first chance to make a good impression. Learn the key do's and don'ts that can make your resume stand out from the competition...</p>
-       <Link href='#'>
+       <Image src={blog2} width={401} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
+       <h3 className='px-3 text-[16px]'>LK Recruitment embraces the agenda 2063 for a thriving future.</h3>
+       <p className='px-3 text-[14px] font-light leading-6'>LK Recruitment Rwanda recently participated in the “One Africa, One HR” Summit, held at the Kigali Convention Center in Kigali, Rwanda. </p>
+       <Link href='/blog2'>
        <button className='flex items-center gap-1 px-3 text-[14px]'>Learn more <GoArrowRight className='bg-secondary  rounded-2xl p-1 text-white text-2xl' /></button>
        </Link>
        </div>

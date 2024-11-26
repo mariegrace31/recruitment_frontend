@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Brands() {
   return (
-    <div className="flex gap-32 bg-[url('./assets/brandsBg.png')] h-[35vh] lg:h-[90vh] bg-center p-4 lg:p-20 ">
+    <div className="flex gap-32 justify-center bg-[url('./assets/brandsBg.png')] h-[35vh] lg:h-[90vh] bg-center p-4 lg:p-20 ">
       <div className='flex flex-col gap-10 lg:gap-16 mt-2 lg:mt-16 w-[40%] '>
       <h1 className=' text-sm lg:text-4xl font-bold text-white'><span className='text-secondary'>Collaboration</span> With Top Brands</h1>
       <p className='text-white text-xs lg:text-lg'>We're proud to collaborate with top brands to bring you exceptional opportunities, innovative solutions, and mutual success. Together, we're creating strong partnerships that drive growth, deliver value, and pave the way for future achievements.</p>
