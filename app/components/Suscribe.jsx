@@ -7,10 +7,10 @@ function Suscribe() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#1A77B9] to-[#333872] opacity-90 z-0"></div>
 
       <div className="relative z-10 flex flex-col gap-2 lg:gap-4 items-center justify-center text-white mt-1 lg:mt-24 p-2 lg:p-5">
-        <h1 className="text-xl lg:text-5xl font-bold mb-4">
+        <h1 className="text-xl text-center lg:text-5xl font-bold mb-4">
         Stay Informed and Ahead of the Curve.
         </h1>
-        <p className="mb-6 text-sm lg:text-lg">
+        <p className="mb-6 text-sm text-center lg:text-lg">
         Subscribe to our newsletter for the latest updates, exclusive insights, and valuable information delivered straight to your inbox.
         </p>
 

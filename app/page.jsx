@@ -7,7 +7,6 @@ import candidate from './assets/candidate.png';
 import { BsArrowDownRightCircleFill } from "react-icons/bs";
 import Jobs from "./components/Jobs";
 import AvailableJobs from "./components/AvailableJobs";
-import Brands from "./components/Brands";
 import Services from "./components/Services";
 import Suscribe from "./components/Suscribe";
 import Testimonials from "./components/Testimonials";
@@ -43,7 +42,7 @@ export default function Home() {
               Investing in people shaping in better future investing in people shaping in better future
             </p>
             <div className="flex gap-4 justify-center">
-              <button className="bg-tertiary border border-gray-400 text-black p-2 px-4 rounded-2xl font-medium hover:bg-secondary hover:text-white">
+              <button className="bg-tertiary border hidden lg:flex border-gray-400 text-black p-2 px-4 rounded-2xl font-medium hover:bg-secondary hover:text-white">
                 Get Started
               </button>
               <button className="border border-gray-400 p-2 rounded-2xl text-white hover:bg-secondary">
@@ -54,25 +53,25 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white p-4 lg:p-20 gap-9 lg:gap-32 mt-16 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 bg-white p-0 lg:p-20 gap-9 lg:gap-32 mt-0 lg:mt-16 ">
         <div className="p-4 bg-gray-100 py-5 rounded-lg">
-          <div className="flex bg-gradient-center p-8 rounded-lg ">
-            <div className="flex flex-col gap-2 lg:gap-7 h-[31vh] w-[70%] lg:w-[60%]">
+          <div className="flex bg-gradient-center m-5 lg:m-0 p-3 lg:p-8 rounded-lg ">
+            <div className="flex flex-col gap-2 lg:gap-7 h-[31vh] w-[100%] lg:w-[60%]">
               <h1 className="font-bold text-[14px] lg:text-xl">For employers</h1>
-              <p className="text-sm lg:text-lg font-light">Contact & connect with skilled candidates ready to make an impact. Let's build a strong team together.</p>
-              <button className="bg-primary text-white font-bold w-[90%] lg:w-[50%] text-[12px] lg:text-sm rounded-3xl p-2 lg:p-3">Contact Us</button>
+              <p className="text-[12px] lg:text-lg font-light">Contact & connect with skilled candidates ready to make an impact. Let's build a strong team together.</p>
+              <button className="bg-primary text-white font-bold w-[80%] lg:w-[50%] text-[12px] lg:text-sm rounded-3xl p-2 lg:p-3">Contact Us</button>
             </div>
-            <Image src={employer} width={170} height={100} alt="Employer png" className='ml-16' />
+            <Image src={employer} width={170} height={100} alt="Employer png" className='ml-6 lg:ml-16 w-[120px] lg:w-[200px]' />
           </div>
         </div>
         <div className="p-4 bg-gray-100 py-5 rounded-lg">
-          <div className="flex bg-gradient-center p-8 rounded-lg ">
-            <div className="flex flex-col gap-2 lg:gap-5 h-[31vh] w-[60%]">
+          <div className="flex bg-gradient-center m-5 lg:m-0 p-3 lg:p-8 rounded-lg ">
+            <div className="flex flex-col gap-2 lg:gap-5 h-[25vh] lg:h-[31vh]  w-[100%] lg:w-[60%]">
               <h1 className="font-bold text-[14px] lg:text-xl">For candidates</h1>
-              <p className="text-sm lg:text-lg font-light">Apply & join a team that values talent, growth, & opportunity. We're excited to see what you can bring to the table.</p>
-              <button className="bg-primary text-white font-bold w-[90%] lg:w-[50%] rounded-3xl text-[12px] lg:text-sm p-3">Register</button>
+              <p className="text-[12px] lg:text-lg font-light">Apply & join a team that values talent, growth, & opportunity. We're excited to see what you can bring to the table.</p>
+              <button className="bg-primary text-white font-bold w-[90%] lg:w-[50%] rounded-3xl text-[12px] lg:text-sm p-2 lg:p-3">Register</button>
             </div>
-            <Image src={candidate} width={170} height={100} alt="Candidate png" className='ml-16' />
+            <Image src={candidate} width={170} height={100} alt="Candidate png" className=' ml-4 lg:ml-16 w-[120px] lg:w-[200px]' />
           </div>
         </div>
       </div>
@@ -83,7 +82,7 @@ export default function Home() {
           e.preventDefault();
           handleScrollToTestimonials();
         }}
-        className="flex items-center gap-3 mx-auto w-[80%] lg:w-[20%] justify-center font-medium text-lg mb-16 p-3 hover:bg-secondary hover:text-white rounded-3xl group"
+        className="flex items-center gap-3 mx-auto w-[100%] lg:w-[20%] justify-center font-medium text-lg mb-0 lg:mb-16 p-3 bg-gray-100 lg:bg-white hover:bg-secondary hover:text-white rounded-none lg:rounded-3xl group"
       >
         See customers stories
         <BsArrowDownRightCircleFill className="text-secondary text-lg group-hover:text-white" />
@@ -91,7 +90,6 @@ export default function Home() {
 
       <Jobs />
       <AvailableJobs />
-      <Brands />
       <Services />
       <Suscribe />
 
@@ -100,6 +98,3 @@ export default function Home() {
       </div>
       <Hr />
       <Footer />
-    </section>
-  );
-}

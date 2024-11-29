@@ -4,7 +4,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import logo from "../assets/secondlogo.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
+import { PiDotsThreeOutline } from "react-icons/pi";
 import Link from "next/link";
 import line from "../assets/navline.svg";
 
@@ -18,18 +19,18 @@ function Navbar() {
 
   return (
     <nav
-      className={`w-[78%] md:w-[80%] fixed top-0 left-[188px] md:left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center px-3 py-2 md:p-3 ${navbarBgColor}`}
+      className={`w-[85%] md:w-[80%] fixed top-0 left-[188px] md:left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center px-3 py-2 md:p-3 ${navbarBgColor}`}
     >
       <div className="flex items-center gap-2">
         <Image src={logo} width={40} height={40} alt="Logo" priority />
-        <h4 className="text-secondary font-medium text-sm md:text-xl">RECRUITMENT</h4>
+        <h4 className="text-secondary font-medium text-[10px] md:text-xl">LK RECRUITMENT RWANDA</h4>
       </div>
 
       <div className="flex gap-3 lg:order-2 items-center">
         <button className="bg-primary text-white rounded-3xl font-medium px-3 py-1 text-[12px] md:px-5 md:py-2 md:text-[15px] hover:bg-secondary cursor-pointer">
           Login
         </button>
-        <button className="bg-tertiary border border-gray-400 text-black rounded-3xl font-medium px-3 py-1 text-[12px] md:px-5 md:py-2 md:text-[15px] hover:bg-secondary cursor-pointer hover:text-white">
+        <button className="bg-tertiary border hidden lg:flex border-gray-400 text-black rounded-3xl font-medium px-3 py-1 text-[12px] md:px-5 md:py-2 md:text-[15px] hover:bg-secondary cursor-pointer hover:text-white">
           Get Started
         </button>
 
@@ -38,7 +39,7 @@ function Navbar() {
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? <FaTimes /> : <PiDotsThreeOutline className="border px-2 w-[100%] rounded-xl border-gray-400 text-2xl text-black" />}
         </button>
       </div>
 
@@ -47,7 +48,7 @@ function Navbar() {
           menuOpen ? "block" : "hidden lg:flex"
         }`}
       >
-        <div className="flex flex-col lg:flex-row gap-3 lg:gap-8 items-center">
+        <div className="flex flex-col mt-5 lg:mt-0 lg:flex-row gap-3 lg:gap-8 items-center">
           <div className="hidden lg:block">
             <Image src={line} width={5} height={10} alt="svg" />
           </div>
@@ -60,6 +61,7 @@ function Navbar() {
           >
             Home
           </Link>
+          <hr className="border border-gray-300 lg:hidden w-[90%]" />
 
           <Link
             href="/about"
@@ -69,6 +71,7 @@ function Navbar() {
           >
             About us
           </Link>
+          <hr className="border border-gray-300 lg:hidden w-[90%]" />
 
           <Link
             href="/jobboard"
@@ -78,6 +81,7 @@ function Navbar() {
           >
             Job Board
           </Link>
+          <hr className="border border-gray-300 lg:hidden w-[90%]" />
 
           <Link
             href="/hrnews"
@@ -87,6 +91,7 @@ function Navbar() {
           >
             HR News & Tips
           </Link>
+          <hr className="border border-gray-300 lg:hidden w-[90%]" />
 
           <Link
             href="/contact"
@@ -106,4 +111,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export de
