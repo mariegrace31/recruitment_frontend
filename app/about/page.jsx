@@ -98,8 +98,8 @@ function TypingEffect() {
       <div className="relative bg-cover bg-coverr bg-center rounded-lg ">
       <div className="absolute inset-0 bg-primary opacity-85 z-0 rounded-lg "></div>
       <div className='relative z-10 p-7 lg:p-16 flex flex-col justify-center gap-7'>
-      <h1 className='uppercase font-semibold text-[35px] lg:text-[45px] text-white text-center'>about us</h1>
-        <Image src={hr} width={190} height={1} alt='hr' className='mx-auto -mt-4' />
+      <h1 className='uppercase font-semibold text-[25px] lg:text-[45px] text-white text-center'>about us</h1>
+        <Image src={hr} width={190} height={1} alt='hr' className='mx-auto -mt-4 w-[95px] lg:w-[180px]' />
         <p className='text-white font-light text-[14px] lg:text-[24px] leading-9 mt-2 lg:mt-10 text-center w-[95%] mx-auto'>LK RECRUITMENT is a staffing and recruitment agency based in Rwanda. Our mission focuses on investing in people and shaping a better
            future through empowerment, social responsibility, and promoting diversity, equity, and inclusion. The agency offers a talent-focused 
            approach, providing the right training, competitive salaries, and a strong commitment to making a positive social impact.
@@ -288,7 +288,7 @@ function TypingEffect() {
           <div className="flex flex-col gap-2 lg:gap-5 w-[90%] lg:w-[60%]">
           <h1 className="font-bold text-[15px] lg:text-xl">For candidates</h1>
           <p className="text-sm lg:text-lg font-light">Apply & join a team that values talent, growth, & opportunity. We're excited to see what you can bring to the table.</p>
-          <button className="bg-primary text-white w-[80%] font-bold lg:w-[40%] rounded-3xl p-2 lg:p-3">Register</button>
+          <button className="bg-primary text-white w-[80%] text-sm lg:text-lg font-bold lg:w-[40%] rounded-3xl p-2 lg:p-3">Register</button>
           </div>
           <Image
            src={candidate}
