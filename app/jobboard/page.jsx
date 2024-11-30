@@ -130,12 +130,12 @@ function page() {
         </div>
       </div>
 
-      <div className='bg-primary p-16 flex justify-between items-center rounded-lg w-[94%] my-14 mx-auto'>
-        <div className='flex flex-col gap-5 lg:gap-10 w-[50%]'>
-          <h1 className='font-medium text-white text-[20px] lg:text-[30px]'>Ready to hire an employee?</h1>
-          <p className='font-extralight text-white text-15px lg:text-[20px]'>Find your next great team member today! We're here to help you connect with top talent that will drive your business forward. Let's build your dream team.</p>
+      <div className='bg-primary p-4 lg:p-16 flex flex-col lg:flex-row justify-between items-center rounded-lg w-[94%] my-4 lg:my-14 mx-auto'>
+        <div className='flex flex-col gap-5 lg:gap-10 w-[90%] lg:w-[50%]'>
+          <h1 className='font-medium text-white text-[15px] lg:text-[20px] lg:text-[30px]'>Ready to hire an employee?</h1>
+          <p className='font-extralight text-center lg:text-left text-white text-[15px] lg:text-[20px]'>Find your next great team member today! We're here to help you connect with top talent that will drive your business forward. Let's build your dream team.</p>
         </div>
-        <button className='bg-secondary text-[13px] lg:text-[16px] text-white p-2 px-3 rounded-3xl font-medium'>Contact Us Today</button>
+        <button className='bg-secondary text-[13px] mt-2 lg:mt-0 lg:text-[16px] text-white p-2 px-3 rounded-3xl font-medium'>Contact Us Today</button>
       </div>
     </div>
     <Footer />
