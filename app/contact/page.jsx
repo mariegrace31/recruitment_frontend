@@ -12,6 +12,8 @@ import Footer from '../components/Footer';
 import Link from 'next/link';
 import contactHr from '../assets/contacthr.png';
 import { IoMdSend } from "react-icons/io";
+import map from '../assets/map.png';
+import 'leaflet/dist/leaflet.css';
 
 
 function page() {
@@ -28,10 +30,10 @@ function page() {
 
 
     
-     <div className='grid grid-cols-3 gap-12 p-16'>
+     <div className='flex justify-center gap-28 p-16'>
 
 
-     <div className='bg-secondary p-5 rounded-s-sm flex flex-col gap-10'>
+     <div className='bg-secondary w-[80%] p-5 rounded-s-sm flex flex-col gap-10'>
      <div className='flex gap-12'>
      <h1 className='text-white text-lg'>Rwanda</h1>
     <Image src={whitehr} width={190} height={1} alt='white hr' className='my-2' />
@@ -43,44 +45,20 @@ function page() {
     <h2 className='text-white font-light flex items-center gap-2'><FaPhoneAlt className='text-xl text-white'/>+250 795 460 410</h2>
    </div>
     <div>
-    <h2 className='text-white font-light flex items-center gap-2'><IoMailUnreadOutline className='text-2xl text-white'/>office@lkrecruitmentrw.com</h2>
+    <h2 className='text-white font-light flex items-center gap-2'><IoMailUnreadOutline className='text-2xl text-white'/>office@lkrecruitmentrw.com <br /> contact@lkrecruitmentrw.com</h2>
    </div>
     </div>
 
 
-    <div className='bg-secondary p-5 rounded-sm flex flex-col gap-10'>
-     <div className='flex gap-12'>
-     <h1 className='text-white text-lg'>Rwanda</h1>
-    <Image src={whitehr} width={190} height={1} alt='white hr' className='my-2' />
+    <div className="bg-secondary w-[80%] p-5 rounded-sm flex flex-col gap-10">
+      <div className="flex gap-12">
+        <h1 className="text-white text-lg">Map</h1>
+        <Image src={whitehr} width={190} height={1} alt="white hr" className="my-2" />
+      </div>
+      <div className="w-full rounded-sm overflow-hidden">
+        <Image src={map} width={400} height={1} alt='map' className='w-full' />
+      </div>
     </div>
-    <div>
-    <h2 className='text-white flex items-center font-light gap-2'><IoLocationSharp className='text-5xl text-white' />4th floor La Bonne Addresse House,Nyarugenge Kiyovu, Kigali.</h2>
-    </div>
-    <div>
-    <h2 className='text-white flex items-center font-light gap-2'><FaPhoneAlt className='text-xl text-white'/>+250 795 460 410</h2>
-   </div>
-    <div>
-    <h2 className='text-white flex items-center font-light gap-2'><IoMailUnreadOutline className='text-2xl text-white'/>office@lkrecruitmentrw.com</h2>
-   </div>
-    </div>
-
-
-    <div className='bg-secondary rounded-sm p-5 flex flex-col gap-10'>
-     <div className='flex gap-12'>
-     <h1 className='text-white text-lg'>Rwanda</h1>
-    <Image src={whitehr} width={190} height={1} alt='white hr' className='my-2' />
-    </div>
-    <div>
-    <h2 className='text-white flex font-light items-center gap-2'><IoLocationSharp className='text-5xl text-white' />4th floor La Bonne Addresse House,Nyarugenge Kiyovu, Kigali.</h2>
-    </div>
-    <div>
-    <h2 className='text-white flex font-light items-center gap-2'><FaPhoneAlt className='text-xl text-white'/>+250 795 460 410</h2>
-   </div>
-    <div>
-    <h2 className='text-white flex font-light items-center gap-2'><IoMailUnreadOutline className='text-2xl text-white'/>office@lkrecruitmentrw.com</h2>
-   </div>
-    </div>
-
 
      </div>
     </div>

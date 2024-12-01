@@ -233,8 +233,8 @@ const cards = [
   </div>
 
 
-  <div className='my-10 lg:my-28 '>
-   <Image src={values} width={200} height={10} alt='values image' />
+  <div className='w-full'>
+   <Image src={values} width={800} height={10} alt='values image' className='w-full' />
   </div>
 
 
@@ -246,12 +246,26 @@ const cards = [
    <div className='bg-secondary p-4 flex flex-col rounded-none lg:rounded-l-lg'>
      <div className='flex gap-8 items-center'>
      <h1 className='text-[80px] lg:text-[190px] text-white'>&ldquo;</h1>
-     <p className='text-white text-xl lg:text-3xl font-medium -mt-8 lg:-mt-20'>Stay Ahead with Industry Insights.</p>
+     <p className='text-white text-xl lg:text-3xl font-medium -mt-8 lg:-mt-20'>What is a Temporary Work Agency?</p>
      </div>
-     <p className='text-white text-[15px] text-center lg:text-left lg:text-[22px] font-light -mt-5 lg:-mt-24'>Our team stays on top of the latest trends, innovations, and best practices in the industry to provide you with valuable insights. On this page, we share expert advice, market updates, and in-depth analysis to help you make informed decisions and stay ahead of the competition. Whether you're looking for the latest industry trends, tips for growth, or guidance on challenges you may face, we've got you covered.</p>
+     <p className='text-white text-[15px] text-center lg:text-left lg:text-[22px] font-light -mt-5 lg:-mt-24'>A temporary work agency is a company that matches businesses in need of temporary staff with qualified individuals looking for short-term employment opportunities.
+     Benefits: Provides flexibility for businesses to meet fluctuating staffing needs, helps individuals gain valuable work experience, and offers a cost-effective solution for both parties.</p>
       <Image src={whitehr} width={100} height={1} alt='white hr' className='my-10 mx-auto lg:mx-0' />
    </div>
-   <Image src={team} width={500} height={100} alt='hr image' className='hidden lg:flex'  />
+   <Image src={team} width={550} height={100} alt='hr image' className='hidden lg:flex'  />
+   </div>
+   <div className='bg-white w-[50%] mx-auto rounded-b-[20%] py-8 px-20'>
+    <h1 className='text-2xl font-bold'>How Does LK RECRUITMENT Work?</h1>
+    <div className='flex flex-col gap-3'>
+      <h2 className='font-bold text-secondary mt-3'>Step O1</h2>
+      <p>Businesses contact us with their staffing requirements.</p>
+      <h2 className='font-bold text-secondary'>Step O2</h2>
+      <p>We source and screen qualified and trained candidates from our pool of temporary workers.</p>
+      <h2 className='font-bold text-secondary'>Step O3</h2>
+      <p>We match the best-suited candidates with the job requirements and facilitate the placement process.</p>
+      <h2 className='font-bold text-secondary'>Step O4</h2>
+      <p>We provide ongoing support and assistance to ensure a successful temporary work arrangement.</p>
+    </div>
    </div>
   </div>
 
