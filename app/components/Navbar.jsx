@@ -19,8 +19,8 @@ function Navbar() {
 
   return (
     <nav
-      className={`w-full md:w-[80%] fixed top-0 left-[188px] md:left-1/2 transform -translate-x-1/2 z-30 rounded-b-none lg:rounded-b-2xl flex justify-between items-center px-3 py-2 md:p-3 ${navbarBgColor}`}
-    >
+    className={`w-full md:w-[80%] fixed top-0 md:left-1/2 transform md:-translate-x-1/2 z-30 rounded-b-none lg:rounded-b-2xl flex justify-between items-center px-3 py-2 md:p-3 ${navbarBgColor}`}
+  >  
       <div className="flex items-center gap-2">
         <Image src={logo} width={40} height={40} alt="Logo" priority />
         <h4 className="text-secondary font-medium text-[10px] md:text-xl">LK RECRUITMENT RWANDA</h4>
