@@ -39,7 +39,7 @@ function Navbar() {
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
-          {menuOpen ? <FaTimes /> : <PiDotsThreeOutline className="border px-2 w-[100%] rounded-xl border-gray-400 text-2xl text-black" />}
+          {menuOpen ? <FaTimes className="text-white bg-secondary p-2 rounded-xl text-3xl" /> : <PiDotsThreeOutline className="border px-2 w-[100%] rounded-xl border-gray-400 text-2xl text-black" />}
         </button>
       </div>
 

@@ -10,14 +10,13 @@ import Socrate from '../assets/socr.png';
 import Djasmine from '../assets/dja.jpeg';
 import Henry from '../assets/henr.png';
 import whitehr from '../assets/hrwhite.png';
-import candidate from '../assets/candidate.png';
-import employer from '../assets/employer.png';
 import Footer from '../components/Footer';
 import team from '../assets/teamm.jpg.png';
 import { LuArrowRight } from "react-icons/lu";
 import { FaUser } from "react-icons/fa6";
 import { GrUserManager } from "react-icons/gr";
 import values from '../assets/values.png';
+import { motion } from 'framer-motion';
 
 const cards = [
  {
@@ -89,6 +88,22 @@ const cards = [
     const [isExpanded, setIsExpanded] = useState(false);
     const toggleReadMore = () => {
       setIsExpanded(!isExpanded);
+    };
+
+    const containerVariants = {
+      hidden: { opacity: 0 },
+      show: {
+        opacity: 1,
+        transition: {
+          staggerChildren: 0.5,
+          when: "beforeChildren",
+        },
+      },
+    };
+
+    const childVariants = {
+      hidden: { opacity: 0, x: '-50%' },
+      show: { opacity: 1, x: 0, transition: { type: 'spring', stiffness: 70 } },
     };
    
     return (
@@ -194,12 +209,10 @@ const cards = [
    <Image src={hr} width={200} height={1} alt='hr' className='mx-auto mt-2' />
    <p className='text-white font-light text-[14px] lg:text-[20px] w-[90%] lg:w-[50%] text-center mx-auto mt-7'>Choose us for unmatched expertise, personalized solutions, and a commitment to your success.</p>
  
-   <div className='grid grid-cols-1 lg:grid-cols-4 gap-10 w-[90%] mx-auto mt-14'>
-
-
+   <div className='grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-5 w-[90%] lg:w-[100%] mx-auto mt-14'>
      <div className='flex flex-col gap-3 bg-white p-3 rounded-lg'>
        <h1 className='text-right font-bold text-secondary text-3xl lg:text-5xl'>01</h1>
-       <h4 className='font-semibold text-[17px] lg:text-[23px] text-black'>Tailored Staffing Solutions</h4>
+       <h4 className='font-semibold text-[17px] lg:text-[22px] text-black'>Tailored Staffing Solutions</h4>
        <p className='text-black font-light text-[14px] lg:text-[15px]'>LK RECRUITMENT provides customized hiring options, from temporary roles to permanent
         positions, ensuring the best match for your business needs.</p>
      </div>
@@ -207,26 +220,25 @@ const cards = [
 
      <div className='flex flex-col gap-3 bg-white p-3 rounded-lg'>
        <h1 className='text-right font-bold text-secondary text-3xl lg:text-5xl'>02</h1>
-       <h4 className='font-semibold text-[17px] lg:text-[23px] text-black'>Expertise and Efficiency</h4>
+       <h4 className='font-semibold text-[17px] lg:text-[22px] text-black'>Expertise and Efficiency</h4>
        <p className='text-black font-light text-[14px] lg:text-[15px]'>With deep industry knowledge and a fast, streamlined hiring process, we make recruitment smooth and hassle-free.</p>
      </div>
 
 
      <div className='flex flex-col gap-3 bg-white p-3 rounded-lg'>
        <h1 className='text-right font-bold text-secondary text-3xl lg:text-5xl'>03</h1>
-       <h4 className='font-semibold text-[17px] lg:text-[23px] text-black'>Commitment to Diversity and Responsibility</h4>
+       <h4 className='font-semibold text-[17px] lg:text-[22px] text-black'>Commitment to Diversity and Responsibility</h4>
        <p className='text-black font-light text-[14px] lg:text-[15px]'>We prioritize diversity, inclusion, and social responsibility, helping you build a strong, socially conscious workforce.</p>
      </div>
 
 
      <div className='flex flex-col gap-3 bg-white p-3 rounded-lg'>
        <h1 className='text-right font-bold text-secondary text-3xl lg:text-5xl'>04</h1>
-       <h4 className='font-semibold text-[17px] lg:text-[23px] text-black'>Quality Assurance</h4>
+       <h4 className='font-semibold text-[17px] lg:text-[22px] text-black'>Quality Assurance</h4>
        <p className='text-black font-light text-[14px] lg:text-[15px]'>We maintain high standards in candidate selection and placement to ensure client satisfaction.</p>
      </div>
-
-
    </div>
+   
   </div>
 
 
@@ -236,9 +248,6 @@ const cards = [
   <div className='w-full'>
    <Image src={values} width={800} height={10} alt='values image' className='w-full' />
   </div>
-
-
-
 
   <div className='bg-[#F5F5FF] p-3 pt-9 lg:pt-0 lg:p-32'>
    <div className='flex flex-col lg:flex-row w-[90%] mx-auto'>
@@ -254,19 +263,38 @@ const cards = [
    </div>
    <Image src={team} width={550} height={100} alt='hr image' className='hidden lg:flex'  />
    </div>
+
    <div className='bg-white w-[80%] lg:w-[50%] mx-auto rounded-b-3xl mb-12 lg:mb-0 lg:rounded-b-[20%] py-6 lg:py-8 px-5 lg:px-20'>
     <h1 className='text-lg text-center lg:text-left lg:text-2xl font-bold'>How Does LK RECRUITMENT Work?</h1>
-    <div className='flex flex-col gap-3'>
+    <motion.div className='flex flex-col gap-3'
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      variants={containerVariants} 
+     >
+      <motion.div variants={childVariants}>
       <h2 className='font-bold text-secondary mt-3 text-[15px] lg:text-[18px]'>Step O1</h2>
       <p className='text-[13px] lg:text-[18px]'>Businesses contact us with their staffing requirements.</p>
+      </motion.div>
+
+      <motion.div variants={childVariants} >
       <h2 className='font-bold text-secondary text-[15px] lg:text-[18px]'>Step O2</h2>
       <p className='text-[13px] lg:text-[18px]'>We source and screen qualified and trained candidates from our pool of temporary workers.</p>
+      </motion.div>
+
+      <motion.div variants={childVariants}>
       <h2 className='font-bold text-secondary text-[15px] lg:text-[18px]'>Step O3</h2>
-      <p className='text-[13px] lg:text-[18px]'>We match the best-suited candidates with the job requirements and facilitate the placement process.</p>
+      <p className='text-[13px] lg:text-[18px]' >We match the best-suited candidates with the job requirements and facilitate the placement process.</p>
+      </motion.div>
+
+      <motion.div variants={childVariants}>
       <h2 className='font-bold text-secondary text-[15px] lg:text-[18px]'>Step O4</h2>
-      <p className='text-[13px] lg:text-[18px]'>We provide ongoing support and assistance to ensure a successful temporary work arrangement.</p>
-    </div>
+      <p className='text-[13px] lg:text-[18px]' >We provide ongoing support and assistance to ensure a successful temporary work arrangement.</p>
+      </motion.div>
+
+    </motion.div>
    </div>
+
   </div>
 
 

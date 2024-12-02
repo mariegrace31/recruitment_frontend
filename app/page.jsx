@@ -10,6 +10,7 @@ import Testimonials from "./components/Testimonials";
 import Link from "next/link";
 import Hr from "./components/Hr";
 import Footer from "./components/Footer";
+import { motion } from "framer-motion";
 
 
 export default function Home() {
@@ -52,8 +53,12 @@ export default function Home() {
      </div>
 
 
-     <div className="grid grid-cols-1 lg:grid-cols-2 bg-gray-100 lg:bg-white p-0 lg:p-20 gap-0 lg:gap-32 mt-0 ">
-
+     <motion.div className="grid grid-cols-1 lg:grid-cols-2 bg-gray-100 lg:bg-white p-0 lg:p-20 gap-0 lg:gap-32 mt-0 "
+     initial={{ opacity: 0, y: 80 }}
+     whileInView={{ opacity: 1, y: 0 }}
+     transition={{ duration: 2 }}
+     viewport={{ once: false }}
+     >
       <div className='bg-gray-100 p-3 rounded-lg'>
       <div className="flex h-[25vh] lg:h-[31vh] bg-gradient-center m-5 lg:m-0 p-3 lg:p-8 rounded-lg ">
            <div className="flex flex-col gap-2 lg:gap-7 w-[100%]">
@@ -75,7 +80,7 @@ export default function Home() {
       </div>
         
       
-     </div>
+     </motion.div>
 
      <Link
        href="#testimonials"
