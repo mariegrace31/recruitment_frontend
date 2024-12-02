@@ -71,9 +71,9 @@ export default function Home() {
 
  return (
    <section>
-     <div className="relative bg-cover bg-center bg-[url('./assets/hero.png')] h-[100vh]">
+     <div className="relative bg-cover bg-center bg-[url('./assets/hero.png')] h-[70vh] lg:h-[100vh]">
        <div className="absolute inset-0 bg-primary opacity-85 z-0"></div>
-       <div className="relative z-10 h-[100vh] flex flex-col justify-center">
+       <div className="relative z-10 h-[70vh] lg:h-[100vh] flex flex-col justify-center">
          <div className="flex flex-col gap-7 md:gap-14 justify-center text-center w-[90%] md:w-[60%] mx-auto">
            <h1 className="text-white font-black text-3xl md:text-6xl leading-none">
              TEMPORARY WORK <br /> & RECRUITMENT AGENCY
