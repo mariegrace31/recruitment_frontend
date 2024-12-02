@@ -27,7 +27,6 @@ function Footer() {
           <Link className='text-white text-[11px] lg:text-[15px] font-light' href='/jobBoard'>Job Board</Link>
           <Link className='text-white text-[11px] lg:text-[15px] font-light' href='/about'>About Us</Link>
           <Link  className='text-white text-[11px] lg:text-[15px] font-light'href='/hrnews'>Hr News</Link>
-          <Link  className='text-white text-[11px] lg:text-[15px] font-light'href='/contact'>Contact</Link>
         </div>
         
       

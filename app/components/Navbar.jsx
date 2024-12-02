@@ -23,7 +23,7 @@ function Navbar() {
   >  
       <div className="flex items-center gap-2">
         <Image src={logo} width={40} height={40} alt="Logo" priority />
-        <h4 className="text-secondary font-medium text-[10px] md:text-xl">LK RECRUITMENT RWANDA</h4>
+        <h4 className="text-secondary font-medium text-[10px] md:text-[15px]">LK RECRUITMENT RWANDA</h4>
       </div>
 
       <div className="flex gap-3 lg:order-2 items-center">
@@ -94,9 +94,9 @@ function Navbar() {
       <div
         className={`hidden lg:flex gap-8 items-center ${mobileMenuBgColor}`}
       >
-        <div className="hidden lg:block">
-          <Image src={line} width={5} height={10} alt="svg" />
-        </div>
+        <p className="hidden text-secondary font-medium text-2xl lg:block">
+         |
+        </p>
 
         <Link
           href="/"
@@ -129,9 +129,9 @@ function Navbar() {
           Contact
         </Link>
 
-        <div className="hidden lg:block">
-          <Image src={line} width={5} height={10} alt="svg" />
-        </div>
+        <p className="hidden text-secondary text-2xl font-medium lg:block">
+          |
+        </p>
       </div>
     </nav>
   );
