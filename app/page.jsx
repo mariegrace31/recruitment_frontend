@@ -102,7 +102,7 @@ export default function Home() {
             <div className="flex flex-col gap-5 w-[100%] lg:w-[60%]">
               <h1 className="font-bold text-lg lg:text-xl">For employers</h1>
               <p className="text-sm lg:text-lg font-light">Looking for the perfect candidate? Share your requirements with us, and we'll connect you with the right talent to meet your needs.</p>
-              <button className="bg-primary text-white font-bold w-[75%] lg:w-[50%] rounded-3xl p-2 lg:p-3" onClick={handleModalToggle}>Send Details</button>
+              <button className="bg-primary text-white text-[13px] lg:text-lg font-bold w-[75%] lg:w-[50%] rounded-3xl p-2 lg:p-3" onClick={handleModalToggle}>Send Details</button>
             </div>
             <Image src={employer} width={170} height={100} alt="Employer png" className='ml-2 lg:ml-5' />
           </div>
@@ -118,7 +118,7 @@ export default function Home() {
             <div className="flex flex-col gap-5  w-[100%] lg:w-[60%]">
               <h1 className="font-bold text-lg lg:text-xl">For candidates</h1>
               <p className="text-sm lg:text-lg font-light">Unlock your potential and take the next step in your career.Apply now, and our team will review your documents and get back to you.</p>
-              <button className="bg-primary text-white font-bold w-[70%] lg:w-[60%] rounded-3xl p-2 lg:p-3" onClick={handleApplyNowModalToggle}>Apply Now</button>
+              <button className="bg-primary text-white text-[13px] lg:text-lg font-bold w-[70%] lg:w-[60%] rounded-3xl p-2 lg:p-3" onClick={handleApplyNowModalToggle}>Apply Now</button>
             </div>
             <Image src={candidate} width={170} height={100} alt="Candidate png" className='ml-2 lg:ml-5' />
           </div>
