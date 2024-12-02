@@ -91,20 +91,20 @@ export default function Home() {
      </div>
 
 
-     <div className="grid grid-cols-1 lg:grid-cols-2 bg-gray-100 lg:bg-white p-3 lg:p-20 gap-8 lg:gap-32 mt-0 lg:mt-16 ">
+     <div className="grid grid-cols-1 lg:grid-cols-2 bg-gray-100 lg:bg-white p-3 lg:p-20 gap-3 lg:gap-32 mt-0 lg:mt-16 ">
         <motion.div className="p-2 lg:p-4 bg-gray-100 py-3 lg:py-5 rounded-lg"
          initial={{ opacity: 0, y: 80 }}
          whileInView={{ opacity: 1, y: 0 }}
          transition={{ duration: 2 }}
          viewport={{ once: false }}
         >
-          <div className="flex bg-gradient-center justify-center p-3 lg:p-8 rounded-lg ">
+          <div className="flex bg-gradient-center items-center justify-center p-3 lg:p-8 rounded-lg ">
             <div className="flex flex-col gap-5 w-[100%] lg:w-[60%]">
-              <h1 className="font-bold text-lg lg:text-xl">For employers</h1>
-              <p className="text-sm lg:text-lg font-light">Looking for the perfect candidate? Share your requirements with us, and we'll connect you with the right talent to meet your needs.</p>
-              <button className="bg-primary text-white text-[13px] lg:text-lg font-bold w-[75%] lg:w-[50%] rounded-3xl p-2 lg:p-3" onClick={handleModalToggle}>Send Details</button>
+              <h1 className="font-bold text-[16px] lg:text-xl">For employers</h1>
+              <p className="text-[12px] lg:text-lg font-light">Looking for the perfect candidate? Share your requirements with us, and we'll connect you with the right talent to meet your needs.</p>
+              <button className="bg-primary text-white text-[13px] lg:text-lg font-medium w-[65%] lg:w-[65%] rounded-3xl p-2 lg:p-3" onClick={handleModalToggle}>Send Details</button>
             </div>
-            <Image src={employer} width={170} height={100} alt="Employer png" className='ml-2 lg:ml-5' />
+            <Image src={employer} width={170} height={100} alt="Employer png" className='ml-2 lg:ml-5 w-[100px] h-[120px] lg:w-[200px] lg:h-[220px]' />
           </div>
         </motion.div>
 
@@ -114,13 +114,13 @@ export default function Home() {
       transition={{ duration: 2 }}
       viewport={{ once: false }}
         >
-          <div className="flex bg-gradient-center justify-center p-3 lg:p-8 rounded-lg ">
+          <div className="flex bg-gradient-center items-center justify-center p-3 lg:p-8 rounded-lg ">
             <div className="flex flex-col gap-5  w-[100%] lg:w-[60%]">
-              <h1 className="font-bold text-lg lg:text-xl">For candidates</h1>
-              <p className="text-sm lg:text-lg font-light">Unlock your potential and take the next step in your career.Apply now, and our team will review your documents and get back to you.</p>
-              <button className="bg-primary text-white text-[13px] lg:text-lg font-bold w-[70%] lg:w-[60%] rounded-3xl p-2 lg:p-3" onClick={handleApplyNowModalToggle}>Apply Now</button>
+              <h1 className="font-bold text-[16px] lg:text-xl">For candidates</h1>
+              <p className="text-[12px] lg:text-lg font-light">Unlock your potential and take the next step in your career.Apply now, and our team will review your documents and get back to you.</p>
+              <button className="bg-primary text-white text-[13px] lg:text-lg font-medium w-[70%] lg:w-[60%] rounded-3xl p-2 lg:p-3" onClick={handleApplyNowModalToggle}>Apply Now</button>
             </div>
-            <Image src={candidate} width={170} height={100} alt="Candidate png" className='ml-2 lg:ml-5' />
+            <Image src={candidate} width={170} height={100} alt="Candidate png" className='ml-2 lg:ml-5 w-[100px] h-[120px] lg:w-[200px] lg:h-[220px]' />
           </div>
         </motion.div>
       </div>
