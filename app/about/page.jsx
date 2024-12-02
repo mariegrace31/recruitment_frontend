@@ -8,7 +8,6 @@ import bHr from '../assets/blackhr.png';
 import Kelly from '../assets/team1.png';
 import Socrate from '../assets/socr.png';
 import Djasmine from '../assets/dja.jpeg';
-import Henry from '../assets/henr.png';
 import whitehr from '../assets/hrwhite.png';
 import Footer from '../components/Footer';
 import team from '../assets/teamm.jpg.png';
@@ -47,14 +46,6 @@ const cards = [
         description2: `I am an administrative assistant at LK Recruitment. With a passion for efficient organization and a strong attention to detail, I  am specialize in providing exceptional support in administrative tasks, ensuring smooth operations in a fast-paced environment.`,
         description3: `At LK Recruitment, I work closely with the team to streamline processes and assist in recruitment efforts, always striving to deliver top-notch services to clients and candidates.
         I am committed to personal and professional growth and always eager to take on new challenges.I am committed to personal and professional growth and always eager to take on new challenges.`,
-    },
-    {
-      image: Henry,
-      name: 'Heritier',
-      position: 'Social Media Manager',
-      description1: `As the Social Media Manager for LK RECRUITMENT, I oversee our digital presence, crafting content that connects with clients and candidates alike.`,
-      description2: `I manage campaigns, job postings, and updates while ensuring our brand reflects our commitment to diversity, inclusion, and social impact.  `,
-      description3: `By analyzing engagement, I continuously optimize our strategy to enhance visibility and interaction across platforms. `,
     },
    ];
    
@@ -265,7 +256,7 @@ const cards = [
    </div>
 
    <div className='bg-white w-[80%] lg:w-[50%] mx-auto rounded-b-3xl mb-12 lg:mb-0 lg:rounded-b-[20%] py-6 lg:py-8 px-5 lg:px-20'>
-    <h1 className='text-lg text-center lg:text-left lg:text-2xl font-bold'>How Does LK RECRUITMENT Work?</h1>
+    <h1 className='text-lg text-center lg:text-left lg:text-2xl font-bold'>How Does LK RECRUITMENT work?</h1>
     <motion.div className='flex flex-col gap-3'
       initial="hidden"
       whileInView="show"

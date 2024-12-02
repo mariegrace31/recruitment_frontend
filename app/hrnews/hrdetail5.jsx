@@ -8,9 +8,9 @@ import Footer from '../components/Footer';
 import { FaTimes } from 'react-icons/fa';
 import profile1 from '../assets/profile1.png';
 import profile2 from '../assets/profile2.png';
-import blog2 from '../assets/blog2.png';
+import blog2 from '../assets/blog5.jpeg';
 
-function Hrdetail2() {
+function Hrdetail5() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleSubmit = () => {
@@ -103,4 +103,4 @@ function Hrdetail2() {
   )
 }
 
-export default Hrdetail2;
+export default Hrdetail5;

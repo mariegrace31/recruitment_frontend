@@ -78,7 +78,7 @@ function page() {
              <h3 className='font-bold text-[16px] lg:text-xl'>Phone number:</h3>
              <h3 className='text-secondary text-sm lg:text-[16px] font-medium underline'>+250 795 460 410</h3>
              <h3 className='font-bold text-[16px] lg:text-xl mt-1 lg:mt-5'>Email Address:</h3>
-             <h3 className='text-secondary text-sm lg:text-[16px] font-medium'>office@lkrecruitmentrw.com</h3>
+             <h3 className='text-secondary text-sm lg:text-[16px] font-medium'>office@lkrecruitmentrw.com <br /> contact@lkrecruitmentrw.com </h3>
              <h3 className='font-bold text-[16px] lg:text-xl mt-1 lg:mt-5'>Our Location</h3>
              <h3 className='text-secondary text-sm lg:text-[16px] font-medium'>4th floor La Bonne Addresse House</h3>
              <h3 className='font-bold text-[16px] lg:text-xl mt-1 lg:mt-5'>Social Media</h3>
@@ -86,7 +86,7 @@ function page() {
              <Link href='#'><FaLinkedinIn   className='p-1 text-xl rounded-sm bg-[#0076B2] text-white'/></Link>
              <Link href='#'><GrFacebookOption className='bg-[#1877F2] text-white text-2xl p-1 rounded-3xl' /></Link>
              <Image src={ig} width={20} height={18} alt='instagram' />
-             <h3 className='text-secondary text-sm lg:text-[16px]'>LkRecruitment</h3>
+             <h3 className='text-secondary text-sm lg:text-[16px]'>LkRecruitmentRwanda</h3>
              </div>
            </div>
          </div>

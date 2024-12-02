@@ -173,7 +173,7 @@ function Jobdetail() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-[15px] lg:text-[20px] text-white font-light mb-2 lg:mb-3 mt-5 lg:mt-8 ">Why should we hire you?</label>
+                <label htmlFor="message" className="block text-[15px] lg:text-[20px] text-white font-light mb-2 lg:mb-3 mt-5 lg:mt-8 ">Message</label>
                 <textarea
                   id="message"
                   rows="3"

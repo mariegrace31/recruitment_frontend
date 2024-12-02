@@ -9,7 +9,7 @@ function Jobs() {
    <div className='flex flex-col lg:flex-row mx-auto justify-center bg-tertiary p-5 lg:p-14 gap-12 lg:gap-32'>
      <Image src={icon} width={650} height={100} alt='job illustrator' />
      <div className='flex flex-col gap-4 w-[100%]'>
-     <h1 className='text-[12px] lg:text-lg font-medium'>Recruitment Process - Staffing Agency</h1>
+     <h1 className='text-[12px] lg:text-lg font-medium'>Recruitment Process</h1>
        <div className='flex flex-col gap-3 mt-4'>
          <h3 className='font-semibold text-[13px] lg:text-[19px]'>Find your perfect Match and Apply</h3>
          <p className='text-[13px] w-[100%]'>Let us know what kind of job you're looking for and let your skills shine; highlight your experience and qualifications that match the job requirements.</p>

@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <nav
-    className={`w-full md:w-[80%] fixed top-0 md:left-1/2 transform md:-translate-x-1/2 z-30 rounded-b-none lg:rounded-b-2xl flex justify-between items-center px-3 py-2 md:p-3 ${navbarBgColor}`}
+    className={`w-full md:w-[80%] fixed top-0 md:left-1/2 transform md:-translate-x-1/2 z-30 rounded-b-none lg:rounded-b-2xl flex justify-between lg:justify-around items-center px-3 py-2 md:p-3 ${navbarBgColor}`}
   >  
       <div className="flex items-center gap-2">
         <Image src={logo} width={40} height={40} alt="Logo" priority />
@@ -29,9 +29,6 @@ function Navbar() {
       <div className="flex gap-3 lg:order-2 items-center">
         <button className="bg-primary text-white rounded-3xl font-medium px-3 py-1 text-[12px] md:px-5 md:py-2 md:text-[15px] hover:bg-secondary cursor-pointer">
           Login
-        </button>
-        <button className="bg-tertiary border hidden lg:flex border-gray-400 text-black rounded-3xl font-medium px-3 py-1 text-[12px] md:px-5 md:py-2 md:text-[15px] hover:bg-secondary cursor-pointer hover:text-white">
-          Get Started
         </button>
 
         <button
