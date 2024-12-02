@@ -58,6 +58,17 @@ export default function Home() {
     setIsSubmittedModalOpen(false);
   };
 
+  const [isApplyNowModalOpen, setIsApplyNowModalOpen] = useState(false);
+  const handleApplyNowModalToggle = () => {
+    setIsApplyNowModalOpen(!isApplyNowModalOpen);
+  };
+  const handleApplyNowSubmit = (e) => {
+    e.preventDefault();
+    setIsApplyNowModalOpen(false);
+    setIsSubmittedModalOpen(true);
+  };
+ 
+
  return (
    <section>
      <div className="relative bg-cover bg-center bg-[url('./assets/hero.png')] h-[100vh]">
@@ -91,7 +102,7 @@ export default function Home() {
             <div className="flex flex-col gap-5 w-[100%] lg:w-[60%]">
               <h1 className="font-bold text-lg lg:text-xl">For employers</h1>
               <p className="text-sm lg:text-lg font-light">Looking for the perfect candidate? Share your requirements with us, and we'll connect you with the right talent to meet your needs.</p>
-              <button className="bg-primary text-white font-bold w-[73%] lg:w-[50%] rounded-3xl p-2 lg:p-3" onClick={handleModalToggle}>Send Details</button>
+              <button className="bg-primary text-white font-bold w-[75%] lg:w-[50%] rounded-3xl p-2 lg:p-3" onClick={handleModalToggle}>Send Details</button>
             </div>
             <Image src={employer} width={170} height={100} alt="Employer png" className='ml-2 lg:ml-5' />
           </div>
@@ -107,7 +118,7 @@ export default function Home() {
             <div className="flex flex-col gap-5  w-[100%] lg:w-[60%]">
               <h1 className="font-bold text-lg lg:text-xl">For candidates</h1>
               <p className="text-sm lg:text-lg font-light">Unlock your potential and take the next step in your career.Apply now, and our team will review your documents and get back to you.</p>
-              <button className="bg-primary text-white font-bold w-[62%] lg:w-[60%] rounded-3xl p-2 lg:p-3">Apply Now</button>
+              <button className="bg-primary text-white font-bold w-[70%] lg:w-[60%] rounded-3xl p-2 lg:p-3" onClick={handleApplyNowModalToggle}>Apply Now</button>
             </div>
             <Image src={candidate} width={170} height={100} alt="Candidate png" className='ml-2 lg:ml-5' />
           </div>
@@ -218,6 +229,81 @@ export default function Home() {
           </div>
         </div>
       )}
+
+      {/* Apply Now Modal */}
+     {isApplyNowModalOpen && (
+       <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary/60 backdrop-blur-sm">
+         <div className="bg-secondary border border-gray-400 w-[90%] max-w-lg p-3 lg:p-4 rounded-lg relative">
+           <button
+             className="absolute top-2 right-2 text-secondary bg-white/50 text-2xl lg:text-4xl p-1 px-3 rounded-3xl"
+             onClick={handleApplyNowModalToggle}
+           >
+             &times;
+           </button>
+           <h2 className="text-[22px] lg:text-[27px] my-4 text-center text-white">Apply Now</h2>
+           <Image src={hr} width={310} height={1} alt='hr' className='mx-auto mt-2 lg:mt-2 w-[170px] lg:w-[150px]' />
+           <form onSubmit={handleFormSubmit} className="space-y-4 mt-10">
+              <div>
+                <label htmlFor="email" className="block text-[15px] lg:text-[20px] text-gray-100 font-light mb-2 lg:mb-3">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  className="w-full border border-gray-300 bg-secondary rounded-md p-2 lg:p-3 text-white placeholder:text-gray-300 placeholder:text-[12px] lg:placeholder:text-[15px] placeholder:font-light"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-[15px] lg:text-[20px] text-gray-100 font-light mb-2 lg:mb-3 mt-5 lg:mt-8">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Your Phone Number"
+                  className="w-full border  bg-secondary  text-white border-gray-300 rounded-md p-2 lg:p-3 placeholder:text-gray-200 placeholder:text-[12px] lg:placeholder:text-[15px] placeholder:font-light"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-[15px] lg:text-[20px] text-white font-light mb-2 lg:mb-3 mt-5 lg:mt-8 ">Message</label>
+                <textarea
+                  id="message"
+                  rows="3"
+                  placeholder="Type your message"
+                  className="w-full border  bg-secondary h-20 lg:h-28  border-gray-300 text-white rounded-md p-2 lg:p-3 placeholder:text-gray-200 placeholder:text-[12px] lg:placeholder:text-[15px] placeholder:font-light"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-3 border border-gray-300 rounded-md p-2 cursor-pointer">
+            <input
+              type="file"
+              id="cv"
+              accept=".doc,.docx,.pdf"
+              className="hidden"
+              onChange={handleFileChange}
+            />
+            <label
+              htmlFor="cv"
+              className="flex items-center justify-center h-12 lg:h-16 gap-2 w-full"
+            >
+              <BsFillCloudUploadFill className="text-gray-200 text-xl" />
+              <span className="text-gray-200 text-[13px] lg:text-[15px] font-light">
+                {uploadedFileName || "Upload CV (doc, docx, pdf)"}
+              </span>
+            </label>
+          </div>
+        </div>
+
+              <button
+                type="submit"
+                className="bg-white text-black text-[14px] lg:text-[20px] w-full py-2 border border-black/80 hover:bg-yellow-500 hover:text-white hover:border-gray-400 font-medium rounded-3xl"
+              >
+                Apply Now
+              </button>
+            </form>
+         </div>
+       </div>
+     )}
 
        {/* Submitted Confirmation Modal */}
        {isSubmittedModalOpen && (

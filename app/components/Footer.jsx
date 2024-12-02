@@ -36,19 +36,12 @@ function Footer() {
           <Link className='text-white text-[11px] lg:text-[15px] font-light' href='#contact'>Contact Us</Link>
         </div>
        
-        <div className='hidden lg:flex flex-col gap-4'>
-          <h1 className='text-[20px] font-medium text-white'>Social media</h1>
-          <Link className='text-white text-[15px] font-light' href='#'>Instagram</Link>
-          <Link className='text-white text-[15px] font-light' href='#'>Facebook</Link>
-          <Link className='text-white text-[15px] font-light' href='#'>LinkedIn</Link>
+        <div className='flex flex-col gap-4'>
+          <h1 className='text-[12px] lg:text-[20px] font-medium text-white'>Social media</h1>
+          <Link className='text-white text-[10px] lg:text-[15px] font-light' href='#'>Instagram</Link>
+          <Link className='text-white text-[10px] lg:text-[15px] font-light' href='#'>Facebook</Link>
+          <Link className='text-white text-[10px] lg:text-[15px] font-light' href='#'>LinkedIn</Link>
         </div>
-
-          <div className='flex flex-col gap-4'>
-           <h1 className='text-[12px] lg:text-[20px] font-medium text-white'>Community</h1>
-            <h3 className='text-white text-[10px] lg:text-[15px] font-light'>Training</h3>
-            <h3 className='text-white text-[10px] lg:text-[15px] font-light'>Employee dev</h3>
-            <h3 className='text-white text-[10px] lg:text-[15px] font-light'>Career Read...</h3>
-          </div>
      
       </div>
 
