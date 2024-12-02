@@ -91,14 +91,14 @@ export default function Home() {
      </div>
 
 
-     <div className="grid grid-cols-1 lg:grid-cols-2 bg-gray-100 lg:bg-white p-5 lg:p-20 gap-8 lg:gap-32 mt-0 lg:mt-16 ">
+     <div className="grid grid-cols-1 lg:grid-cols-2 bg-gray-100 lg:bg-white p-3 lg:p-20 gap-8 lg:gap-32 mt-0 lg:mt-16 ">
         <motion.div className="p-2 lg:p-4 bg-gray-100 py-3 lg:py-5 rounded-lg"
          initial={{ opacity: 0, y: 80 }}
          whileInView={{ opacity: 1, y: 0 }}
          transition={{ duration: 2 }}
          viewport={{ once: false }}
         >
-          <div className="flex bg-gradient-center justify-center p-8 rounded-lg ">
+          <div className="flex bg-gradient-center justify-center p-3 lg:p-8 rounded-lg ">
             <div className="flex flex-col gap-5 w-[100%] lg:w-[60%]">
               <h1 className="font-bold text-lg lg:text-xl">For employers</h1>
               <p className="text-sm lg:text-lg font-light">Looking for the perfect candidate? Share your requirements with us, and we'll connect you with the right talent to meet your needs.</p>
@@ -114,7 +114,7 @@ export default function Home() {
       transition={{ duration: 2 }}
       viewport={{ once: false }}
         >
-          <div className="flex bg-gradient-center justify-center p-8 rounded-lg ">
+          <div className="flex bg-gradient-center justify-center p-3 lg:p-8 rounded-lg ">
             <div className="flex flex-col gap-5  w-[100%] lg:w-[60%]">
               <h1 className="font-bold text-lg lg:text-xl">For candidates</h1>
               <p className="text-sm lg:text-lg font-light">Unlock your potential and take the next step in your career.Apply now, and our team will review your documents and get back to you.</p>
