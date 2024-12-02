@@ -100,7 +100,7 @@ function Jobdetail() {
         />
             <div className='flex flex-col'>
               <h2 className='text-white text-sm lg:text-lg font-light'>Company</h2>
-              <h3 className='text-4xl text-sm lg:text-lg text-white'>Mayllos</h3>
+              <h3 className='text-sm lg:text-lg text-white'>Mayllos</h3>
             </div>
           </div>
           <div className='flex justify-between mb-4'>
