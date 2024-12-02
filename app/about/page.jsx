@@ -292,7 +292,7 @@ const cards = [
   <div className="grid grid-cols-1 lg:grid-cols-2 justify-center bg-gray-100 lg:bg-white p-4 lg:p-20 gap-10 lg:gap-32 mt-0 ">
      
      <div className='bg-gray-100 p-3 rounded-lg'>
-     <div className="flex h-[18vh] lg:h-[31vh] bg-gradient-center p-3 lg:p-8 rounded-lg ">
+     <div className="flex h-[20vh] lg:h-[31vh] bg-gradient-center p-3 lg:p-8 rounded-lg ">
          <div className="flex flex-col gap-2 lg:gap-5 w-[100%]">
          <h1 className="font-bold text-[15px] lg:text-xl">Our mission</h1>
          <p className="text-[12px] lg:text-lg font-light">With LK Recruitment , you can expect a Commitment to Social Impact: We are passionate about making a positive difference in the world, and we strive to create a more sustainable and equitable future</p>
@@ -301,7 +301,7 @@ const cards = [
      </div>
       
       <div className='bg-gray-100 p-3 rounded-lg'>
-      <div className="flex h-[18vh] lg:h-[31vh] bg-gradient-center p-3 lg:p-8 rounded-lg ">
+      <div className="flex h-[20vh] lg:h-[31vh] bg-gradient-center p-3 lg:p-8 rounded-lg ">
          <div className="flex flex-col gap-2 lg:gap-5 w-[100%]">
          <h1 className="font-bold text-[15px] lg:text-xl">Our vision</h1>
          <p className="text-[12px] lg:text-lg font-light">At LK Recruitment we believe in building a brighter future  by promoting Diversity, Equity, and Inclusion: We believe in a world where everyone has the
