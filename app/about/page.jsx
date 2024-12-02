@@ -94,7 +94,7 @@ const cards = [
     return (
       <div className="">
         <div className='bg-[#F5F5FF] mt-0 p-6 lg:p-32 pb-14'>
-        <h1 className="text-2xl lg:text-7xl mx-auto w-[100%] mt-28 lg:mt-10 lg:w-[70%] text-center">
+        <h1 className="text-2xl lg:text-7xl mx-auto w-[100%] mt-20 lg:mt-10 lg:w-[70%] text-center">
           {displayedText}
           <span className="border-r-2 border-black animate-blink">&nbsp;</span>
      </h1>

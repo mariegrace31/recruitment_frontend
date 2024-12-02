@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`w-[85%] md:w-[80%] fixed top-0 left-[188px] md:left-1/2 transform -translate-x-1/2 z-30 rounded-b-2xl flex justify-between items-center px-3 py-2 md:p-3 ${navbarBgColor}`}
+      className={`w-full md:w-[80%] fixed top-0 left-[188px] md:left-1/2 transform -translate-x-1/2 z-30 rounded-b-none lg:rounded-b-2xl flex justify-between items-center px-3 py-2 md:p-3 ${navbarBgColor}`}
     >
       <div className="flex items-center gap-2">
         <Image src={logo} width={40} height={40} alt="Logo" priority />
@@ -43,68 +43,97 @@ function Navbar() {
         </button>
       </div>
 
+      {/* Mobile Menu */}
       <div
-        className={`absolute lg:static top-14 left-0 w-full lg:w-auto ${mobileMenuBgColor} lg:flex lg:gap-8 items-center px-4 py-3 lg:p-0 rounded-lg lg:rounded-none z-20 transition-all ${
-          menuOpen ? "block" : "hidden lg:flex"
-        }`}
+        className={`absolute top-0 left-0 w-full h-[60vh] ${mobileMenuBgColor} bg-opacity-90 backdrop-blur-lg lg:hidden transition-transform duration-300 ease-in-out ${menuOpen ? "translate-y-14" : "-translate-y-full"}`}
       >
-        <div className="flex flex-col mt-5 lg:mt-0 lg:flex-row gap-3 lg:gap-8 items-center">
-          <div className="hidden lg:block">
-            <Image src={line} width={5} height={10} alt="svg" />
-          </div>
+        <div className="flex flex-col justify-center text-center gap-4 px-6 py-10">
 
           <Link
             href="/"
-            className={`text-secondary font-medium text-[15px] ${
-              pathname === "/" ? "underline" : ""
-            }`}
+            className={`text-secondary font-medium text-[15px] ${pathname === "/" ? "underline" : ""}`}
+            onClick={() => setMenuOpen(false)}
           >
             Home
           </Link>
-          <hr className="border border-gray-300 lg:hidden w-[90%]" />
-
+          <hr className="border border-gray-300" />
           <Link
             href="/about"
-            className={`flex items-center gap-1 text-secondary font-medium text-[15px] ${
-              pathname === "/about" ? "underline" : ""
-            }`}
+            className={`text-secondary font-medium text-[15px] ${pathname === "/about" ? "underline" : ""}`}
+            onClick={() => setMenuOpen(false)}
           >
             About us
           </Link>
-          <hr className="border border-gray-300 lg:hidden w-[90%]" />
-
+          <hr className="border border-gray-300" />
           <Link
             href="/jobboard"
-            className={`text-secondary font-medium text-[15px] ${
-              pathname === "/jobboard" ? "underline" : ""
-            }`}
+            className={`text-secondary font-medium text-[15px] ${pathname === "/jobboard" ? "underline" : ""}`}
+            onClick={() => setMenuOpen(false)}
           >
             Job Board
           </Link>
-          <hr className="border border-gray-300 lg:hidden w-[90%]" />
-
+          <hr className="border border-gray-300" />
           <Link
             href="/hrnews"
-            className={`text-secondary font-medium text-[15px] ${
-              pathname === "/hrnews" ? "underline" : ""
-            }`}
+            className={`text-secondary font-medium text-[15px] ${pathname === "/hrnews" ? "underline" : ""}`}
+            onClick={() => setMenuOpen(false)}
           >
             HR News & Tips
           </Link>
-          <hr className="border border-gray-300 lg:hidden w-[90%]" />
-
+          <hr className="border border-gray-300" />
           <Link
             href="/contact"
-            className={`text-secondary font-medium text-[15px] ${
-              pathname === "/contact" ? "underline" : ""
-            }`}
+            className={`text-secondary font-medium text-[15px] ${pathname === "/contact" ? "underline" : ""}`}
+            onClick={() => setMenuOpen(false)}
           >
             Contact
           </Link>
+          <hr className="border border-gray-300" />
+          <button onClick={toggleMenu} className="text-secondary text-[15px]">Close</button>
+        </div>
+      </div>
 
-          <div className="hidden lg:block">
-            <Image src={line} width={5} height={10} alt="svg" />
-          </div>
+      {/* Desktop Menu */}
+      <div
+        className={`hidden lg:flex gap-8 items-center ${mobileMenuBgColor}`}
+      >
+        <div className="hidden lg:block">
+          <Image src={line} width={5} height={10} alt="svg" />
+        </div>
+
+        <Link
+          href="/"
+          className={`text-secondary font-medium text-[15px] ${pathname === "/" ? "underline" : ""}`}
+        >
+          Home
+        </Link>
+        <Link
+          href="/about"
+          className={`text-secondary font-medium text-[15px] ${pathname === "/about" ? "underline" : ""}`}
+        >
+          About us
+        </Link>
+        <Link
+          href="/jobboard"
+          className={`text-secondary font-medium text-[15px] ${pathname === "/jobboard" ? "underline" : ""}`}
+        >
+          Job Board
+        </Link>
+        <Link
+          href="/hrnews"
+          className={`text-secondary font-medium text-[15px] ${pathname === "/hrnews" ? "underline" : ""}`}
+        >
+          HR News & Tips
+        </Link>
+        <Link
+          href="/contact"
+          className={`text-secondary font-medium text-[15px] ${pathname === "/contact" ? "underline" : ""}`}
+        >
+          Contact
+        </Link>
+
+        <div className="hidden lg:block">
+          <Image src={line} width={5} height={10} alt="svg" />
         </div>
       </div>
     </nav>
