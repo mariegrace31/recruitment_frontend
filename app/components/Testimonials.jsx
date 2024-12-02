@@ -45,11 +45,11 @@ useEffect(() => {
 
 return (
   <div className='bg-[#F5F5FF] p-6 lg:p-24' id='testimonials'>
-    <h1 className='uppercase font-medium text-center text-[18px]'>testimonials</h1>
+    <h1 className='uppercase font-medium text-center text-[17px] lg:text-[20px]'>testimonials</h1>
     <p className='font-semibold text-center text-xl lg:text-4xl mt-3'>Hear what they say about us</p>
 
 
-    <div className='relative mt-16 w-[80%] mx-auto overflow-hidden'>
+    <div className='relative mt-16 w-[100%] lg:w-[80%] mx-auto overflow-hidden'>
       <div
         className='flex transition-transform duration-1000'
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
@@ -59,11 +59,18 @@ return (
             key={index}
             className='bg-white flex flex-col lg:flex-row rounded-3xl w-full shrink-0'
           >
+            <Image
+               src={testimonial.img}
+               width={400}
+               height={100}
+               alt='testimonial'
+               className='w-full rounded-t-3xl flex lg:hidden'
+             />
             <div className='p-3 lg:p-5 flex flex-col gap-1 justify-center'>
-              <p className='text-lg leading-9'>{testimonial.text}</p>
-              <Image src={testimonial.hrImg} width={500} height={100} alt='hr' className='mt-8' />
+              <p className='p-3 lg:p-0 text-sm lg:text-lg leading-9'>{testimonial.text}</p>
+              <Image src={testimonial.hrImg} width={500} height={100} alt='hr' className='mt-3 lg:mt-8' />
                <div className='flex gap-6 mt-4 items-center'>
-                 <h3 className='text-xs'>{testimonial.name}</h3>
+                 <h3 className='text-[10px] lg:text-xs'>{testimonial.name}</h3>
                  <p className='text-[8px] text-left lg:text-[10px] bg-secondary/15 p-1 rounded-xl px-2'>
                    {testimonial.role}
                  </p>
@@ -74,7 +81,7 @@ return (
                width={400}
                height={100}
                alt='testimonial'
-               className='rounded-0 lg:rounded-r-3xl'
+               className='rounded-0 lg:rounded-r-3xl hidden lg:flex'
              />
            </div>
          ))}

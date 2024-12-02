@@ -10,21 +10,21 @@ import Link from 'next/link';
 function page() {
   return (
     <div className='bg-[#F8FAFF]'>
-      <div className='p-7 lg:p-20'>
+      <div className='p-5 lg:p-20'>
       <div className='bg-gray-300 relative p-2 rounded-lg w-[90%] mt-20 mx-auto'>
-        <div className='bg-primary relative rounded-lg p-5 py-28 lg:p-44'>
-          <h1 className='text-white text-center text-3xl lg:text-6xl'>Available Jobs</h1>
-          <Image src={hr} width={300} height={1} alt='hr' className='mx-auto mt-4 z-10' />
+        <div className='bg-primary relative rounded-lg p-16 lg:p-44'>
+          <h1 className='text-white text-center text-xl lg:text-6xl'>Available Jobs</h1>
+          <Image src={hr} width={300} height={1} alt='hr' className='mx-auto mt-2 lg:mt-4 z-10 w-[120px]' />
         </div>
       </div>
-      <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-24 z-10 object-cover'/>
+      <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-32 lg:-mt-24 z-10 object-cover'/>
 
-      <Image src={dot} width={1150} height={1} alt='dothr' className='mt-10 lg:mt-24 mx-auto' />
+      <Image src={dot} width={1150} height={1} alt='dothr' className='mt-5 lg:mt-24 mx-auto' />
 
       <div>
-       <div className='grid grid-cols-1 lg:grid-cols-4 gap-7 w-[100%] p-5 lg:p-24 mx-auto'>
+       <div className='grid grid-cols-1 lg:grid-cols-4 gap-7 w-[100%] p-6 lg:p-24 mx-auto'>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-lg'>Software Engineer</h1>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Software Engineer</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
@@ -37,7 +37,7 @@ function page() {
           </Link>
          </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-lg'>Marketing Specialist</h1>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Marketing Specialist</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
@@ -50,7 +50,7 @@ function page() {
               </Link>
            </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-lg'>HR Manager</h1>
+          <h1 className='font-bold text-[16px] lg:text-lg'>HR Manager</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
@@ -63,7 +63,7 @@ function page() {
               </Link>
               </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-lg'>Community Builder</h1>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Community Builder</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
@@ -76,7 +76,7 @@ function page() {
               </Link>
            </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-lg'>Kitchen Assistant</h1>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Kitchen Assistant</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
@@ -89,7 +89,7 @@ function page() {
               </Link>
               </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-lg'>Caring Nanny Needed</h1>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Caring Nanny Needed</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
@@ -102,7 +102,7 @@ function page() {
             </Link>
             </div>
           <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-lg'>Reliable Maid Needed</h1>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Reliable Maid Needed</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
@@ -115,7 +115,7 @@ function page() {
           </Link>
             </div>
          <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-           <h1 className='font-bold text-lg'>Experienced Driver</h1>
+           <h1 className='font-bold text-[16px] lg:text-lg'>Experienced Driver</h1>
            <div className='flex gap-9'>
              <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
              <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
@@ -132,10 +132,10 @@ function page() {
 
       <div className='bg-primary p-4 lg:p-16 flex flex-col lg:flex-row justify-between items-center rounded-lg w-[94%] my-4 lg:my-14 mx-auto'>
         <div className='flex flex-col gap-5 lg:gap-10 w-[90%] lg:w-[50%]'>
-          <h1 className='font-medium text-white text-[15px] lg:text-[20px] lg:text-[30px]'>Ready to hire an employee?</h1>
+          <h1 className='font-medium text-white text-[15px] text-center lg:text-left lg:text-[30px]'>Ready to hire an employee?</h1>
           <p className='font-extralight text-center lg:text-left text-white text-[15px] lg:text-[20px]'>Find your next great team member today! We're here to help you connect with top talent that will drive your business forward. Let's build your dream team.</p>
         </div>
-        <button className='bg-secondary text-[13px] mt-2 lg:mt-0 lg:text-[16px] text-white p-2 px-3 rounded-3xl font-medium'>Contact Us Today</button>
+        <button className='bg-secondary text-[13px] mt-5 lg:mt-0 lg:text-[16px] text-white p-2 px-3 rounded-3xl font-medium'>Contact Us Today</button>
       </div>
     </div>
     <Footer />

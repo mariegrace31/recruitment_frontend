@@ -14,45 +14,44 @@ function Services() {
      </div>
 
 
-     <div className='grid grid-cols-2 gap-10 mt-16'>
+     <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16'>
        <div className='bg-[#F5F5FF] flex flex-col justify-center p-7 border border-[#1A77B9]/50 rounded-lg'>
-         <h3 className='font-bold text-xl'>Workforce Solutions</h3>
+         <h3 className='font-bold text-[16px] lg:text-xl'>Workforce Solutions</h3>
+
          <div>
-
-
            <div className='mt-3'>
-           <p className='font-medium flex items-center'><GoDotFill className='text-secondary text-2xl' />Temporary staffing:</p>
-           <p className='font-light text-[14px]'>Workers to fill short-term positions in various sectors, such as; house staff (Babysitting/Nanny, Housekeeping/Maid, Personal Assistants, Drivers, Gardener, Tutor), catering staff, web specialist, etc.</p>
+           <p className='font-medium text-[14px] lg:text-[16px] flex items-center'><GoDotFill className='text-secondary text-xl lg:text-2xl' />Temporary staffing:</p>
+           <p className='font-light text-[12px] lg:text-[14px]'>Workers to fill short-term positions in various sectors, such as; house staff (Babysitting/Nanny, Housekeeping/Maid, Personal Assistants, Drivers, Gardener, Tutor), catering staff, web specialist, etc.</p>
            </div>
            <div className='mt-3'>
-           <p className='font-medium flex items-center'><GoDotFill className='text-secondary text-2xl' />Temp-to-Perm Staffing:</p>
-           <p className='font-light text-[14px]'>Trial period for both employer and worker to evaluate fit before making a permanent hiring decision.</p>
+           <p className='font-medium text-[14px] lg:text-[16px] flex items-center'><GoDotFill className='text-secondary text-xl lg:text-2xl' />Temp-to-Perm Staffing:</p>
+           <p className='font-light text-[12px] lg:text-[14px]'>Trial period for both employer and worker to evaluate fit before making a permanent hiring decision.</p>
            </div>
            <div className='mt-3'>
-           <p className='font-medium flex items-center'><GoDotFill className='text-secondary text-2xl'/>Training and Development:</p>
-           <p className='font-light text-[14px]'>Training services to improve candidate skills and increase their employability.</p>
+           <p className='font-medium  text-[14px] lg:text-[16px] flex items-center'><GoDotFill className='text-secondary text-xl lg:text-2xl'/>Training and Development:</p>
+           <p className='font-light text-[12px] lg:text-[14px]'>Training services to improve candidate skills and increase their employability.</p>
            </div>
            <div className='mt-3'>
-           <p className='font-medium flex items-center'><GoDotFill className='text-secondary text-2xl' />On-Site Management:</p>
-           <p className='font-light text-[14px]'>Overseeing the temporary workers placed at a client's location and managing day-to-day operations.</p>
+           <p className='font-medium text-[14px] lg:text-[16px] flex items-center'><GoDotFill className='text-secondary text-xl lg:text-2xl' />On-Site Management:</p>
+           <p className='font-light text-[12px] lg:text-[14px]'>Overseeing the temporary workers placed at a client's location and managing day-to-day operations.</p>
            </div>
          </div>
        </div>
 
 
        <div className='bg-[#F5F5FF] flex flex-col justify-center p-7 border border-[#1A77B9]/50 rounded-lg'>
-         <h3 className='font-bold text-xl'>Talent Architects</h3>
+         <h3 className='font-bold text-[16px] lg:text-xl'>Talent Architects</h3>
        
-           <p className='font-light flex items-center mt-3'><GoDotFill className='text-secondary text-2xl' />End-to-End Recruitment</p>
-           <p className='font-light flex items-center mt-3'><GoDotFill className='text-secondary text-2xl' />HR Consulting (Coaching & Well-being)</p>
-           <p className='font-light flex items-center mt-3'><GoDotFill className='text-secondary text-2xl' />Recruitment Jury Organization & Support</p>
-           <p className='font-light flex items-center mt-3'><GoDotFill className='text-secondary text-2xl' />Executive Search</p>
+           <p className='font-light text-[14px] lg:text-[16px] flex items-center mt-3'><GoDotFill className='text-secondary text-xl lg:text-2xl' />End-to-End Recruitment</p>
+           <p className='font-light text-[14px] lg:text-[16px] flex items-center mt-3'><GoDotFill className='text-secondary text-xl lg:text-2xl' />HR Consulting (Coaching & Well-being)</p>
+           <p className='font-light text-[14px] lg:text-[16px] flex items-center mt-3'><GoDotFill className='text-secondary text-xl lg:text-2xl' />Recruitment Jury Organization & Support</p>
+           <p className='font-light text-[14px] lg:text-[16px] flex items-center mt-3'><GoDotFill className='text-secondary text-xl lg:text-2xl' />Executive Search</p>
        
-         <h3 className='font-bold text-xl mt-3'>Flexible Recruitment Solutions:</h3>
+         <h3 className='font-bold text-[16px] lg:text-xl mt-3'>Flexible Recruitment Solutions:</h3>
         
-           <p className='font-light flex items-center mt-3'><GoDotFill className='text-secondary text-2xl' />Permanent Recruitment</p>
-           <p className='font-light flex items-center mt-3'><GoDotFill className='text-secondary text-2xl' />Temporary Staffing</p>
-           <p className='font-light flex items-center mt-3'><GoDotFill className='text-secondary text-2xl' />Executive Search</p>
+           <p className='font-light text-[14px] lg:text-[16px] flex items-center mt-3'><GoDotFill className='text-secondary text-xl lg:text-2xl' />Permanent Recruitment</p>
+           <p className='font-light text-[14px] lg:text-[16px] flex items-center mt-3'><GoDotFill className='text-secondary text-xl lg:text-2xl' />Temporary Staffing</p>
+           <p className='font-light text-[14px] lg:text-[16px] flex items-center mt-3'><GoDotFill className='text-secondary text-xl lg:text-2xl' />Executive Search</p>
         
         </div>
       </div>

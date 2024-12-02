@@ -10,7 +10,7 @@ function Suscribe() {
         <h1 className="text-xl text-center lg:text-5xl font-bold mb-4">
         Stay Informed and Ahead of the Curve.
         </h1>
-        <p className="mb-6 text-sm text-center lg:text-lg">
+        <p className="mb-0 lg:mb-6 text-sm text-center lg:text-lg">
         Subscribe to our newsletter for the latest updates, exclusive insights, and valuable information delivered straight to your inbox.
         </p>
 

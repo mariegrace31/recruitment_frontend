@@ -24,7 +24,7 @@ function Hrdetail() {
     <div>
       <div className='p-8 lg:p-20'>
         <div className='relative'>
-        <Image src={image} width={950} height={60} alt='recruiter'  className='relative mx-auto bg-gray-300 p-2 rounded-3xl  mt-9'/>
+        <Image src={image} width={950} height={60} alt='recruiter'  className='relative mx-auto bg-gray-300 p-2 rounded-3xl mt-16 lg:mt-9'/>
         <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-32 lg:-mt-24  object-cover'/>
         </div>
 

@@ -16,14 +16,14 @@ function page() {
     <div className='bg-white'>
       <div className='p-7 lg:p-20'>
       <div className='bg-gray-300 relative p-2 rounded-lg w-[100%] lg:w-[90%] mt-20 mx-auto'>
-        <div className='bg-primary rounded-lg p-10 lg:p-44 relative'>
-          <h1 className='text-white text-center text-2xl lg:text-6xl'>HR News & Tips</h1>
+        <div className='bg-primary rounded-lg p-16 lg:p-44 relative'>
+          <h1 className='text-white text-center text-xl lg:text-6xl'>HR News & Tips</h1>
           <Image src={hr} width={400} height={1} alt='hr' className='mx-auto mt-4 z-10 w-[140px] lg:w-[350px]' />
         </div>
       </div>
-      <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-24 z-10 object-cover'/>
+      <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-32 z-10 object-cover'/>
 
-      <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 mt-5 lg:mt-32 p-16 px-3'>
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 mt-0 lg:mt-32 p-16 px-3'>
 
         <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
         <Image src={hrImage} width={401} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
@@ -53,7 +53,7 @@ function page() {
        </div>
 
        </div>
-       <button className='flex items-center gap-1 border border-secondary/50 p-2 lg:p-3 text-sm lg:text-lg w-[40%] lg:w-[15%] mx-auto my-3 lg:my-14 justify-center rounded-3xl hover:bg-secondary hover:text-white'><RiLoader2Line className='text-xl group-hover:text-white' /> Load more</button>
+       <button className='flex items-center gap-1 border border-secondary/50 p-2 lg:p-3 text-sm lg:text-lg w-[40%] lg:w-[15%] mx-auto my-0 lg:my-14 justify-center rounded-3xl hover:bg-secondary hover:text-white'><RiLoader2Line className='text-xl group-hover:text-white' /> Load more</button>
       </div>
       <Footer />
     </div>

@@ -93,8 +93,8 @@ const cards = [
    
     return (
       <div className="">
-        <div className='bg-[#F5F5FF] mt-20 lg:mt-0 p-6 lg:p-32 pb-14'>
-        <h1 className="text-2xl lg:text-7xl mx-auto w-[100%] lg:w-[70%] text-center">
+        <div className='bg-[#F5F5FF] mt-0 p-6 lg:p-32 pb-14'>
+        <h1 className="text-2xl lg:text-7xl mx-auto w-[100%] mt-28 lg:mt-10 lg:w-[70%] text-center">
           {displayedText}
           <span className="border-r-2 border-black animate-blink">&nbsp;</span>
      </h1>
@@ -108,11 +108,11 @@ const cards = [
           future through empowerment, social responsibility, and promoting diversity, equity, and inclusion. The agency offers a talent-focused
           approach, providing the right training, competitive salaries, and a strong commitment to making a positive social impact.
        </p>
-       <button className='bg-white p-2 rounded-2xl mt-4 lg:mt-9 border text-[17px] lg:text-[24px] hover:bg-secondary mx-auto items-center text-center hover:text-white hover:border-gray-400'>Contact us</button>
+       <button className='bg-white p-2 rounded-2xl mt-4 lg:mt-9 border text-[15px] lg:text-[24px] hover:bg-secondary mx-auto items-center text-center hover:text-white hover:border-gray-400'>Contact us</button>
      </div>
      </div>
      </div>
-   <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-24 z-10 object-cover'/>
+   <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-32 lg:-mt-24 z-10 object-cover'/>
      </div>
 
 
@@ -240,7 +240,7 @@ const cards = [
 
 
 
-  <div className='bg-[#F5F5FF] p-5 lg:p-32'>
+  <div className='bg-[#F5F5FF] p-3 pt-9 lg:pt-0 lg:p-32'>
    <div className='flex flex-col lg:flex-row w-[90%] mx-auto'>
    <Image src={team} width={500} height={100} alt='hr image' className='flex lg:hidden'  />
    <div className='bg-secondary p-4 flex flex-col rounded-none lg:rounded-l-lg'>
@@ -254,55 +254,47 @@ const cards = [
    </div>
    <Image src={team} width={550} height={100} alt='hr image' className='hidden lg:flex'  />
    </div>
-   <div className='bg-white w-[50%] mx-auto rounded-b-[20%] py-8 px-20'>
-    <h1 className='text-2xl font-bold'>How Does LK RECRUITMENT Work?</h1>
+   <div className='bg-white w-[80%] lg:w-[50%] mx-auto rounded-b-3xl mb-12 lg:mb-0 lg:rounded-b-[20%] py-6 lg:py-8 px-5 lg:px-20'>
+    <h1 className='text-lg text-center lg:text-left lg:text-2xl font-bold'>How Does LK RECRUITMENT Work?</h1>
     <div className='flex flex-col gap-3'>
-      <h2 className='font-bold text-secondary mt-3'>Step O1</h2>
-      <p>Businesses contact us with their staffing requirements.</p>
-      <h2 className='font-bold text-secondary'>Step O2</h2>
-      <p>We source and screen qualified and trained candidates from our pool of temporary workers.</p>
-      <h2 className='font-bold text-secondary'>Step O3</h2>
-      <p>We match the best-suited candidates with the job requirements and facilitate the placement process.</p>
-      <h2 className='font-bold text-secondary'>Step O4</h2>
-      <p>We provide ongoing support and assistance to ensure a successful temporary work arrangement.</p>
+      <h2 className='font-bold text-secondary mt-3 text-[15px] lg:text-[18px]'>Step O1</h2>
+      <p className='text-[13px] lg:text-[18px]'>Businesses contact us with their staffing requirements.</p>
+      <h2 className='font-bold text-secondary text-[15px] lg:text-[18px]'>Step O2</h2>
+      <p className='text-[13px] lg:text-[18px]'>We source and screen qualified and trained candidates from our pool of temporary workers.</p>
+      <h2 className='font-bold text-secondary text-[15px] lg:text-[18px]'>Step O3</h2>
+      <p className='text-[13px] lg:text-[18px]'>We match the best-suited candidates with the job requirements and facilitate the placement process.</p>
+      <h2 className='font-bold text-secondary text-[15px] lg:text-[18px]'>Step O4</h2>
+      <p className='text-[13px] lg:text-[18px]'>We provide ongoing support and assistance to ensure a successful temporary work arrangement.</p>
     </div>
    </div>
   </div>
 
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 bg-white p-4 lg:p-20 gap-10 lg:gap-32 mt-16 ">
-     <div className="p-2 lg:p-4 bg-gray-100 py-2 lg:py-5 rounded-lg">
-       <div className="flex bg-gradient-center p-3 lg:p-8 rounded-lg ">
-         <div className="flex flex-col gap-2 lg:gap-5 w-[90%] lg:w-[60%]">
-         <h1 className="font-bold text-[15px] lg:text-xl">For employers</h1>
-         <p className="text-sm lg:text-lg font-light">Contact us & connect with skilled candidates ready to make an impact. Let's build a strong team together.</p>
-         <button className="bg-primary text-white font-bold w-[80%] text-sm lg:text-lg lg:w-[65%] rounded-3xl p-2 lg:p-3">Contact Us</button>
+  <div className="grid grid-cols-1 lg:grid-cols-2 justify-center bg-gray-100 lg:bg-white p-4 lg:p-20 gap-10 lg:gap-32 mt-0 ">
+     
+     <div className='bg-gray-100 p-3 rounded-lg'>
+     <div className="flex h-[25vh] lg:h-[31vh] bg-gradient-center p-3 lg:p-8 rounded-lg ">
+         <div className="flex flex-col gap-2 lg:gap-5 w-[100%]">
+         <h1 className="font-bold text-[15px] lg:text-xl">Our mission</h1>
+         <p className="text-[12px] lg:text-lg font-light">With LK Recruitment , you can expect a Commitment to Social Impact: We are passionate about making a positive difference in the world, and we strive to create a more sustainable and equitable future</p>
          </div>
-         <Image
-          src={employer}
-          width={170}
-          height={100}
-          alt="Employer png"
-          className='ml-6'
-         />
        </div>
      </div>
-     <div className="p-2 lg:p-4 bg-gray-100 py-2 lg:py-5 rounded-lg">
-       <div className="flex bg-gradient-center p-3 lg:p-8 rounded-lg ">
-         <div className="flex flex-col gap-2 lg:gap-5 w-[90%] lg:w-[60%]">
-         <h1 className="font-bold text-[15px] lg:text-xl">For candidates</h1>
-         <p className="text-sm lg:text-lg font-light">Apply & join a team that values talent, growth, & opportunity. We're excited to see what you can bring to the table.</p>
-         <button className="bg-primary text-white w-[80%] text-sm lg:text-lg font-bold lg:w-[40%] rounded-3xl p-2 lg:p-3">Register</button>
+      
+      <div className='bg-gray-100 p-3 rounded-lg'>
+      <div className="flex h-[25vh] lg:h-[31vh] bg-gradient-center p-3 lg:p-8 rounded-lg ">
+         <div className="flex flex-col gap-2 lg:gap-5 w-[100%]">
+         <h1 className="font-bold text-[15px] lg:text-xl">Our vision</h1>
+         <p className="text-[12px] lg:text-lg font-light">At LK Recruitment we believe in building a brighter future  by promoting Diversity, Equity, and Inclusion: We believe in a world where everyone has the
+          opportunity to succeed, and we actively champion diversity, equity, and inclusion within our
+          organization.</p>
+       
          </div>
-         <Image
-          src={candidate}
-          width={170}
-          height={100}
-          alt="Candidate png"
-          className='ml-7'
-         />
+         
        </div>
-     </div>
+      </div>
+       
+    
    </div>
    <Footer />
    </div>

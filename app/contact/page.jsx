@@ -30,7 +30,7 @@ function page() {
 
 
     
-     <div className='flex flex-col mt-20 lg:mt-0 lg:flex-row justify-center gap-7 lg:gap-28 p-3 lg:p-16'>
+     <div className='flex flex-col mt-6 lg:mt-0 lg:flex-row justify-center gap-7 lg:gap-28 p-3 lg:p-16'>
 
 
      <div className='bg-secondary w-[100%] lg:w-[80%] p-5 rounded-s-sm flex flex-col gap-5 lg:gap-10'>
@@ -71,11 +71,7 @@ function page() {
        
     </div>
       
-
-
        <div className='flex flex-col lg:flex-row gap-64 items-start relative'>
-
-
          <div className='mt-7 flex gap-2 relative'>
            <Image src={contactHr} width={10} height={1} alt='hr' className='h-[200px] lg:h-[270px]' />
            <div className='flex flex-col gap-2'>
