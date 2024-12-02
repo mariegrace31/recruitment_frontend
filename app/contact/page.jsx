@@ -56,7 +56,15 @@ function page() {
         <Image src={whitehr} width={190} height={1} alt="white hr" className="my-2 w-[100px] lg:w-[200px]" />
       </div>
       <div className="w-full rounded-sm overflow-hidden">
-        <Image src={map} width={400} height={1} alt='map' className='w-full' />
+      <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38392.209292547175!2d30.0609764!3d-1.9460172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6b7fddf20fb%3A0xb88a0d94cc7a8ff9!2sKigali!5e0!3m2!1sen!2srw!4v1694511787659!5m2!1sen!2srw"
+    width="100%"
+    height="250"
+    allowFullScreen={true}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="w-full rounded-sm border-none"
+  />
       </div>
     </div>
 
