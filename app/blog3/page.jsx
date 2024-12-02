@@ -1,5 +1,5 @@
 import React from 'react';
-import Hrdetail3 from '../hrnews/hrdetail2';
+import Hrdetail3 from '../hrnews/hrdetail3';
 
 const Blog2 = () => {
   return (

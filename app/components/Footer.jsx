@@ -21,15 +21,17 @@ function Footer() {
 
       <div className='flex justify-around mx-auto mt-6 lg:mt-10 p-3 lg:p-12'>
 
-        <div className='flex flex-col gap-4 ml-2 lg:ml-9'>
-          <h1 className='text-[12px] lg:text-[20px] font-medium text-white'>Useful Links</h1>
+        <div className='flex flex-col gap-4'>
+          <h1 className='text-[12px] lg:text-[20px] font-medium text-white'>Main menu</h1>
+          <Link className='text-white text-[11px] lg:text-[15px] font-light' href='/'>Home</Link>
           <Link className='text-white text-[11px] lg:text-[15px] font-light' href='/jobBoard'>Job Board</Link>
           <Link className='text-white text-[11px] lg:text-[15px] font-light' href='/about'>About Us</Link>
           <Link  className='text-white text-[11px] lg:text-[15px] font-light'href='/hrnews'>Hr News</Link>
+          <Link  className='text-white text-[11px] lg:text-[15px] font-light'href='/contact'>Contact</Link>
         </div>
         
       
-        <div className='flex flex-col gap-4 ml-0 lg:ml-9'>
+        <div className='flex flex-col gap-4'>
           <h1 className='text-[12px] lg:text-[20px] font-medium text-white'>Support</h1>
           <Link className='text-white text-[11px] lg:text-[15px] font-light' href='#privacy'>Privacy and Policy</Link>
           <Link className='text-white text-[11px] lg:text-[15px] font-light' href='#contact'>Contact Us</Link>
@@ -42,12 +44,11 @@ function Footer() {
           <Link className='text-white text-[15px] font-light' href='#'>LinkedIn</Link>
         </div>
 
-          <div className='hidden lg:flex flex-col gap-4'>
-           <h1 className='text-[20px] font-medium text-white'>Some Available Jobs</h1>
-            <h3 className='text-white text-[15px]font-light'>Software Developer</h3>
-            <h3 className='text-white text-[15px] font-light'>Waiter & Waitress</h3>
-            <h3 className='text-white text-[15px] font-light'>Receptionist</h3>
-            <Link href='/jobboard' className='text-white text-[15px] font-light underline'>More</Link>
+          <div className='flex flex-col gap-4'>
+           <h1 className='text-[12px] lg:text-[20px] font-medium text-white'>Community</h1>
+            <h3 className='text-white text-[10px] lg:text-[15px] font-light'>Training</h3>
+            <h3 className='text-white text-[10px] lg:text-[15px] font-light'>Employee dev</h3>
+            <h3 className='text-white text-[10px] lg:text-[15px] font-light'>Career Read...</h3>
           </div>
      
       </div>

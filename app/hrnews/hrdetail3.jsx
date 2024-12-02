@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import { FaTimes } from 'react-icons/fa';
 import profile1 from '../assets/profile1.png';
 import profile2 from '../assets/profile2.png';
-import blog2 from '../assets/blog3.jpeg';
+import blog3 from '../assets/blog3.jpeg';
 
 function Hrdetail3() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,60 +25,66 @@ function Hrdetail3() {
     <div>
       <div className='p-5 lg:p-20'>
         <div className='relative'>
-        <Image src={blog2} width={990} height={60} alt='recruiter'  className='relative mx-auto bg-gray-300 p-2 rounded-3xl mt-20  lg:mt-9'/>
+        <Image src={blog3} width={990} height={60} alt='recruiter'  className='relative mx-auto bg-gray-300 p-2 rounded-3xl mt-20  lg:mt-9'/>
         <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-32 lg:-mt-24  object-cover'/>
         </div>
 
         <div className='mt-12 lg:mt-24 text-center'>
-          <h1 className='text-[20px] lg:text-[50px]'>One Africa, One HR: LK Recruitment Rwanda Embraces the Agenda 2063 for a
-          Thriving Future</h1>
+          <h1 className='text-[20px] lg:text-[60px]'>Cracking the Code: How to Read Job Ads Like a Pro.</h1>
           <Image src={dot} width={820} height={1} alt='dothr' className='mt-3 lg:mt-6 mx-auto' />
         </div>
 
         <div className='flex flex-col gap-4 lg:gap-9 mt-6 lg:mt-12 px-5 lg:px-20'>
-          <p className='text-[15px] lg:text-[20px] leading-9'>LK Recruitment Rwanda recently participated in the “One Africa, One HR” Summit, held at the Kigali Convention Center in Kigali, Rwanda. This landmark event brought together leading HR professionals from across the African continent, emphasizing the shared vision of a prosperous and integrated Africa by 2063, a vision that aligns perfectly with our core values.</p>
+          <p className='text-[15px] lg:text-[20px] leading-9'><span className='font-bold'>Tired of applying for jobs and getting nowhere?</span> It might be time to upgrade your job ad reading skills! Job ads aren't just lists of requirements - they're treasure maps to your dream career.</p>
 
-          <p className='text-[15px] lg:text-[20px] leading-9'>At LK Recruitment, we go beyond traditional recruitment. We believe in building a brighter future by:</p>
+          <p className='text-[15px] lg:text-[20px] leading-9 font-bold'>Here's how to decipher them like a pro:</p>
+
+          <p className='text-[16px] lg:text-[23px] font-bold'>1. The First Impression</p>
 
            <ul className='list-disc'>
-            <li className='text-[15px] lg:text-[20px] leading-9'> <span className='font-bold text-[16px] lg:text-[22px]'>Empowering Individuals: </span>Providing the right training, competitive salaries, and benefits to help people reach their full potential.</li>
-            <li className='text-[15px] lg:text-[20px] mt-2 leading-9'><span className='font-bold text-[16px] lg:text-[22px]'>Driving Positive Change: </span>We help navigate the evolving business landscape, ensuring our clients and their employees thrive in a dynamic environment.</li>
-            <li className='text-[15px] lg:text-[20px] mt-2 leading-9'><span className='font-bold text-[16px] lg:text-[22px]'>Integrating Social Responsibility: </span>We embed social and environmental responsibility into everything we do, from our business operations to our decision-making. This commitment to Corporate Social Responsibility (CSR0) is fundamental to our culture, defining our values and shaping who we are as an organization.</li>
-            <li className='text-[15px] lg:text-[20px] mt-2 leading-9'><span className='font-bold text-[16px] lg:text-[22px]'>Promoting Diversity, Equity, and Inclusion: </span>We believe in a world where everyone has the opportunity to succeed, and we actively champion diversity, equity, and inclusion within our organization.</li>
+            <li className='text-[15px] lg:text-[20px] leading-9'> <span className='font-bold text-[16px] lg:text-[22px]'> Eye-Catching Style: </span>Does the ad look polished? A professional design and clear language tell you the employer values their recruitment process.</li>
+            <li className='text-[15px] lg:text-[20px] mt-2 leading-9'><span className='font-bold text-[16px] lg:text-[22px]'>Competition's Hot: </span>Many organizations are vying for top talent. Ads should be unique and stand out - that's a good sign.</li>
            </ul>
 
-           <p className='text-[15px] lg:text-[20px] leading-9'>The summit provided a valuable platform for engaging with other HR professionals and candidates. We were proud to showcase our commitment to the Agenda 2063 at our booth, where we connected with numerous stakeholders, discussing our unique approach to talent sourcing and placement. We actively participated in the dynamic discussions surrounding the future of HR in Africa, particularly its role in achieving the goals of the Agenda 2063. We were inspired by the insightful presentations and panel discussions, which shed light on the objectives for 2063 and the necessary evolution of management practices to achieve them.</p>
-           <p className='text-[15px] lg:text-[20px] leading-9'>We are committed to incorporating these valuable insights into our own practices and initiatives.
-           LK Recruitment Rwanda firmly believes that investing in human capital is the key to achieving the aspirations of the Agenda 2063. We are committed to collaborating with other organizations and stakeholders to drive initiatives that will help create a more skilled, resilient, and inclusive workforce across the continent.</p>
-           <p className='text-[15px] lg:text-[20px] leading-9'>The &quot;One Africa, One HR&quot; summit was an enriching experience. We are proud to have contributed to this vital event alongside our team. We are committed to contributing to the positive transformation of the African workforce and helping achieve a brighter future for the continent.</p>
-           <p className='text-[15px] lg:text-[20px]] leading-9'>Learn more about LK Recruitment Rwanda&#39;s commitment to the Agenda 2063 and how we are partnering with businesses and individuals to shape the future of Africa.</p>
+           <p className='text-[16px] lg:text-[23px] font-bold'>2. Reading Between the Lines</p>
+
+           <ul className='list-disc'>
+            <li className='text-[15px] lg:text-[20px] leading-9'> <span className='font-bold text-[16px] lg:text-[22px]'> Your Perfect Fit: </span>The job title often highlights the desired status. Make sure you meet the requirements (like specific job classifications, transfer options, etc.). If you're a contract worker, avoid applying if the ad only mentions “statutory recruitment”.</li>
+            <li className='text-[15px] lg:text-[20px] mt-2 leading-9'><span className='font-bold text-[16px] lg:text-[22px]'>Where You Stand: </span>The responsibilities section outlines your place in the organization's structure. If you're aiming for a specific level of responsibility, make sure it matches.</li>
+            <li className='text-[15px] lg:text-[20px] mt-2 leading-9'><span className='font-bold text-[16px] lg:text-[22px]'>The Employer's Wish List: </span>The employer has carefully chosen their words. Analyze each responsibility listed, as it reveals their needs and your potential future.</li>
+           </ul>
+
+           <p className='text-[16px] lg:text-[23px] font-bold'>3. Decode the Profile:</p>
+
+            <ul className='list-disc'>
+              <li className='text-[15px] lg:text-[20px] leading-9'> <span className='font-bold text-[16px] lg:text-[22px]'> The “Must-Have” List: </span>The words used in the profile description (like education, experience, and skills) reveal what the employer wants. Compare your qualifications.</li>
+              <li className='text-[15px] lg:text-[20px] mt-2 leading-9'><span className='font-bold text-[16px] lg:text-[22px]'>Hidden Clues: </span>Phrases like <span className='font-medium'>“perfect command of administrative procedures”</span> and <span className='font-medium'>“solid experience, ideally acquired…”</span> have different implications. Pay close attention to these nuances.</li>
+            </ul>
+
+            <p className='text-[16px] lg:text-[23px] font-bold'>4. Beyond the Basics:</p>
+
+             <ul className='list-disc'>
+             <li className='text-[15px] lg:text-[20px] leading-9'> <span className='font-bold text-[16px] lg:text-[22px]'> Dig Deeper:</span> Don't be shy! Research the organization, its projects, environment, and leaders.</li>
+             <li className='text-[15px] lg:text-[20px] mt-2 leading-9'><span className='font-bold text-[16px] lg:text-[22px]'>The Clock is Ticking: </span>A deadline signals urgency. If you miss it, don't give up! Contact the department to see if they're still accepting applications.</li>
+            </ul>  
+
+            <p className='text-[16px] lg:text-[23px] font-bold'>Here's the Bottom Line:</p>
+
+            <ul className='list-disc'>
+            <li className='text-[15px] lg:text-[20px] leading-9'> <span className='font-bold text-[16px] lg:text-[22px]'> Master the Art:</span> Read job ads carefully, analyzing every word and nuance</li>
+            <li className='text-[15px] lg:text-[20px] mt-2 leading-9'><span className='font-bold text-[16px] lg:text-[22px]'>Match the Profile: </span>Ensure your profile aligns with the employer's expectations. Find Your Passion: Research the organization to make sure you&#39;re truly interested in the opportunity.</li>
+            <li className='text-[15px] lg:text-[20px] leading-9'> <span className='font-bold text-[16px] lg:text-[22px]'> Be Strategic:</span> Don't apply to every ad; choose those that align with your skills and goals.</li>
+            </ul> 
+
+            <p className='text-[15px] lg:text-[20px] leading-9'> <span className='font-bold text-[16px] lg:text-[22px]'> Remember:</span> A successful application means adapting your profile to the employer's needs and showcasing your skills in a clear, engaging way.</p>
+            <p className='text-[15px] lg:text-[20px] leading-9'> <span className='font-bold text-[16px] lg:text-[22px]'> Ready to land your dream job?</span> Start with a strong job ad analysis</p>
+
         </div>
 
         <div className='p-2 lg:p-7 border border-gray-300 flex flex-col gap-5 rounded-2xl m-0 mt-6 lg:m-16'>
           <h1 className='font-medium text-[15px] lg:text-3xl'>Leave a comment</h1>
           <input type="text" placeholder='Your comment' className='border border-gray-300 p-3 bg-[#C6C6E2]/20 placeholder:align-text-top placeholder:text-sm lg:placeholder:text-lg pb-10 lg:pb-36 rounded-3xl' />
           <button onClick={handleSubmit} className='bg-secondary text-white p-2 lg:p-3 w-[35%] lg:w-[10%] text-sm lg:text-lg rounded-3xl'>Submit</button>
-          <div className='border border-gray-300 rounded-xl p-3 lg:p-6'>
-            <div className='flex items-center justify-between'>
-              <div className='flex gap-2 items-center'>
-              <Image src={profile1} width={30} height={2} alt='profile' />
-              <h3 className='text-[12px] lg:text-[14px]'>Sarah Brenda </h3>
-              </div>
-              <h3 className='text-black/50 text-[9px] lg:text-[13px]'>November 23, 2024</h3>
-            </div>
-            <p className='mt-3 text-[12px] lg:text-lg font-light'>Great insights! Networking has been a game-changer for my career. Attending industry events helped me land my current job. Thanks for sharing this!</p>
-          </div>
-
-          <div className='border border-gray-300 rounded-xl p-3 lg:p-6'>
-            <div className='flex items-center justify-between'>
-              <div className='flex gap-2 items-center'>
-              <Image src={profile2} width={30} height={2} alt='profile' />
-              <h4 className='text-[12px] lg:text-[14px]'>Djasmine Keza </h4>
-              </div>
-              <h3 className='text-black/50 text-[9px] lg:text-[13px]'>November 23, 2024</h3>
-            </div>
-            <p className='mt-3 text-[12px] lg:text-lg font-light'>Such a helpful read! I've underestimated LinkedIn activity before, but engaging with posts really does make a difference. Will definitely try these tips. </p>
-          </div>
         </div>
 
       </div>

@@ -44,14 +44,14 @@ function page() {
         id: 4,
         image: blog4,
         title: 'Ace Your First Interview: How to Impress and Get the Job',
-        description: "That first interview is crucial - it&#39;s your chance to shine! Those first few minutes are make-or-break,especially when it comes to showing your perso...",
+        description: "That first interview is crucial - it's your chance to shine! Those first few minutes are make-or-break,especially when it comes to showing your perso...",
         link: '/blog4',
       },
       {
         id: 5,
         image: blog5,
         title: 'Your CV: showcasing your Experience like a boss',
-        description: "We all live with our CVs, not on paper, but through our daily conversations. Think about the times you've met someone new and they ask, “So, what do you do?.....",
+        description: "We all live with our CVs, not on paper, but through our daily conversations. Think about the times you've met someone new and they ask, “So, what do you do?...",
         link: '/blog5',
       },
     ];
@@ -80,7 +80,7 @@ function page() {
               width={401}
               height={100}
               alt={card.title}
-              className="rounded-t-xl w-full object-cover"
+              className="rounded-t-xl w-full h-full object-cover"
             />
             <h3 className="px-3 text-[14px] lg:text-[16px]">{card.title}</h3>
             <p className="px-3 text-[12px] lg:text-[14px] font-light leading-6">{card.description}</p>

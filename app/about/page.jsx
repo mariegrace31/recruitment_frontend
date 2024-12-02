@@ -240,7 +240,7 @@ const cards = [
    <Image src={values} width={800} height={10} alt='values image' className='w-full' />
   </div>
 
-  <div className='bg-[#F5F5FF] p-3 pt-9 lg:pt-0 lg:p-32'>
+  <div className='bg-[#F5F5FF] p-3 pt-9 lg:pt-28 lg:p-32'>
    <div className='flex flex-col lg:flex-row w-[90%] mx-auto'>
    <Image src={team} width={500} height={100} alt='hr image' className='flex lg:hidden'  />
    <div className='bg-secondary p-4 flex flex-col rounded-none lg:rounded-l-lg'>

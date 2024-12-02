@@ -3,9 +3,8 @@ import Image from 'next/image';
 import { GoArrowRight } from "react-icons/go";
 import Link from 'next/link';
 import hrImage from '../assets/recru.png';
-import resume from '../assets/resume.png';
-import skill from '../assets/sico.png';
 import blog2 from '../assets/blog2.png';
+import blog3 from '../assets/blog3.jpeg';
 
 function Hr() {
   return (
@@ -30,11 +29,14 @@ function Hr() {
           <Link href='/blog2'>
           <button className='flex items-center gap-1 px-3 text-[13px]'>Learn more <GoArrowRight className='bg-secondary  rounded-2xl p-1 text-white text-2xl' /></button>
           </Link> </div>
+
         <div className='rounded-xl border border-black/20 flex flex-col gap-4 pb-6'>
-          <Image src={skill} width={377} height={100} alt='hr image' className='rounded-t-xl w-full object-cover' />
-          <h3 className='px-3'>Top 5 Soft Skills Employers Look For</h3>
-          <p className='px-3 text-[12px] font-light leading-6'>Preparing for a job interview can be daunting. Here are some practical tips to help you stand out and make a lasting impression on your potential employer...</p>
+          <Image src={blog3} width={377} height={100} alt='hr image' className='rounded-t-xl w-full h-full object-cover' />
+          <h3 className='px-3'>Cracking the Code: How to Read Job Ads Like a Pro</h3>
+          <p className='px-3 text-[12px] font-light leading-6'>Tired of applying for jobs and getting nowhere? It might be time to upgrade your job ad reading skills! Job ads aren't just lists of requirements...</p>
+          <Link href='/blog3'>
           <button className='flex items-center gap-1 px-3 text-[13px]'>Learn more <GoArrowRight className='bg-secondary  rounded-2xl p-1 text-white text-2xl' /></button>
+          </Link>
         </div>
 
       </div>
