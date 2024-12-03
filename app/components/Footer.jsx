@@ -32,8 +32,8 @@ function Footer() {
       
         <div className='flex flex-col gap-4'>
           <h1 className='text-[12px] lg:text-[20px] font-medium text-white'>Support</h1>
-          <Link className='text-white text-[11px] lg:text-[15px] font-light' href='#privacy'>Privacy and Policy</Link>
-          <Link className='text-white text-[11px] lg:text-[15px] font-light' href='#contact'>Contact Us</Link>
+          <Link className='text-white text-[11px] lg:text-[15px] font-light' href='/privacy'>Privacy and Policy</Link>
+          <Link className='text-white text-[11px] lg:text-[15px] font-light' href='/contact'>Contact Us</Link>
         </div>
        
         <div className='flex flex-col gap-4'>

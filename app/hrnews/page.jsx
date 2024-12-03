@@ -70,7 +70,6 @@ function page() {
       </div>
       <Image src={lines} width={100} height={50} alt='lines' className=' mx-auto -mt-32 z-10 object-cover'/>
 
-
       <div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-0 lg:mt-32 p-16 px-3">
         {cards.slice(0, visibleCards).map((card) => (
