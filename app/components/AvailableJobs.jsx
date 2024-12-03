@@ -25,39 +25,41 @@ function AvailableJobs() {
           </Link>
         </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#F8FAFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-[16px]'>Marketing Specialist</h1>
+          <h1 className='font-bold text-[16px]'>Tutor</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
-          <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
+          <p className='text-sm'>As a Tutor, you will provide individualized academic support to students of various ages and levels.</p>
           <Link href="/jobdetail">
           <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
           </Link>
         </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#F8FAFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-[16px]'>HR Manager</h1>
+          <h1 className='font-bold text-[16px]'>Graphic Designer</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
-          <p className='text-sm'>Manage HR operations and enhance our recruitment strategies. 5 years of experience in HR is required.</p>
+          <p className='text-sm'>As a Graphic Designer, you will be the visual storyteller for our brand, crafting engaging and memorable designs.....</p>
           <Link href="/jobdetail">
           <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
           </Link>
         </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#F8FAFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-[16px]'>Kitchen Assistant</h1>
+          <h1 className='font-bold text-[16px]'>Web designer</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
-          <p className='text-sm'>Join our team as a Kitchen Assistant - where passion for food meets opportunity.</p>
+          <p className='text-sm'>As a Web Designer, you will be responsible for the visual design and development of our website </p>
           <Link href="/jobdetail">
           <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
           </Link>
         </div>
+        <Link href="/jobboard">
         <button className='flex items-center gap-1 border mx-auto text-sm lg:hidden border-secondary/50 p-2 w-[45%] lg:w-[27%] justify-center rounded-2xl hover:bg-secondary hover:text-white'><RiLoader2Line className='text-xl group-hover:text-white' /> Load more</button>
+        </Link>
       </div>
     </div>
   )

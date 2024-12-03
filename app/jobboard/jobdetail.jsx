@@ -8,7 +8,7 @@ import { GrFacebookOption } from 'react-icons/gr';
 import Link from 'next/link';
 import { MdOutlineContentCopy } from "react-icons/md";
 import { PiShareFatFill } from "react-icons/pi";
-import logo from '../assets/navLogo.png';
+import logo from "../assets/thirdlogo.png";
 import gray from '../assets/grayhr.png';
 import Footer from '../components/Footer';
 import emoji from '../assets/emoji.png';
@@ -52,89 +52,102 @@ function Jobdetail() {
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
         <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
-        <div className='flex flex-col gap-6 lg:gap-11 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
-          <h1 className='text-sm lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labogggris nisi ut galiquip ex ea commodo consequat.
-             Duis aute irure dolor inelit esse cillum dolore eu fugiat nu sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p className='text-[12px] lg:text-[14px]'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
-          <p className='text-[12px] lg:text-[14px]'>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore</p>
-        </div>
-        <div
-      className='flex flex-col gap-8 border border-gray-400border-b-gray-400 py-5 p-3 mt-10 rounded-lg h-[852px]'
-    >
+        <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
+          <h1 className='text-[16px] lg:text-xl'>Overview</h1>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
+            to join our team. We are looking for individuals passionate about creating innovative applications and software,
+             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
+             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+         </div>
       <div>
-      <h1 className="text-xl">Job Description</h1>
-      <p className="text-[12px] lg:text-[14px] mt-6">
-        Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-         aliquip ex ea commodo consequat. Duis aute irure dolor in elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p className='text-[12px] lg:text-[14px] mt-7'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+
+        <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
+        <h1 className="text-[16px] lg:text-xl">Job Description</h1>
+      <p className="text-[12px] lg:text-[14px]">
+      As a Software Designer, you will be responsible for designing and implementing applications 
+      and software that meet specific client needs. You will work closely with development teams to translate technical
+       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
+        engaging user interfaces, ensuring an optimal user experience.</p>
+        </div>
      
-      <h1 className="text-xl mt-7">Responsabilities</h1>
-      <p className="text-[12px] lg:text-[14px] mt-7">
-        Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-         aliquip ex ea commodo consequat. Duis aute irure dolor in elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p className='text-[12px] lg:text-[14px] mt-7'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
-     
-      <h1 className="text-xl mt-7">Required Skills</h1>
-      <p className="text-[12px] lg:text-[14px] mt-7">
-        Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-         aliquip ex ea commodo consequat. Duis aute irure dolor in elit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p className='text-[12px] lg:text-[14px] mt-7'>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
-  
+
+        <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
+        <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <p className="text-[12px] lg:text-[14px]">
+      Analyze functional and technical requirements for software projects. <br />
+      Design robust and scalable software architectures. <br />
+      Develop intuitive and engaging user interfaces (UI). <br />
+      Write clean, efficient, and well-documented code. <br />
+      Test and debug software applications to ensure stability and performance.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      <p className="text-[12px] lg:text-[14px]">
+      Work closely with development, design, and project management teams. <br />
+       Participate in code reviews and brainstorming sessions. <br />
+       Effectively communicate progress and challenges related to software development.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      <p className="text-[12px] lg:text-[14px]">
+      Update and improve existing software applications. <br />
+      Resolve issues and bugs reported by users. <br />
+      Propose enhancements to application functionality and usability.</p>
+        </div>
+
+        <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
+        <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
+      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
+      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
+      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
+      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
+      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
+      <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+        </div>
+      
       </div> 
-      </div>
 
       </div>
 
       <div className='flex flex-col gap-24 w-[100%] lg:w-[50%] -mt-0 lg:-mt-52'>
         <div className='bg-secondary p-4 w-[100%] py-4 lg:py-10 border-4 border-white rounded-xl'>
-          <div className='flex items-center gap-2 mt-5 lg:mt-10 mb-10 lg:mb-20'>
+          <div className='flex items-center gap-2 lg:gap-3 mt-5 lg:mt-10 mb-10 lg:mb-20'>
           <Image
           src={logo}
           width={40}
           height={40}
           alt="Logo"
+          className="w-[40px] lg:w-[60px]"
         />
             <div className='flex flex-col'>
-              <h2 className='text-white text-sm lg:text-lg font-light'>Company</h2>
-              <h3 className='text-sm lg:text-lg text-white'>Mayllos</h3>
+              <h2 className='text-white/50 text-[13px] lg:text-lg font-light'>Company</h2>
+              <h3 className='text-[13px] lg:text-lg text-white'>LK RECRUITMENT RWANDA</h3>
             </div>
           </div>
           <div className='flex justify-between mb-4'>
-            <h3 className='font-light text-sm lg:text-lg text-[#ECEDF2]'>Monthly Salary:</h3>
-            <p className='font-light text-sm lg:text-lg text-[#ECEDF2]'>200,000 Rwf</p>
+            <h3 className='font-light text-[13px] lg:text-lg text-white/50'>Monthly Salary:</h3>
+            <p className='font-light text-[13px] lg:text-lg text-white/50'>Depending on experience</p>
           </div>
           <hr className='text-[#ECEDF2]' />
           <div className='flex justify-between my-4'>
-            <h3 className='font-light text-sm lg:text-lg text-[#ECEDF2]'>Job Type:</h3>
-            <p className='font-light text-sm lg:text-lg text-[#ECEDF2]'> Full Time, Part Time</p>
+            <h3 className='font-light text-[13px] lg:text-lg text-white/50'>Job Type:</h3>
+            <p className='font-light text-[13px] lg:text-lg text-white/50'> Full Time, Part Time</p>
           </div>
           <hr className='text-[#ECEDF2]'  />
           <div className='flex justify-between my-4'>
-            <h3 className='font-light text-sm lg:text-lg text-[#ECEDF2]'>Job Location:</h3>
-            <p className='font-light text-sm lg:text-lg text-[#ECEDF2]'> Kigali/Rwanda</p>
+            <h3 className='font-light text-[13px] lg:text-lg text-white/50'>Job Location:</h3>
+            <p className='font-light text-[13px] lg:text-lg text-white/50'> Kigali/Rwanda</p>
           </div>
           <hr className='text-[#ECEDF2]'  />
           <div className='flex justify-between my-4'>
-            <h3 className='font-light text-sm lg:text-lg text-[#ECEDF2]'>Job Type:</h3>
-            <p className='font-light text-sm lg:text-lg text-[#ECEDF2]'>Full Time, Part Time</p>
+            <h3 className='font-light text-[13px] lg:text-lg text-white/50'>Contact Us:</h3>
+            <p className='font-light text-[13px] lg:text-lg text-white/50'>0784 673 524</p>
           </div>
           <hr className='text-[#ECEDF2]'  />
           <div className='flex justify-between my-4'>
-            <h3 className='font-light text-sm lg:text-lg text-[#ECEDF2]'>Contact Us:</h3>
-            <p className='font-light text-sm lg:text-lg text-[#ECEDF2]'>0784 673 524</p>
-          </div>
-          <hr className='text-[#ECEDF2]'  />
-          <div className='flex justify-between my-4'>
-            <h3 className='font-light text-sm lg:text-lg text-[#ECEDF2]'>E-mail:</h3>
-            <p className='font-light text-sm lg:text-lg text-[#ECEDF2]'>info.mayllos@gmail.com</p>
+            <h3 className='font-light text-[13px] lg:text-lg text-white/50'>E-mail:</h3>
+            <p className='font-light text-[13px] lg:text-lg text-white/50'>info.mayllos@gmail.com</p>
           </div>
           <hr className='text-[#ECEDF2]' />
           <div className='text-center'>
-          <button className='bg-white text-black p-2 w-[80%] text-sm lg:text-lg mt-7 lg:mt-16 mb-8 lg:mb-12 border border-black/80 hover:bg-yellow-500 hover:text-white hover:border-gray-400 font-medium rounded-3xl' onClick={handleModalToggle}>Apply now</button>
+          <button className='bg-white text-black p-2 w-[80%] text-[13px] lg:text-lg mt-7 lg:mt-16 mb-8 lg:mb-12 border border-black/80 hover:bg-yellow-500 hover:text-white hover:border-gray-400 font-medium rounded-3xl' onClick={handleModalToggle}>Apply now</button>
           </div>
          
         </div>
