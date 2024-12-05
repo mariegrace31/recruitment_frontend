@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { GoArrowRight } from "react-icons/go";
 import Link from 'next/link';
 import hrImage from '../assets/recru.png';
-import blog2 from '../assets/blog2.png';
+import blog2 from '../assets/blogpic.jpeg';
 import blog3 from '../assets/blog3.jpeg';
 
 function Hr() {

@@ -3,7 +3,7 @@ import { React, useState} from 'react';
 import hr from '../assets/abouthr.png';
 import lines from '../assets/linegroup.png';
 import Image from 'next/image';
-import blog2 from '../assets/blog2.png';
+import blog2 from '../assets/blogpic.jpeg';
 import { GoArrowRight } from "react-icons/go";
 import Footer from '../components/Footer';
 import Link from 'next/link';

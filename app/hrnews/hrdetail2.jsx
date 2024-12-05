@@ -5,7 +5,7 @@ import lines from '../assets/linegroup.png';
 import dot from '../assets/dothr.png';
 import Footer from '../components/Footer';
 import { FaTimes } from 'react-icons/fa';
-import blog2 from '../assets/blog2.png';
+import blog2 from '../assets/blogpic.jpeg';
 
 function Hrdetail2() {
   const [isModalOpen, setIsModalOpen] = useState(false);
