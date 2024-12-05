@@ -2,20 +2,13 @@
 import React, { useState } from "react";
 import hr from '../assets/abouthr.png';
 import Image from 'next/image';
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaLinkedinIn } from 'react-icons/fa';
-import { GrFacebookOption } from 'react-icons/gr';
-import Link from 'next/link';
-import { MdOutlineContentCopy } from "react-icons/md";
-import { PiShareFatFill } from "react-icons/pi";
 import logo from "../assets/thirdlogo.png";
-import gray from '../assets/grayhr.png';
 import Footer from '../components/Footer';
 import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
-function Jobdetail() {
+function Jobdetail11() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -51,55 +44,54 @@ function Jobdetail() {
 
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
-        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <h1 className='text-xl lg:text-3xl font-medium'>Commercial Assistant</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
-            to join our team. We are looking for individuals passionate about creating innovative applications and software,
-             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
-             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking a motivated and detail-oriented Commercial Assistant to join our dynamic team. We are looking for an individual with a passion for sales and a strong understanding of business operations. If you possess excellent communication and interpersonal skills, a proactive mindset, and a dedication to achieving sales targets, we encourage you to apply.</p>
          </div>
       <div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
-        engaging user interfaces, ensuring an optimal user experience.</p>
+      As a Commercial Assistant, you will play a crucial role in supporting our sales efforts and ensuring smooth business operations. You will be responsible for a range of tasks, including customer interaction, order processing, sales administration, and market research. You will work closely with the sales team to achieve sales targets and provide excellent customer service.</p>
         </div>
      
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">•Sales Support:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Analyze functional and technical requirements for software projects. <br />
-      Design robust and scalable software architectures. <br />
-      Develop intuitive and engaging user interfaces (UI). <br />
-      Write clean, efficient, and well-documented code. <br />
-      Test and debug software applications to ensure stability and performance.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      Assist the sales team with customer inquiries, order processing, and follow-up.<br />
+      Prepare sales presentations and proposals. <br />
+      Track customer interactions and manage sales pipelines. <br />
+      Provide product information and technical support to customers.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Administrative Support:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Work closely with development, design, and project management teams. <br />
-       Participate in code reviews and brainstorming sessions. <br />
-       Effectively communicate progress and challenges related to software development.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      Maintain customer records and databases. <br />
+      Prepare reports and analysis on sales performance. <br />
+      Coordinate with logistics and shipping departments to ensure timely delivery.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Kitchen Management:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Update and improve existing software applications. <br />
-      Resolve issues and bugs reported by users. <br />
-      Propose enhancements to application functionality and usability.</p>
+      Manage the kitchen workflow and ensure that all tasks are completed efficiently. <br />
+      Supervise and train kitchen staff. <br />
+      Order and manage food inventory.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Market Research and Analysis:</h4>
+      <p className="text-[12px] lg:text-[14px]">
+      Conduct market research to identify potential customers and opportunities. <br />
+      Analyze sales trends and competitor activities. <br />
+      Prepare reports and presentations based on market insights.</p>
         </div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
-      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
-      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
-      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
-      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
-      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
-      <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+      <p className="text-[12px] lg:text-[14px]">Proven experience in a sales or commercial support role.</p>
+      <p className="text-[12px] lg:text-[14px]">•  Excellent communication and interpersonal skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Strong organizational and time management skills.</p>
+      <p className="text-[12px] lg:text-[14px]">•  Proficiency in Microsoft Office Suite (Word, Excel, PowerPoint).</p>
+      <p className="text-[12px] lg:text-[14px]">•  Detail-oriented and accuracy in data entry.</p>
+      <p className="text-[12px] lg:text-[14px]">•  Ability to work independently and as part of a team.</p>
+      <p className="text-[12px] lg:text-[14px]">•  Passion for sales and a drive to achieve targets.</p>
         </div>
       
       </div> 
@@ -263,4 +255,4 @@ function Jobdetail() {
   )
 }
 
-export default Jobdetail;
+export default Jobdetail11;

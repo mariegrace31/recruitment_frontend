@@ -2,20 +2,13 @@
 import React, { useState } from "react";
 import hr from '../assets/abouthr.png';
 import Image from 'next/image';
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaLinkedinIn } from 'react-icons/fa';
-import { GrFacebookOption } from 'react-icons/gr';
-import Link from 'next/link';
-import { MdOutlineContentCopy } from "react-icons/md";
-import { PiShareFatFill } from "react-icons/pi";
 import logo from "../assets/thirdlogo.png";
-import gray from '../assets/grayhr.png';
 import Footer from '../components/Footer';
 import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
-function Jobdetail() {
+function Jobdetail3() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -51,55 +44,55 @@ function Jobdetail() {
 
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
-        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <h1 className='text-xl lg:text-3xl font-medium'>Web designer</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
-            to join our team. We are looking for individuals passionate about creating innovative applications and software,
-             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
-             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is looking for a talented and experienced Web Designer to join our team. You will play a key role in shaping the visual identity and user experience of our website and other digital platforms.  We are searching for a creative and detail-oriented individual who is passionate about crafting beautiful and functional designs that engage our audience and contribute to our brand success.</p>
          </div>
       <div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
-        engaging user interfaces, ensuring an optimal user experience.</p>
+      As a Web Designer, you will be responsible for the visual design and development of our website and related digital materials. You will work closely with our team to translate our vision into a cohesive and user-friendly online experience.</p>
         </div>
      
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Website Design:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Analyze functional and technical requirements for software projects. <br />
-      Design robust and scalable software architectures. <br />
-      Develop intuitive and engaging user interfaces (UI). <br />
-      Write clean, efficient, and well-documented code. <br />
-      Test and debug software applications to ensure stability and performance.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      Create wireframes, mockups, and prototypes to present design concepts for our website. <br />
+      Design and develop user interfaces (UI) that are aesthetically pleasing, user-friendly, and optimized for various devices. <br />
+      Ensure website design adheres to best practices for accessibility and usability <br />
+      Collaborate with developers to implement designs and ensure seamless integration.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Visual Assets:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Work closely with development, design, and project management teams. <br />
-       Participate in code reviews and brainstorming sessions. <br />
-       Effectively communicate progress and challenges related to software development.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      Create high-quality visual assets for the website, including banners, icons, graphics, and illustrations. <br />
+      Develop brand guidelines and ensure consistency in design across all platforms</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• User Experience (UX):</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Update and improve existing software applications. <br />
-      Resolve issues and bugs reported by users. <br />
-      Propose enhancements to application functionality and usability.</p>
+      Conduct user research and gather feedback to understand user needs and preferences. <br />
+      Implement UX principles to create an intuitive and enjoyable user experience. <br />
+      Optimize website layout and navigation for ease of use.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Technical Skills:</h4>
+      <p className="text-[12px] lg:text-[14px]">
+      Proficiency in web design software (Adobe Photoshop, Illustrator, InDesign, etc.) <br />
+      Experience with HTML, CSS, and JavaScript. <br />
+      Knowledge of responsive web design principles. <br />
+      Understanding of web accessibility guidelines.</p>
         </div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
-      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
-      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
-      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
-      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
+      <p className="text-[12px] lg:text-[14px]">• Strong portfolio showcasing website design projects.</p>
+      <p className="text-[12px] lg:text-[14px]">• Excellent visual design skills and a keen eye for detail.</p>
+      <p className="text-[12px] lg:text-[14px]">• Understanding of user interface (UI) and user experience (UX) principles.</p>
+      <p className="text-[12px] lg:text-[14px]">• Proficient in web design software and tools.</p>
+      <p className="text-[12px] lg:text-[14px]">• Experience with front-end development languages (HTML, CSS, JavaScript).</p>
       <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
       <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Passion for web design and user experience.</p>
         </div>
       
       </div> 
@@ -234,7 +227,7 @@ function Jobdetail() {
           <div className="bg-white w-[80%] lg:w-[100%] max-w-md p-6 rounded-lg text-center">
             <div className="flex items-center gap-1 justify-center">
             <h2 className="text-2xl lg:text-4xl text-secondary mb-4">Great Job </h2>
-            
+           
             </div>
             
             <p className="text-gray-800 mt-5 mb-6 leading-9">
@@ -263,4 +256,4 @@ function Jobdetail() {
   )
 }
 
-export default Jobdetail;
+export default Jobdetail3;

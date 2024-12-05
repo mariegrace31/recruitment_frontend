@@ -2,20 +2,13 @@
 import React, { useState } from "react";
 import hr from '../assets/abouthr.png';
 import Image from 'next/image';
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaLinkedinIn } from 'react-icons/fa';
-import { GrFacebookOption } from 'react-icons/gr';
-import Link from 'next/link';
-import { MdOutlineContentCopy } from "react-icons/md";
-import { PiShareFatFill } from "react-icons/pi";
 import logo from "../assets/thirdlogo.png";
-import gray from '../assets/grayhr.png';
 import Footer from '../components/Footer';
 import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
-function Jobdetail() {
+function Jobdetail5() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -51,55 +44,51 @@ function Jobdetail() {
 
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
-        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <h1 className='text-xl lg:text-3xl font-medium'>Caring Nanny Needed</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
-            to join our team. We are looking for individuals passionate about creating innovative applications and software,
-             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
-             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is searching for compassionate and nurturing Nannies to join our team. We are seeking individuals who are dedicated to providing a safe, loving, and stimulating environment for children. If you have a genuine love for children, a passion for their development, and a commitment to providing excellent care, we encourage you to apply.</p>
          </div>
       <div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
-        engaging user interfaces, ensuring an optimal user experience.</p>
+      As a Nanny, you will be responsible for the overall care and well-being of children in a private home. You will provide a nurturing and stimulating environment, engage in age-appropriate activities, and ensure their physical, emotional, and cognitive development. You will be a trusted member of the family, building strong bonds with the children and supporting their growth.</p>
         </div>
      
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Childcare:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Analyze functional and technical requirements for software projects. <br />
-      Design robust and scalable software architectures. <br />
-      Develop intuitive and engaging user interfaces (UI). <br />
-      Write clean, efficient, and well-documented code. <br />
-      Test and debug software applications to ensure stability and performance.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      Provide attentive and loving care to children, ensuring their safety and well-being. <br />
+      Follow a daily routine that includes feeding, bathing, changing diapers, and nap time. <br />
+      Create a nurturing and stimulating environment for the children.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Activities and Development:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Work closely with development, design, and project management teams. <br />
-       Participate in code reviews and brainstorming sessions. <br />
-       Effectively communicate progress and challenges related to software development.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      Engage children in age-appropriate activities, such as reading, singing, playing games, and outdoor exploration. teams. <br />
+      Encourage learning through play and foster their cognitive development. <br />
+      Plan and organize outings and activities to keep children engaged and entertained.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Household Responsibilities:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Update and improve existing software applications. <br />
-      Resolve issues and bugs reported by users. <br />
-      Propose enhancements to application functionality and usability.</p>
+      Maintain a clean and organized play area and children's rooms. <br />
+      Prepare healthy meals and snacks for the children. <br />
+      Assist with laundry and other household tasks related to childcare.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Communication and Collaboration:</h4>
+      <p className="text-[12px] lg:text-[14px]">
+      Maintain open communication with parents about the children's day and any concerns. <br />
+      Collaborate with parents to ensure a consistent approach to childcare.</p>
         </div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
-      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
-      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
-      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
-      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
-      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
-      <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Experience caring for children of various ages.</p>
+      <p className="text-[12px] lg:text-[14px]">• Strong understanding of child development and age-appropriate activities.</p>
+      <p className="text-[12px] lg:text-[14px]">• Patience, empathy, and a genuine love for children.</p>
+      <p className="text-[12px] lg:text-[14px]">• Excellent communication and interpersonal skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Ability to create a safe, nurturing, and stimulating environment.</p>
+      <p className="text-[12px] lg:text-[14px]">• First aid and CPR certification (preferred).</p>
         </div>
       
       </div> 
@@ -263,4 +252,4 @@ function Jobdetail() {
   )
 }
 
-export default Jobdetail;
+export default Jobdetail5;

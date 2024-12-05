@@ -37,78 +37,130 @@ function page() {
           </Link>
          </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-[16px] lg:text-lg'>Marketing Specialist</h1>
-          <div className='flex gap-9'>
-            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
-          </div>
-          <p className='text-sm'>Drive our marketing campaigns and expand brand visibility. Experience in digital marketing preferred.</p>
-          <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
-                  More Details
-                </button>
-              </Link>
-           </div>
-        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-[16px] lg:text-lg'>HR Manager</h1>
-          <div className='flex gap-9'>
-            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
-          </div>
-          <p className='text-sm'>Manage HR operations and enhance our recruitment strategies. 5 years of experience in HR is required.</p>
-          <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
-                  More Details
-                </button>
-              </Link>
-              </div>
-        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-[16px] lg:text-lg'>Community Builder</h1>
-          <div className='flex gap-9'>
-            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
-          </div>
-          <p className='text-sm'>Join us as a Community Builder and make a lasting impact by fostering connections, promoting collaboration.</p>
-          <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
-                  More Details
-                </button>
-              </Link>
-           </div>
-        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-[16px] lg:text-lg'>Kitchen Assistant</h1>
-          <div className='flex gap-9'>
-            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
-            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
-          </div>
-          <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
-          <Link href="/jobdetail">
-                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
-                  More Details
-                </button>
-              </Link>
-              </div>
-        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
           <h1 className='font-bold text-[16px] lg:text-lg'>Caring Nanny Needed</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
           <p className='text-sm'>Seeking a compassionate and dependable Nanny to provide exceptional care and support for children</p>
-          <Link href="/jobdetail">
+          <Link href="/job5">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+           </div>
+        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Content Creator</h1>
+          <div className='flex gap-9'>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+          </div>
+          <p className='text-sm'>As a Content Creator, you will be the voice of our brand, responsible for developing and producing high-quality..</p>
+          <Link href="/job9">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+              </div>
+              <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Tutor</h1>
+          <div className='flex gap-9'>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+          </div>
+          <p className='text-sm'>As a Tutor, you will provide individualized academic support to students of various ages and levels.</p>
+          <Link href="/job4">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+              </div>
+              <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Graphic Designer</h1>
+          <div className='flex gap-9'>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+          </div>
+          <p className='text-sm'>As a Graphic Designer, you will be the visual storyteller for our brand, crafting engaging and memorable designs.....</p>
+          <Link href="/job2">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+              </div>
+              <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Web designer</h1>
+          <div className='flex gap-9'>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+          </div>
+          <p className='text-sm'>As a Web Designer, you will be responsible for the visual design and development of our website ...</p>
+          <Link href="/job3">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+              </div>
+              <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Reliable Maid Needed</h1>
+          <div className='flex gap-9'>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+          </div>
+          <p className='text-sm'>Looking for a hardworking and trustworthy Maid to help maintain a clean and organized home.</p>
+          <Link href="/job6">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+              </div>
+        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Community Manager</h1>
+          <div className='flex gap-9'>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+          </div>
+          <p className='text-sm'>JJoin us as a Community manager and make a lasting impact by fostering connections, promoting collaboration.</p>
+          <Link href="/job8">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+           </div>
+        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Chef Cook</h1>
+          <div className='flex gap-9'>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+          </div>
+          <p className='text-sm'>As a Chef Cook, you will be responsible for preparing and cooking high-quality meals for our clients.</p>
+          <Link href="/job12">
+                <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
+                  More Details
+                </button>
+              </Link>
+              </div>
+        <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Admin assistant</h1>
+          <div className='flex gap-9'>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
+            <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
+          </div>
+          <p className='text-sm'>As an Administrative Assistant, you will be responsible for providing comprehensive administrative support...</p>
+          <Link href="/job10">
             <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
               More Details
             </button>
             </Link>
             </div>
           <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#FFF] hover:bg-[#E0E6F7] group'>
-          <h1 className='font-bold text-[16px] lg:text-lg'>Reliable Maid Needed</h1>
+          <h1 className='font-bold text-[16px] lg:text-lg'>Commercial Assistant</h1>
           <div className='flex gap-9'>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Full Time</p>
             <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
           </div>
-          <p className='text-xs'>Looking for a hardworking and trustworthy Maid to help maintain a clean and organized home.</p>
-          <Link href="/jobdetail">
+          <p className='text-xs'>As a Commercial Assistant, you will play a crucial role in supporting our sales efforts and ensuring smooth business...</p>
+          <Link href="/job11">
             <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
               More Details
             </button>
@@ -121,7 +173,7 @@ function page() {
              <p className='flex items-center text-[11px] gap-1 text-gray-400'><TbBriefcase className='text-gray-400' />Part Time</p>
            </div>
            <p className='text-sm'>Looking for a professional and reliable Driver to ensure smooth, safe, and timely transportation.</p>
-          <Link href="/jobdetail">
+          <Link href="/job7">
             <button className='bg-[#E0E6F7] p-2 rounded-md w-[45%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>
               More Details
             </button>

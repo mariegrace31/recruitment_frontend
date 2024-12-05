@@ -2,20 +2,13 @@
 import React, { useState } from "react";
 import hr from '../assets/abouthr.png';
 import Image from 'next/image';
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaLinkedinIn } from 'react-icons/fa';
-import { GrFacebookOption } from 'react-icons/gr';
-import Link from 'next/link';
-import { MdOutlineContentCopy } from "react-icons/md";
-import { PiShareFatFill } from "react-icons/pi";
 import logo from "../assets/thirdlogo.png";
-import gray from '../assets/grayhr.png';
 import Footer from '../components/Footer';
 import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
-function Jobdetail() {
+function Jobdetail9() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -51,55 +44,49 @@ function Jobdetail() {
 
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
-        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <h1 className='text-xl lg:text-3xl font-medium'>Content Creator</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
-            to join our team. We are looking for individuals passionate about creating innovative applications and software,
-             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
-             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking a creative and engaging Content Creator to join our dynamic team. You will be responsible for crafting compelling and original content that captivates our audience, strengthens our brand identity, and drives meaningful engagement across various platforms. This is an opportunity to unleash your creativity, contribute to our company's growth, and make a real impact.</p>
          </div>
       <div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
-        engaging user interfaces, ensuring an optimal user experience.</p>
+      As a Content Creator, you will be the voice of our brand, responsible for developing and producing high-quality content that resonates with our target audience. You will utilize your creativity and storytelling skills to bring our brand to life, inform, entertain, and inspire. </p>
         </div>
      
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Content Development:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Analyze functional and technical requirements for software projects. <br />
-      Design robust and scalable software architectures. <br />
-      Develop intuitive and engaging user interfaces (UI). <br />
-      Write clean, efficient, and well-documented code. <br />
-      Test and debug software applications to ensure stability and performance.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      Conceptualize and create original content, including blog posts, articles, social media captions, video scripts, and other relevant formats. <br />
+      Develop a deep understanding of our brand voice and target audience to ensure all content aligns with our values and messaging. <br />
+      Research and stay up-to-date on industry trends and best practices to maintain a fresh and engaging content strategy </p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Content Production:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Work closely with development, design, and project management teams. <br />
-       Participate in code reviews and brainstorming sessions. <br />
-       Effectively communicate progress and challenges related to software development.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      Write, edit, and proofread all content for clarity, accuracy, and grammatical correctness. <br />
+      Collaborate with internal teams to gather information and ensure content aligns with company goals and objectives. <br />
+      Utilize photo and video editing software to create visually appealing content.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">•Content Distribution:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Update and improve existing software applications. <br />
-      Resolve issues and bugs reported by users. <br />
-      Propose enhancements to application functionality and usability.</p>
+      Distribute content across various platforms, including our website, social media channels, and email newsletters. <br />
+      Track and analyze content performance using data analytics to identify areas for improvement and optimize content strategy.</p>
         </div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
-      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
-      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
-      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
-      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
-      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
-      <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Proven experience as a content creator or writer.</p>
+      <p className="text-[12px] lg:text-[14px]">• Strong storytelling abilities and a knack for captivating writing.</p>
+      <p className="text-[12px] lg:text-[14px]">• Proficiency in various content formats (blog posts, articles, social media posts, video scripts, etc.).</p>
+      <p className="text-[12px] lg:text-[14px]">• Excellent written and verbal communication skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Experience with content management systems (CMS) and social media platforms</p>
+      <p className="text-[12px] lg:text-[14px]">• Knowledge of SEO and digital marketing best practices.</p>
+      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and meet deadlines.</p>
+      <p className="text-[12px] lg:text-[14px]">• Passion for creating engaging and impactful content</p>
+      <p className="text-[12px] lg:text-[14px]">• Fluency in English and French.</p>
         </div>
       
       </div> 
@@ -234,7 +221,7 @@ function Jobdetail() {
           <div className="bg-white w-[80%] lg:w-[100%] max-w-md p-6 rounded-lg text-center">
             <div className="flex items-center gap-1 justify-center">
             <h2 className="text-2xl lg:text-4xl text-secondary mb-4">Great Job </h2>
-            
+           
             </div>
             
             <p className="text-gray-800 mt-5 mb-6 leading-9">
@@ -263,4 +250,4 @@ function Jobdetail() {
   )
 }
 
-export default Jobdetail;
+export default Jobdetail9;

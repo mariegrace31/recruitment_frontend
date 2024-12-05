@@ -15,7 +15,7 @@ import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
-function Jobdetail() {
+function Jobdetail2() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -51,55 +51,57 @@ function Jobdetail() {
 
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
-        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <h1 className='text-xl lg:text-3xl font-medium'>Graphic Designer</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
-            to join our team. We are looking for individuals passionate about creating innovative applications and software,
-             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
-             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking a creative and talented Graphic Designer to join our growing team.
+             You will be responsible for creating visually appealing and impactful designs across a variety of mediums, including branding materials, social
+              media graphics, marketing materials, and more.We are looking for a passionate and detail-oriented individual who can bring our brand vision to
+               life and contribute to our success.</p>
          </div>
       <div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
-        engaging user interfaces, ensuring an optimal user experience.</p>
+      As a Graphic Designer, you will be the visual storyteller for our brand, crafting engaging and memorable designs that resonate with our audience and strengthen our visual identity.  You will work collaboratively with our team to develop a cohesive brand aesthetic and create high-quality visuals that support our marketing efforts and enhance our overall brand presence.</p>
         </div>
      
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Branding Design:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Analyze functional and technical requirements for software projects. <br />
-      Design robust and scalable software architectures. <br />
-      Develop intuitive and engaging user interfaces (UI). <br />
-      Write clean, efficient, and well-documented code. <br />
-      Test and debug software applications to ensure stability and performance.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      Develop and maintain our brand guidelines, ensuring consistency in visual identity across all materials. <br />
+      Create logos, brand assets, and other visual elements that communicate our brand values. <br />
+      Design and produce marketing collateral, including brochures, flyers, presentations, and other promotional materials.
+    </p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Digital Graphics:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Work closely with development, design, and project management teams. <br />
-       Participate in code reviews and brainstorming sessions. <br />
-       Effectively communicate progress and challenges related to software development.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      Design eye-catching graphics for social media platforms, websites, and other digital channels. <br />
+      Create infographics, illustrations, and other engaging visuals to enhance content. <br />
+      Develop and manage visual assets for email marketing campaigns and online advertising.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Print Design:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Update and improve existing software applications. <br />
-      Resolve issues and bugs reported by users. <br />
-      Propose enhancements to application functionality and usability.</p>
+      Design and produce print materials, including brochures, flyers, posters, and business cards. <br />
+      Ensure designs are optimized for printing and meet high-quality standards
+    </p>
+    <h4 className="text-[12px] lg:text-[14px] font-medium">•Creative Thinking:</h4>
+      <p className="text-[12px] lg:text-[14px]">
+      Develop innovative design concepts and solutions that meet our brand objectives. <br />
+      Stay abreast of current design trends and incorporate them into your work.
+    </p>
         </div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
-      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
-      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
-      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
-      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
+      <p className="text-[12px] lg:text-[14px]">• Strong portfolio showcasing graphic design projects.</p>
+      <p className="text-[12px] lg:text-[14px]">• Proficient in design software, including Adobe Creative Suite (Photoshop, Illustrator, InDesign).</p>
+      <p className="text-[12px] lg:text-[14px]">• Excellent understanding of visual composition, color theory, typography, and layout principles.</p>
+      <p className="text-[12px] lg:text-[14px]">• Experience with print and digital design formats.</p>
       <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
       <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Passion for graphic design and a keen eye for detail.</p>
         </div>
       
       </div> 
@@ -263,4 +265,4 @@ function Jobdetail() {
   )
 }
 
-export default Jobdetail;
+export default Jobdetail2;

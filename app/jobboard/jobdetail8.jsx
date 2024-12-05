@@ -15,7 +15,7 @@ import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
-function Jobdetail() {
+function Jobdetail8() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -51,55 +51,51 @@ function Jobdetail() {
 
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
-        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <h1 className='text-xl lg:text-3xl font-medium'>Community Manager</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
-            to join our team. We are looking for individuals passionate about creating innovative applications and software,
-             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
-             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking a passionate and dynamic Community Manager to join our team. You will play a crucial role in building and nurturing engaging online communities, fostering vibrant discussions, and driving impactful conversations across various platforms. This position offers the chance to make a meaningful contribution to our company's growth and success.</p>
          </div>
       <div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
-        engaging user interfaces, ensuring an optimal user experience.</p>
+      As a Community Manager, you will be responsible for managing and growing our online communities. You will engage with our audience, create compelling content, moderate discussions, and build relationships with key members. Your mission is to cultivate a positive and thriving online space that reflects our brand values and connects with our target audience.</p>
         </div>
      
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Community Management:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Analyze functional and technical requirements for software projects. <br />
-      Design robust and scalable software architectures. <br />
-      Develop intuitive and engaging user interfaces (UI). <br />
-      Write clean, efficient, and well-documented code. <br />
-      Test and debug software applications to ensure stability and performance.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      Develop and implement strategies to grow and engage our online communities across various platforms. <br />
+      Monitor and moderate online discussions, ensuring a positive and respectful environment. <br />
+      Respond to inquiries and feedback from community members promptly and professionally. <br />
+      Identify and cultivate influential community members to become brand ambassadors.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">•  Content Creation:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Work closely with development, design, and project management teams. <br />
-       Participate in code reviews and brainstorming sessions. <br />
-       Effectively communicate progress and challenges related to software development.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      Create original and engaging content, including articles, blog posts, social media updates, and video content. <br />
+      Curate and share relevant content from other sources to enrich our community. <br />
+      Utilize data analytics to understand community interests and optimize content strategies.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Community Outreach:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Update and improve existing software applications. <br />
-      Resolve issues and bugs reported by users. <br />
-      Propose enhancements to application functionality and usability.</p>
+      Collaborate with internal teams to promote community initiatives and events. <br />
+      Participate in online and offline community events to build relationships and expand reach. <br />
+      Identify and leverage opportunities for community growth and engagement.</p>
         </div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
-      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
-      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
-      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
-      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
+      <p className="text-[12px] lg:text-[14px]">• Proven experience in community management.</p>
+      <p className="text-[12px] lg:text-[14px]">• Excellent communication and interpersonal skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Strong writing and editing abilities.</p>
+      <p className="text-[12px] lg:text-[14px]">• Proficiency in social media platforms (Facebook, Instagram, Twitter, etc.).</p>
+      <p className="text-[12px] lg:text-[14px]">• Experience with community management tools (e.g., Hootsuite, Buffer, etc.).</p>
+      <p className="text-[12px] lg:text-[14px]">• Knowledge of digital marketing and content strategy.</p>
       <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
-      <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Passionate about building and fostering online communities.</p>
+      <p className="text-[12px] lg:text-[14px]">• Fluency in English and French.</p>
         </div>
       
       </div> 
@@ -263,4 +259,4 @@ function Jobdetail() {
   )
 }
 
-export default Jobdetail;
+export default Jobdetail8;

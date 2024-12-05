@@ -2,20 +2,13 @@
 import React, { useState } from "react";
 import hr from '../assets/abouthr.png';
 import Image from 'next/image';
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaLinkedinIn } from 'react-icons/fa';
-import { GrFacebookOption } from 'react-icons/gr';
-import Link from 'next/link';
-import { MdOutlineContentCopy } from "react-icons/md";
-import { PiShareFatFill } from "react-icons/pi";
 import logo from "../assets/thirdlogo.png";
-import gray from '../assets/grayhr.png';
 import Footer from '../components/Footer';
 import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
-function Jobdetail() {
+function Jobdetail10() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -51,55 +44,50 @@ function Jobdetail() {
 
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
-        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <h1 className='text-xl lg:text-3xl font-medium'>Admin assistant</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
-            to join our team. We are looking for individuals passionate about creating innovative applications and software,
-             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
-             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking a highly organized and detail-oriented Administrative Assistant to join our team. We are looking for an individual who thrives in a fast-paced environment, has excellent communication and interpersonal skills, and is committed to providing efficient and effective administrative support. If you possess strong organizational skills, a proactive mindset, and a dedication to ensuring smooth operations, we encourage you to apply.</p>
          </div>
       <div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
-        engaging user interfaces, ensuring an optimal user experience.</p>
+      As an Administrative Assistant, you will be responsible for providing comprehensive administrative support to various departments within our organization. You will handle a wide range of tasks, including managing schedules, coordinating meetings, preparing documents, answering phones, and assisting with general office management. You will be a key contributor to our smooth operations, ensuring efficiency and effectiveness across all departments.</p>
         </div>
      
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Administrative Support:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Analyze functional and technical requirements for software projects. <br />
-      Design robust and scalable software architectures. <br />
-      Develop intuitive and engaging user interfaces (UI). <br />
-      Write clean, efficient, and well-documented code. <br />
-      Test and debug software applications to ensure stability and performance.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      Manage calendars, schedule appointments, and coordinate meetings for various departments <br />
+      Prepare and distribute meeting materials, including agendas, presentations, and minutes. <br />
+      Answer phones, greet visitors, and handle inquiries professionally. <br />
+      Maintain office supplies and order necessary materials. <br />
+      Assist with travel arrangements, including booking flights and accommodation.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Data Management:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Work closely with development, design, and project management teams. <br />
-       Participate in code reviews and brainstorming sessions. <br />
-       Effectively communicate progress and challenges related to software development.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      Maintain accurate records and files, both physical and electronic. <br />
+      Prepare reports and presentations as needed. <br />
+      Input data into databases and spreadsheets.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Communication and Coordination:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Update and improve existing software applications. <br />
-      Resolve issues and bugs reported by users. <br />
-      Propose enhancements to application functionality and usability.</p>
+      Communicate effectively with internal and external stakeholders. <br />
+      Maintain a professional and courteous demeanor in all interactions. <br />
+      Collaborate with team members to ensure smooth workflow.</p>
         </div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
-      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
-      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
-      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
-      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
-      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
-      <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Proven experience in an administrative assistant role.</p>
+      <p className="text-[12px] lg:text-[14px]">• Strong organizational and time management skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Excellent communication and interpersonal skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Proficiency in Microsoft Office Suite (Word, Excel, PowerPoint).</p>
+      <p className="text-[12px] lg:text-[14px]">• Detail-oriented and accuracy in data entry.</p>
+      <p className="text-[12px] lg:text-[14px]">• Ability to prioritize tasks and manage multiple responsibilities</p>
+      <p className="text-[12px] lg:text-[14px]">• Pleasant and professional demeanor.</p>
         </div>
       
       </div> 
@@ -234,7 +222,7 @@ function Jobdetail() {
           <div className="bg-white w-[80%] lg:w-[100%] max-w-md p-6 rounded-lg text-center">
             <div className="flex items-center gap-1 justify-center">
             <h2 className="text-2xl lg:text-4xl text-secondary mb-4">Great Job </h2>
-            
+          
             </div>
             
             <p className="text-gray-800 mt-5 mb-6 leading-9">
@@ -263,4 +251,4 @@ function Jobdetail() {
   )
 }
 
-export default Jobdetail;
+export default Jobdetail10;

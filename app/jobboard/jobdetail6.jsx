@@ -15,7 +15,7 @@ import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
-function Jobdetail() {
+function Jobdetail6() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -51,55 +51,50 @@ function Jobdetail() {
 
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
-        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <h1 className='text-xl lg:text-3xl font-medium'>Reliable Maid Needed</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
-            to join our team. We are looking for individuals passionate about creating innovative applications and software,
-             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
-             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking reliable and hardworking Maids to join our team. We are looking for individuals who are dedicated to maintaining a clean and organized home, providing excellent customer service, and demonstrating a strong work ethic. If you have a passion for cleanliness, a keen eye for detail, and a commitment to providing a comfortable and welcoming environment, we encourage you to apply.</p>
          </div>
       <div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
-        engaging user interfaces, ensuring an optimal user experience.</p>
+      As a Maid, you will be responsible for maintaining the cleanliness and order of a private home. You will perform various cleaning tasks, including dusting, vacuuming, mopping, laundry, and other household chores. You will ensure the home is presentable and comfortable for the residents, demonstrating a commitment to excellence in your work.</p>
         </div>
      
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Cleaning and Housekeeping:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Analyze functional and technical requirements for software projects. <br />
-      Design robust and scalable software architectures. <br />
-      Develop intuitive and engaging user interfaces (UI). <br />
-      Write clean, efficient, and well-documented code. <br />
-      Test and debug software applications to ensure stability and performance.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      Clean and maintain all areas of the home, including bedrooms, bathrooms, kitchens, living rooms, and common areas. <br />
+      Dust furniture, vacuum carpets, and mop floors regularly. <br />
+      Wash dishes, clean countertops, and maintain a clean and sanitized kitchen. </p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Laundry and Ironing:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Work closely with development, design, and project management teams. <br />
-       Participate in code reviews and brainstorming sessions. <br />
-       Effectively communicate progress and challenges related to software development.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      Wash, dry, and iron clothing and other linens according to instructions. <br />
+      Fold and store laundry neatly. </p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• General Housekeeping:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Update and improve existing software applications. <br />
-      Resolve issues and bugs reported by users. <br />
-      Propose enhancements to application functionality and usability.</p>
+      Empty trash cans, change bed linens, and make beds. <br />
+      Clean windows, mirrors, and other surfaces. <br />
+      Maintain a clean and organized pantry and storage areas.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Communication and Collaboration:</h4>
+      <p className="text-[12px] lg:text-[14px]">
+      Communicate with the homeowner or supervisor regarding cleaning schedules and any necessary supplies. <br />
+      Work independently and efficiently to complete assigned tasks.</p>
         </div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
-      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
-      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
-      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
-      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
-      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
-      <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Experience in cleaning and maintaining a home environment.</p>
+      <p className="text-[12px] lg:text-[14px]">• Strong cleaning skills and attention to detail.</p>
+      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and efficiently.</p>
+      <p className="text-[12px] lg:text-[14px]">• Knowledge of cleaning products and techniques.</p>
+      <p className="text-[12px] lg:text-[14px]">• Physical stamina and ability to perform repetitive tasks.</p>
+      <p className="text-[12px] lg:text-[14px]">• Positive attitude and a strong work ethic.</p>
         </div>
       
       </div> 
@@ -234,7 +229,7 @@ function Jobdetail() {
           <div className="bg-white w-[80%] lg:w-[100%] max-w-md p-6 rounded-lg text-center">
             <div className="flex items-center gap-1 justify-center">
             <h2 className="text-2xl lg:text-4xl text-secondary mb-4">Great Job </h2>
-            
+           
             </div>
             
             <p className="text-gray-800 mt-5 mb-6 leading-9">
@@ -263,4 +258,4 @@ function Jobdetail() {
   )
 }
 
-export default Jobdetail;
+export default Jobdetail6;

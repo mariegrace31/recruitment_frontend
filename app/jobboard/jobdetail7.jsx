@@ -15,7 +15,7 @@ import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
-function Jobdetail() {
+function Jobdetail7() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmittedModalOpen, setIsSubmittedModalOpen] = useState(false);
 
@@ -51,55 +51,51 @@ function Jobdetail() {
 
       <div className='bg-white p-6 lg:p-32 flex flex-col lg:flex-row gap-12 lg:gap-32'>
       <div className='w-[100%] lg:w-[50%] h-[calc(100%-Xpx)] lg:h-[800px] overflow-y-hidden lg:overflow-y-auto border-b-gray-400'>
-        <h1 className='text-xl lg:text-3xl font-medium'>Software Dev</h1>
+        <h1 className='text-xl lg:text-3xl font-medium'>Experienced Driver</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is seeking talented and experienced Software Designers 
-            to join our team. We are looking for individuals passionate about creating innovative applications and software,
-             with a strong understanding of design principles and a knack for problem-solving. If you have a passion for 
-             coding, a vibrant creative mind, and a desire to build cutting-edge software solutions, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is looking for reliable and experienced Drivers to join our team. We are seeking individuals with a strong commitment to safety, a professional driving record, and a dedication to providing excellent customer service.  If you have a passion for driving, a keen understanding of road safety, and a commitment to punctuality, we encourage you to apply. </p>
          </div>
       <div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
-        engaging user interfaces, ensuring an optimal user experience.</p>
+      As a Driver, you will be responsible for safely transporting passengers or goods to their destinations.  You will ensure a comfortable and enjoyable journey for passengers and adhere to all traffic laws and regulations. You will be a key member of our team, representing our company with professionalism and courtesy. </p>
         </div>
      
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Responsabilities</h1>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Design and Development:</h4>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Safe Driving Practices:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Analyze functional and technical requirements for software projects. <br />
-      Design robust and scalable software architectures. <br />
-      Develop intuitive and engaging user interfaces (UI). <br />
-      Write clean, efficient, and well-documented code. <br />
-      Test and debug software applications to ensure stability and performance.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Team Collaboration:</h4>
+      Maintain a safe driving record and adhere to all traffic laws and regulations.  <br />
+      Practice defensive driving techniques and prioritize passenger safety. <br />
+      Conduct regular vehicle checks to ensure safe operating condition.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Route Planning and Navigation:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Work closely with development, design, and project management teams. <br />
-       Participate in code reviews and brainstorming sessions. <br />
-       Effectively communicate progress and challenges related to software development.</p>
-      <h4 className="text-[12px] lg:text-[14px] font-medium">• Maintenance and Improvements:</h4>
+      Plan efficient routes and ensure timely arrival at destinations. <br />
+      Utilize navigation systems and maps to locate destinations efficiently. <br />
+      Adapt to changing traffic conditions and adjust routes accordingly.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Passenger Service:</h4>
       <p className="text-[12px] lg:text-[14px]">
-      Update and improve existing software applications. <br />
-      Resolve issues and bugs reported by users. <br />
-      Propose enhancements to application functionality and usability.</p>
+      Provide courteous and professional service to passengers. <br />
+      Assist passengers with loading and unloading luggage. <br />
+      Maintain a clean and organized vehicle.</p>
+      <h4 className="text-[12px] lg:text-[14px] font-medium">• Vehicle Maintenance:</h4>
+      <p className="text-[12px] lg:text-[14px]">
+      Report any vehicle issues or maintenance needs to supervisors <br />
+      Contribute to the upkeep and cleanliness of the vehicle.</p>
         </div>
 
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Required Skills.</h1>
-      <p className="text-[12px] lg:text-[14px]">• Strong proficiency in one or more programming languages (e.g., Java, Python, C++, JavaScript).</p>
-      <p className="text-[12px] lg:text-[14px]">• Experience in designing and developing web and/or mobile applications.</p>
-      <p className="text-[12px] lg:text-[14px]">• Understanding of UI/UX design principles.</p>
-      <p className="text-[12px] lg:text-[14px]">• Knowledge of software architecture concepts and database management.</p>
-      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team.</p>
-      <p className="text-[12px] lg:text-[14px]">• Excellent communication and problem-solving skills.</p>
+      <p className="text-[12px] lg:text-[14px]">• Valid driver's license with a clean driving record.</p>
+      <p className="text-[12px] lg:text-[14px]">• Experience driving a variety of vehicles (cars, vans, etc.).</p>
+      <p className="text-[12px] lg:text-[14px]">• Knowledge of traffic laws and regulations.</p>
+      <p className="text-[12px] lg:text-[14px]">• Strong spatial awareness and ability to navigate effectively.</p>
+      <p className="text-[12px] lg:text-[14px]">• Excellent customer service skills and a professional demeanor.</p>
+      <p className="text-[12px] lg:text-[14px]">• Ability to work independently and as part of a team</p>
         </div>
       
       </div> 
@@ -263,4 +259,4 @@ function Jobdetail() {
   )
 }
 
-export default Jobdetail;
+export default Jobdetail7;
