@@ -138,12 +138,12 @@ function Jobdetail() {
           <hr className='text-[#ECEDF2]'  />
           <div className='flex justify-between my-4'>
             <h3 className='font-light text-[13px] lg:text-lg text-white/50'>Contact Us:</h3>
-            <p className='font-light text-[13px] lg:text-lg text-white/50'>0784 673 524</p>
+            <p className='font-light text-[13px] lg:text-lg text-white/50'>+250 795 460 410</p>
           </div>
           <hr className='text-[#ECEDF2]'  />
           <div className='flex justify-between my-4'>
             <h3 className='font-light text-[13px] lg:text-lg text-white/50'>E-mail:</h3>
-            <p className='font-light text-[13px] lg:text-lg text-white/50'>info.mayllos@gmail.com</p>
+            <p className='font-light text-[13px] lg:text-lg text-white/50'>contact@lkrecrutementrw.com</p>
           </div>
           <hr className='text-[#ECEDF2]' />
           <div className='text-center'>
@@ -231,13 +231,13 @@ function Jobdetail() {
           {/* Submitted Confirmation Modal */}
           {isSubmittedModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary/60 backdrop-blur-sm">
-          <div className="bg-white w-[80%] lg:w-[100%] max-w-md p-6 rounded-lg text-center">
+          <div className="bg-white w-[85%] lg:w-[100%] max-w-md p-4 lg:p-6 rounded-lg text-center">
             <div className="flex items-center gap-1 justify-center">
-            <h2 className="text-2xl lg:text-4xl text-secondary mb-4">Great Job </h2>
+            <h2 className="text-xl lg:text-4xl text-secondary mb-4">Great Job </h2>
             
             </div>
             
-            <p className="text-gray-800 mt-5 mb-6 leading-9">
+            <p className="text-gray-800 mt-2 lg:mt-5 mb-4 lg:mb-6 text-[12px] lg:text-[19px] leading-8 lg:leading-9">
             Thank you for applying to Lk Recruitment Rwanda. We are currently reviewing all applications and will reach out within four weeks if your qualifications match the position.
              If you don't hear from us by then, we have carefully reviewed your application but may not 
              have selected you for this role. We encourage you to check our website for future opportunities. <br />
