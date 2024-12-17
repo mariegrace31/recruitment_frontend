@@ -13,7 +13,15 @@ function Footer() {
         <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px] w-[50%] lg:w-[23%]'> <TiLocation className='p-1 px-2 text-xl lg:text-5xl bg-secondary rounded-r-lg text-white' />4th floor La Bonne Addresse House, Nyarugenge Kiyovu, Kigali City</p>
         <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px]'><MdOutlineEmail className='p-1 text-lg lg:text-4xl bg-secondary rounded-r-lg text-white' />office@lkrecruitmentrw.com <br /> contact@lkrecruitmentrw.com</p>
         <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px]'><IoCall className='p-1 text-lg lg:text-4xl bg-secondary rounded-r-lg text-white' />+250 795 460 410</p>
-        <p className='border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px]'><FaWhatsapp className='p-1 text-lg lg:text-4xl bg-secondary rounded-r-lg text-white' />Chat with us now</p>
+        <a
+         href="https://wa.me/250795460410"
+         target="_blank"
+         rel="noopener noreferrer"
+         className="border border-gray-500 p-1 lg:p-2 rounded-sm flex items-center gap-2 text-white text-[8px] lg:text-[14px]"
+        >
+        <FaWhatsapp className="p-1 text-lg lg:text-4xl bg-secondary rounded-r-lg text-white" />
+        Chat with us now
+       </a>
       </div>
       <div>
       <p className='border border-gray-500 p-3 lg:hidden rounded-lg flex items-center justify-center w-[90%] mx-auto gap-2 text-white text-[12px]'><IoCall className='text-xl text-white' />+250 795 460 410 | office@lkrecruitmentrw.com </p>
@@ -38,9 +46,9 @@ function Footer() {
        
         <div className='flex flex-col gap-4'>
           <h1 className='text-[12px] lg:text-[20px] font-medium text-white'>Social media</h1>
-          <Link className='text-white text-[10px] lg:text-[15px] font-light' href='#'>Instagram</Link>
-          <Link className='text-white text-[10px] lg:text-[15px] font-light' href='#'>Facebook</Link>
-          <Link className='text-white text-[10px] lg:text-[15px] font-light' href='#'>LinkedIn</Link>
+          <Link className='text-white text-[10px] lg:text-[15px] font-light' href='https://www.instagram.com/lkrecruitement.rw/profilecard/?igsh=MTZ6dGloaGluazcycQ=='>Instagram</Link>
+          <Link className='text-white text-[10px] lg:text-[15px] font-light' href='https://www.facebook.com/share/qdAx7Q41BKRNA9AD/'>Facebook</Link>
+          <Link className='text-white text-[10px] lg:text-[15px] font-light' href='https://www.linkedin.com/in/lk-recruitment-rwanda-3543b5334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>LinkedIn</Link>
         </div>
      
       </div>

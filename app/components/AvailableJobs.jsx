@@ -28,7 +28,7 @@ function AvailableJobs() {
           </div>
           <p className='text-sm'>Join our tech team to develop innovative solutions. Minimum 3 years of experience required.</p>
           <Link href="/jobdetail">
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
+          <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] lg:w-[43%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
           </Link>
         </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#F8FAFF] hover:bg-[#E0E6F7] group'>
@@ -39,7 +39,7 @@ function AvailableJobs() {
           </div>
           <p className='text-sm'>As a Tutor, you will provide individualized academic support to students of various ages and levels.</p>
           <Link href="/job4">
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
+          <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] lg:w-[43%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
           </Link>
         </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#F8FAFF] hover:bg-[#E0E6F7] group'>
@@ -50,7 +50,7 @@ function AvailableJobs() {
           </div>
           <p className='text-sm'>As a Graphic Designer, you will be the visual storyteller for our brand, crafting engaging and memorable designs.....</p>
           <Link href="/job2">
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
+          <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] lg:w-[43%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
           </Link>
         </div>
         <div className='flex flex-col gap-3 border border-secondary p-4 py-8 rounded-lg bg-[#F8FAFF] hover:bg-[#E0E6F7] group'>
@@ -61,7 +61,7 @@ function AvailableJobs() {
           </div>
           <p className='text-sm'>As a Web Designer, you will be responsible for the visual design and development of our website </p>
           <Link href="/job3">
-          <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
+          <button className='bg-[#E0E6F7] p-2 rounded-md w-[40%] lg:w-[43%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white'>More Details</button>
           </Link>
         </div>
 
