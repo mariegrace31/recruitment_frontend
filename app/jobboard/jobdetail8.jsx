@@ -2,16 +2,9 @@
 import React, { useState } from "react";
 import hr from '../assets/abouthr.png';
 import Image from 'next/image';
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaLinkedinIn } from 'react-icons/fa';
-import { GrFacebookOption } from 'react-icons/gr';
-import Link from 'next/link';
-import { MdOutlineContentCopy } from "react-icons/md";
-import { PiShareFatFill } from "react-icons/pi";
 import logo from "../assets/thirdlogo.png";
-import gray from '../assets/grayhr.png';
 import Footer from '../components/Footer';
-import emoji from '../assets/emoji.png';
+import emailjs from "emailjs-com"; 
 import { BsFillCloudUploadFill } from "react-icons/bs";
  
 
@@ -36,6 +29,23 @@ function Jobdetail8() {
     e.preventDefault();
     setIsModalOpen(false);
     setIsSubmittedModalOpen(true);
+    emailjs
+    .sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      e.target,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY
+    )
+    .then(
+      (result) => {
+        console.log("Email sent successfully:", result.text);
+        
+      },
+      (error) => {
+        console.error("Error submitting application:", error.text);
+        
+      }
+    );
   };
 
   const closeSubmittedModal = () => {
@@ -166,6 +176,7 @@ function Jobdetail8() {
                 <input
                   type="email"
                   id="email"
+                  name="user_email"
                   placeholder="Email"
                   className="w-full border border-gray-300 bg-secondary rounded-md p-2 lg:p-3 text-white placeholder:text-gray-300 placeholder:text-[12px] lg:placeholder:text-[15px] placeholder:font-light"
                   required
@@ -176,6 +187,7 @@ function Jobdetail8() {
                 <input
                   type="tel"
                   id="phone"
+                  name="user_number"
                   placeholder="Your Phone Number"
                   className="w-full border  bg-secondary  text-white border-gray-300 rounded-md p-2 lg:p-3 placeholder:text-gray-200 placeholder:text-[12px] lg:placeholder:text-[15px] placeholder:font-light"
                   required
@@ -186,6 +198,7 @@ function Jobdetail8() {
                 <textarea
                   id="message"
                   rows="3"
+                  name="message"
                   placeholder="Type your message"
                   className="w-full border  bg-secondary h-20 lg:h-28  border-gray-300 text-white rounded-md p-2 lg:p-3 placeholder:text-gray-200 placeholder:text-[12px] lg:placeholder:text-[15px] placeholder:font-light"
                   required
@@ -196,6 +209,7 @@ function Jobdetail8() {
             <input
               type="file"
               id="cv"
+              name="user_cv"
               accept=".doc,.docx,.pdf"
               className="hidden"
               onChange={handleFileChange}

@@ -2,18 +2,10 @@
 import React, { useState } from "react";
 import hr from '../assets/abouthr.png';
 import Image from 'next/image';
-import { IoLogoWhatsapp } from "react-icons/io";
-import { FaLinkedinIn } from 'react-icons/fa';
-import { GrFacebookOption } from 'react-icons/gr';
-import Link from 'next/link';
-import { MdOutlineContentCopy } from "react-icons/md";
-import { PiShareFatFill } from "react-icons/pi";
 import logo from "../assets/thirdlogo.png";
-import gray from '../assets/grayhr.png';
 import Footer from '../components/Footer';
-import emoji from '../assets/emoji.png';
 import { BsFillCloudUploadFill } from "react-icons/bs";
- 
+import emailjs from "emailjs-com"; 
 
 function Jobdetail2() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,6 +28,24 @@ function Jobdetail2() {
     e.preventDefault();
     setIsModalOpen(false);
     setIsSubmittedModalOpen(true);
+
+    emailjs
+    .sendForm(
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      e.target,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY
+    )
+    .then(
+      (result) => {
+        console.log("Email sent successfully:", result.text);
+        
+      },
+      (error) => {
+        console.error("Error submitting application:", error.text);
+        
+      }
+    );
   };
 
   const closeSubmittedModal = () => {
@@ -171,6 +181,7 @@ function Jobdetail2() {
                 <label htmlFor="email" className="block text-[15px] lg:text-[20px] text-gray-100 font-light mb-2 lg:mb-3">Email Address</label>
                 <input
                   type="email"
+                  name="user_email"
                   id="email"
                   placeholder="Email"
                   className="w-full border border-gray-300 bg-secondary rounded-md p-2 lg:p-3 text-white placeholder:text-gray-300 placeholder:text-[12px] lg:placeholder:text-[15px] placeholder:font-light"
@@ -182,6 +193,7 @@ function Jobdetail2() {
                 <input
                   type="tel"
                   id="phone"
+                  name="user_number"
                   placeholder="Your Phone Number"
                   className="w-full border  bg-secondary  text-white border-gray-300 rounded-md p-2 lg:p-3 placeholder:text-gray-200 placeholder:text-[12px] lg:placeholder:text-[15px] placeholder:font-light"
                   required
@@ -191,6 +203,7 @@ function Jobdetail2() {
                 <label htmlFor="message" className="block text-[15px] lg:text-[20px] text-white font-light mb-2 lg:mb-3 mt-5 lg:mt-8 ">Message</label>
                 <textarea
                   id="message"
+                  name="message"
                   rows="3"
                   placeholder="Type your message"
                   className="w-full border  bg-secondary h-20 lg:h-28  border-gray-300 text-white rounded-md p-2 lg:p-3 placeholder:text-gray-200 placeholder:text-[12px] lg:placeholder:text-[15px] placeholder:font-light"
@@ -202,6 +215,7 @@ function Jobdetail2() {
             <input
               type="file"
               id="cv"
+              name="user_cv"
               accept=".doc,.docx,.pdf"
               className="hidden"
               onChange={handleFileChange}
