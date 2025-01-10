@@ -7,7 +7,7 @@ import { MdOutlineCheckBoxOutlineBlank, MdCheckBox } from "react-icons/md";
 import line from '../assets/loginline.png';
 import Link from 'next/link';
 
-function Login() {
+function SignUp() {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
 
@@ -16,11 +16,18 @@ function Login() {
       <div className='my-auto w-[28%]'>
         <Image src={logo} width={100} height={100} alt='logo' className='mx-auto' />
         <div className='bg-white w-[100%] flex flex-col gap-4 justify-center p-12 border border-[#1A77B9]/50 rounded-md mt-9 '>
-          <h3 className='text-[14px]'>Username or Email Address</h3>
+          <h3 className='text-[14px]'>Full Name</h3>
           <input
             className='border border-[#523F69]/50 placeholder:text-[8px] placeholder:text-black/50 px-2 py-[4px] bg-[#1A77B9]/10 rounded-md'
             type="text"
-            placeholder='Username'
+            placeholder='Full Name'
+            required
+          />
+          <h3 className='text-[14px]'>Email Address</h3>
+          <input
+            className='border border-[#523F69]/50 placeholder:text-[8px] placeholder:text-black/50 px-2 py-[4px] bg-[#1A77B9]/10 rounded-md'
+            type="email"
+            placeholder='Email Address'
             required
           />
           <h3 className='text-[14px]'>Password</h3>
@@ -55,17 +62,17 @@ function Login() {
               )}
               <p className='text-[13px]'>Remember me</p>
             </div>
-            <Link href='/password' className='text-[13px] hover:underline'>Lost password</Link>
+       
           </div>
           <Link href='/'>
-            <button className='text-[14px] bg-[#1A77B9] text-white w-[100%] p-1 rounded-md'>Login</button>
+            <button className='text-[14px] bg-[#1A77B9] text-white w-[100%] p-1 rounded-md'>Sign Up</button>
           </Link>
           <Image src={line} width={200} height={100} alt='line' className='w-[350px] mx-auto' />
-          <p className='text-[12px] text-center'>Don't have an account yet? <span className='text-[#1A77B9] cursor-pointer hover:underline'><Link href='/signup'>Sign Up</Link></span></p>
+          <p className='text-[12px] text-center'>Already have an account? <span className='text-[#1A77B9] cursor-pointer hover:underline'><Link href='/login'>Login</Link></span></p>
         </div>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default SignUp;
