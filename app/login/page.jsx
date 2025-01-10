@@ -55,13 +55,13 @@ function Login() {
               )}
               <p className='text-[13px]'>Remember me</p>
             </div>
-            <Link href='/password' className='text-[13px]'>Lost password</Link>
+            <Link href='/password' className='text-[13px] hover:underline'>Lost password</Link>
           </div>
           <Link href='/'>
             <button className='text-[14px] bg-[#1A77B9] text-white w-[100%] p-1 rounded-md'>Login</button>
           </Link>
           <Image src={line} width={200} height={100} alt='line' className='w-[350px] mx-auto' />
-          <p className='text-[12px] text-center'>Don't have an account yet? <span className='text-[#1A77B9]'>Sign Up</span></p>
+          <p className='text-[12px] text-center'>Don't have an account yet? <span className='text-[#1A77B9] cursor-pointer hover:underline'>Sign Up</span></p>
         </div>
       </div>
     </div>
