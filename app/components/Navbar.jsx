@@ -27,9 +27,12 @@ function Navbar() {
       </div>
 
       <div className="flex gap-3 lg:order-2 items-center">
+        <Link href='/login'>
         <button className="bg-primary text-white rounded-3xl font-medium px-3 py-1 text-[12px] md:px-5 md:py-2 md:text-[15px] hover:bg-secondary cursor-pointer">
           Login
         </button>
+        </Link>
+       
 
         <button
           className="lg:hidden text-secondary text-2xl"
