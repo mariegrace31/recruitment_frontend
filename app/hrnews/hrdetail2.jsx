@@ -6,6 +6,7 @@ import dot from '../assets/dothr.png';
 import Footer from '../components/Footer';
 import { FaTimes } from 'react-icons/fa';
 import blog2 from '../assets/blogpic.jpeg';
+import Link from 'next/link';
 
 function Hrdetail2() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -69,7 +70,10 @@ function Hrdetail2() {
             <div className='flex flex-col gap-5 items-center'>
               <h2 className='font-medium text-secondary text-lg lg:text-xl'>Oops</h2>
               <p className='text-[15px] lg:text-[18px] text-black text-center'>Sorry! You need to log in to share your thoughts. Log in now and let us know what you think!</p>
+              <Link href='/login'>
               <button className='font-semibold underline text-secondary text-[18px]'>Login</button>
+              </Link>
+             
             </div>
           </div>
         </div>
