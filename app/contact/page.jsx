@@ -12,11 +12,11 @@ import Footer from '../components/Footer';
 import Link from 'next/link';
 import contactHr from '../assets/contacthr.png';
 import { IoMdSend } from "react-icons/io";
-import map from '../assets/map.png';
 import 'leaflet/dist/leaflet.css';
 
 
 function page() {
+
  return (
    <div>
       <div className='p-5 lg:p-20'>
@@ -91,9 +91,9 @@ function page() {
              <h3 className='text-secondary text-sm lg:text-[16px] font-medium'>4th floor La Bonne Addresse House</h3>
              <h3 className='font-bold text-[16px] lg:text-xl mt-1 lg:mt-5'>Social Media</h3>
              <div className='flex gap-3 items-center'>
-             <Link href='#'><FaLinkedinIn   className='p-1 text-xl rounded-sm bg-[#0076B2] text-white'/></Link>
-             <Link href='#'><GrFacebookOption className='bg-[#1877F2] text-white text-2xl p-1 rounded-3xl' /></Link>
-             <Image src={ig} width={20} height={18} alt='instagram' />
+             <Link href='https://www.linkedin.com/in/lk-recruitment-rwanda-3543b5334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'><FaLinkedinIn   className='p-1 text-xl rounded-sm bg-[#0076B2] text-white'/></Link>
+             <Link href='https://www.facebook.com/share/qdAx7Q41BKRNA9AD/'><GrFacebookOption className='bg-[#1877F2] text-white text-2xl p-1 rounded-3xl' /></Link>
+            <Link href='https://www.instagram.com/lkrecruitement.rw/profilecard/?igsh=MTZ6dGloaGluazcycQ=='><Image src={ig} width={20} height={18} alt='instagram' /></Link>
              <h3 className='text-secondary text-sm lg:text-[16px]'>LkRecruitmentRwanda</h3>
              </div>
            </div>
