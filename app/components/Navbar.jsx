@@ -7,7 +7,6 @@ import logo from "../assets/secondlogo.png";
 import { FaTimes } from "react-icons/fa";
 import { PiDotsThreeOutline } from "react-icons/pi";
 import Link from "next/link";
-import line from "../assets/navline.svg";
 
 function Navbar() {
   const pathname = usePathname();

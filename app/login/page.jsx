@@ -65,7 +65,7 @@ function Login() {
         >
           <h3 className='text-[14px]'>Username</h3>
           <input
-            className='border border-[#523F69]/50 placeholder:text-[8px] placeholder:text-black/50 px-2 py-[4px] bg-[#1A77B9]/10 rounded-md'
+            className='border border-[#523F69]/50 placeholder:text-[8px] text-[14px] placeholder:text-black/50 px-2 py-[4px] bg-[#1A77B9]/10 rounded-md'
             type="text"
             placeholder='Username'
             value={username}
