@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Sidebar from '../components/sidebar';
 import { TbBriefcase } from 'react-icons/tb';
 import { RiLoader2Line } from "react-icons/ri";
-import Modal from '../components/Modal';
+import Modal from '../components/modal';
 
 function Jobs() {
   const [jobs, setJobs] = useState([
@@ -33,9 +33,9 @@ function Jobs() {
     },
     {
       id: 5,
-      title: 'Marketing Specialist',
+      title: 'Chef Cook',
       type: ['Full Time', 'Part Time'],
-      description: 'Drive our marketing campaigns and expand brand visibility. Experience in digital marketing preferred.',
+      description: 'As a chef cook, you will be providing exceptional dining experiences.',
     },
     {
       id: 6,
@@ -60,12 +60,10 @@ function Jobs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentJob, setCurrentJob] = useState(null);
 
-  // Function to handle job deletion
   const handleDeleteJob = (id) => {
     setJobs(jobs.filter((job) => job.id !== id));
   };
 
-  // Function to handle opening the modal for editing
   const handleEditJob = (job) => {
     setCurrentJob(job);
     setIsModalOpen(true);

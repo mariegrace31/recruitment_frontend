@@ -64,7 +64,7 @@ function Jobdetail12() {
         <h1 className='text-xl lg:text-3xl font-medium'>Chef Cook</h1>
         <div className='flex flex-col gap-6 lg:gap-4 border border-gray-400 py-5 p-3 mt-5 lg:mt-10 rounded-lg'>
           <h1 className='text-[16px] lg:text-xl'>Overview</h1>
-          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is searching for a skilled and passionate Chef Cook to join our team. We are seeking an individual with a proven track record of culinary excellence, creativity, and a dedication to providing exceptional dining experiences.  If you have a passion for food, a love for creating delicious dishes, and a commitment to culinary artistry, we encourage you to apply.</p>
+          <p className='text-[12px] lg:text-[14px]'>LK Recruitment Rwanda is searching for a skilled and passionate Chef Cook to join our team. We are seeking an individual with a proven track record of culinary excellence, creativity, and a dedication to providing exceptional dining experiences. If you have a passion for food, a love for creating delicious dishes, and a commitment to culinary artistry, we encourage you to apply.</p>
          </div>
       <div>
 
