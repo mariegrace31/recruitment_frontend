@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { TbBriefcase } from 'react-icons/tb';
 
@@ -31,21 +32,9 @@ function Jobs() {
     },
   ]);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentJob, setCurrentJob] = useState(null);
 
   const deleteJob = (id) => {
     setJobs(jobs.filter((job) => job.id !== id));
-  };
-
-  const openEditModal = (job) => {
-    setCurrentJob(job);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setCurrentJob(null);
   };
 
   return (
@@ -78,32 +67,18 @@ function Jobs() {
             >
               Delete this job
             </button>
+            <Link href='/edit'>
             <button
-              onClick={() => openEditModal(job)}
               className='bg-[#E0E6F7] py-2 px-4 rounded-md text-[13px] text-primary_dash group-hover:bg-primary_dash group-hover:text-white'
             >
               Edit this Job
             </button>
+            </Link>
+           
           </div>
         </div>
       ))}
 
-      {/* Modal for Editing */}
-      {isModalOpen && (
-        <div className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
-          <div className='bg-white w-[90%] max-w-md p-6 rounded-lg'>
-            <h2 className='text-xl font-bold mb-4'>Edit Job</h2>
-           
-            <p className='mb-2'>Job Title: {currentJob?.title}</p>
-            <button
-              onClick={closeModal}
-              className='bg-red-500 text-white py-1 px-3 rounded-md'
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

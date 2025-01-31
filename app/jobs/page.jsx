@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Sidebar from '../components/sidebar';
 import { TbBriefcase } from 'react-icons/tb';
 import { RiLoader2Line } from "react-icons/ri";
-import Modal from '../components/modal';
+import Link from 'next/link';
 
 function Jobs() {
   const [jobs, setJobs] = useState([
@@ -57,17 +57,10 @@ function Jobs() {
     },
   ]);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentJob, setCurrentJob] = useState(null);
-
   const handleDeleteJob = (id) => {
     setJobs(jobs.filter((job) => job.id !== id));
   };
 
-  const handleEditJob = (job) => {
-    setCurrentJob(job);
-    setIsModalOpen(true);
-  };
 
   return (
     <section className='flex'>
@@ -99,12 +92,13 @@ function Jobs() {
                 >
                   Delete this job
                 </button>
+                <Link href='/edit'  >
                 <button
-                  onClick={() => handleEditJob(job)}
                   className='bg-[#E0E6F7] py-2 px-3 rounded-md text-[12px] text-primary_dash group-hover:bg-primary_dash group-hover:text-white'
                 >
                   Edit this Job
                 </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -112,14 +106,6 @@ function Jobs() {
         <button className='flex items-center gap-1 border border-primary_dash/50 py-2 px-4 rounded-3xl text-[17px] mx-auto mt-4'>< RiLoader2Line />Load more</button>
       </div>
 
-      {/* Modal for editing job */}
-      {isModalOpen && (
-        <Modal
-          isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
-          job={currentJob}
-        />
-      )}
     </section>
   );
 }
