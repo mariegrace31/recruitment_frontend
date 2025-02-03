@@ -4,6 +4,7 @@ import Sidebar from '../components/sidebar';
 import { TbBriefcase } from 'react-icons/tb';
 import { RiLoader2Line } from "react-icons/ri";
 import Link from 'next/link';
+import Navbar2 from '../components/navbar2';
 
 function Jobs() {
   const [jobs, setJobs] = useState([
@@ -63,7 +64,9 @@ function Jobs() {
 
 
   return (
-    <section className='flex'>
+    <section >
+      <Navbar2 />
+      <div className='flex'>
       <Sidebar />
       <div>
         <h1 className="font-semibold text-2xl px-10 pt-10">Job listings</h1>
@@ -104,6 +107,7 @@ function Jobs() {
           ))}
         </div>
         <button className='flex items-center gap-1 border border-primary_dash/50 py-2 px-4 rounded-3xl text-[17px] mx-auto mt-4'>< RiLoader2Line />Load more</button>
+      </div>
       </div>
 
     </section>

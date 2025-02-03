@@ -97,7 +97,7 @@ function Sidebar() {
            <div className="pl-8 mt-2 flex flex-col gap-2">
            <Link href='/' className='flex gap-1 items-center text-[14px] text-lk_black_2 transform transition-transform duration-200 hover:scale-105'><LuGitCommitHorizontal className='text-xl' />Landing age</Link>
            <Link href='/about' className='flex gap-1 items-center text-[14px] text-lk_black_2 transform transition-transform duration-200 hover:scale-105'><LuGitCommitHorizontal className='text-xl' />About us</Link>
-           <Link href='/hrnews' className='flex gap-1 items-center text-[14px] text-lk_black_2 transform transition-transform duration-200 hover:scale-105'><LuGitCommitHorizontal className='text-xl' />HR News & Tips</Link>
+           <Link href='/newHr' className='flex gap-1 items-center text-[14px] text-lk_black_2 transform transition-transform duration-200 hover:scale-105'><LuGitCommitHorizontal className='text-xl' />HR News & Tips</Link>
            <Link href='/contact' className='flex gap-1 items-center text-[14px] text-lk_black_2 transform transition-transform duration-200 hover:scale-105'><LuGitCommitHorizontal className='text-xl' />Contact Us</Link>
          </div>
           }

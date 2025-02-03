@@ -15,7 +15,8 @@ module.exports = {
         lk_bg: "#F5F5FF",
         secondary_dash: "#E0E6F7",
         lk_black: "#05264E",
-        lk_black_2: "#172B4C"
+        lk_black_2: "#172B4C",
+        lk_button:"#2196F3"
       },
     },
   },
