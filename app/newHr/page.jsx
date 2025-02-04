@@ -130,20 +130,22 @@ function NewHr() {
 
         <div>
 
+      <label className='text-[13px] mt-2'>Post Title</label>    
       <input 
         type="text" 
         name="title" 
-        placeholder="Title" 
+        placeholder="Enter the title" 
         value={newBlog.title} 
         onChange={handleInputChange} 
-        className="block w-full p-2 border mt-2 outline-secondary_dash" 
+        className="block w-full p-2 border mt-2 outline-secondary_dash placeholder:text-[13px] mb-2" 
       />
+      <label className='text-[13px]'>Post Description</label>
       <textarea 
         name="description" 
         placeholder="Description" 
         value={newBlog.description} 
         onChange={handleInputChange} 
-        className="block w-full p-2 border mt-2 outline-secondary_dash" 
+        className="block w-full p-2 border mt-2 outline-secondary_dash placeholder:text-[13px]" 
       />
         </div>
       </div>
