@@ -221,6 +221,94 @@ function HomeEdit() {
               </div>
             </div>
           </div>
+
+          {/* SERVICES */}
+          <div className='flex gap-8 mt-8'>
+            <div>
+              <h3 className='text-[16px] font-medium my-10'>Our Services</h3>
+              <div className='flex gap-8'>
+                <div className='w-[45%]'>
+                  <h3 className="font-medium text-[16px] my-7">
+                    <span className="text-primary_dash">01:</span> Workforce Solutions
+                  </h3>
+                  <div className='flex flex-col gap-4'>
+                  <h4 className="text-[13px] flex gap-3 items-center justify-between">
+                  Temporary staffing: <RiEdit2Fill />
+                  </h4>
+                  <p className="text-[13px] p-2 border border-gray-300 py-4 flex gap-3 items-center rounded-sm">
+                  Workers to fill short-term positions in various sectors, such as; house staff (Babysitting/Nanny, Housekeeping/Maid, Personal Assistants, Drivers, Gardener, Tutor), catering staff, web specialist, etc. 
+                  </p>
+
+                  <h4 className="text-[13px] flex gap-3 items-center justify-between">
+                  Temp-to-Perm Staffing: <RiEdit2Fill />
+                  </h4>
+                  <p className="text-[13px] p-2 border border-gray-300 py-4 flex gap-3 items-center rounded-sm">
+                  Trial period for both employer and worker to evaluate fit before making a permanent hiring decision. 
+                  </p>
+
+                  <h4 className="text-[13px] flex gap-3 items-center justify-between">
+                  Training and Development: <RiEdit2Fill />
+                  </h4>
+                  <p className="text-[13px] p-2 border border-gray-300 py-4 flex gap-3 items-center rounded-sm">
+                  Training services to improve candidate skills and increase their employability. 
+                  </p>
+
+                  <h4 className="text-[13px] flex gap-3 items-center justify-between">
+                  On-Site Management: <RiEdit2Fill />
+                  </h4>
+                  <p className="text-[13px] p-2 border border-gray-300 py-4 flex gap-3 items-center rounded-sm">
+                  Overseeing the temporary workers placed at a client's location and managing day-to-day operations. 
+                  </p>
+                  </div>
+                </div>
+
+                <div>
+                <h3 className="font-medium text-[16px] my-7">
+                    <span className="text-primary_dash">02:</span> Talent Architects
+                  </h3>
+                  <div className='flex flex-col gap-5'>
+                  <p className="text-[13px] p-2 border border-gray-300 flex gap-3 items-center justify-between rounded-sm">
+                  End-to-End Recruitment <RiEdit2Fill />
+                 </p>
+                 <p className="text-[13px] p-2 border border-gray-300 flex gap-3 items-center justify-between rounded-sm">
+                 HR Consulting (Coaching & Well-being) <RiEdit2Fill />
+                </p>
+                <p className="text-[13px] p-2 border border-gray-300 flex gap-3 items-center justify-between rounded-sm">
+                Recruitment Jury Organization & Support <RiEdit2Fill />
+                </p>
+                <p className="text-[13px] p-2 border border-gray-300 flex gap-3 items-center justify-between rounded-sm">
+                Executive Search <RiEdit2Fill />
+                </p>
+
+                <p className='font-medium text-[16px] my-6'>Flexible Recruitment Solutions</p>
+                <p className="text-[13px] p-2 border border-gray-300 flex gap-3 items-cente justify-between rounded-sm">
+                Permanent Recruitment <RiEdit2Fill />
+                </p>
+                <p className="text-[13px] p-2 border border-gray-300 flex gap-3 items-center justify-between rounded-sm">
+                Temporary Staffing <RiEdit2Fill />
+                </p>
+                <p className="text-[13px] p-2 border border-gray-300 flex gap-3 items-center justify-between rounded-sm">
+                Executive Search <RiEdit2Fill />
+                </p>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div>
+              <h3 className='text-[16px] font-medium my-10'>News Letter subscribe</h3>
+              <div className="flex flex-col gap-3 ">
+              <h4 className="text-[13px] flex gap-3 items-center justify-between mt-6">
+              Stay Informed and Ahead of the Curve. <RiEdit2Fill />
+                  </h4>
+                  <p className="text-[13px] p-2 border border-gray-300 py-4 flex gap-3 items-center rounded-sm">
+                  Subscribe to our newsletter for the latest updates, exclusive insights, and valuable information delivered straight to your inbox. 
+                  </p>
+              </div>
+            </div>
+          </div>
           
         </div>
       </div>
