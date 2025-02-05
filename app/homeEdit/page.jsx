@@ -5,7 +5,12 @@ import Navbar2 from "../components/navbar2";
 import Sidebar from "../components/sidebar";
 import { RiEdit2Fill } from "react-icons/ri";
 import { LuArrowRight } from "react-icons/lu";
+import CEO from '../assets/sara.png';
+import Soc from '../assets/yohani.png';
+import dja from '../assets/dawidi.png';
 import Link from 'next/link';
+import { IoMdCamera, IoMdClose } from "react-icons/io";
+import Image from 'next/image';
 
 function HomeEdit() {
   const scrollContent = () => {
@@ -47,6 +52,50 @@ function HomeEdit() {
     const deleteJob = (id) => {
       setJobs(jobs.filter((job) => job.id !== id));
     };
+
+     const [team, setTeam] = useState([
+        { id: 1, name: "Sara Jarhain", position: "HR Manager at COTTAGE HAVEN", description: "The LK Recruitment team has consistently exceeded our expectations. Their expertise and dedication helped us build a strong, talented team. We highly recommend their services.", image: CEO, editing: false },
+        { id: 2, name: "Yohani Smith", position: "CEO at Investment Insights Agency", description: "The LK Recruitment team has consistently exceeded our expectations. Their expertise and dedication helped us build a strong, talented team. We highly recommend their services.", image: Soc, editing: false },
+        { id: 3, name: "Dawidi Leeray", position: "Project manager at venture", description: "My name is Keza Djasmine,I am an administrative assistant at LK Recruitment. With a passion for efficient organization and a strong attention to detail, I am specialize in providing exceptional support", image: dja, editing: false },
+      ]);
+    
+      const [newMember, setNewMember] = useState({ name: "", position: "", description: "", image: null });
+      const [showModal, setShowModal] = useState(false);
+    
+      const handleEdit = (id, field) => {
+        setTeam(team.map(member => 
+          member.id === id 
+            ? { ...member, [field]: !member[field] } 
+            : member
+        ));
+      };
+    
+      const handleSave = () => {
+        setTeam(team.map(member => ({ ...member, editing: false })));
+      };
+    
+      const handleDelete = (id) => {
+        setTeam(team.filter(member => member.id !== id));
+      };
+    
+      const handleAddNew = () => {
+        if (newMember.name && newMember.position && newMember.description && newMember.image) {
+          setTeam([...team, { id: Date.now(), ...newMember, editing: false }]);
+          setNewMember({ name: "", position: "", description: "", image: null });
+          setShowModal(false);
+        }
+      };
+    
+      const handleImageUpload = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onloadend = () => {
+            setNewMember((prev) => ({ ...prev, image: reader.result }));
+          };
+          reader.readAsDataURL(file);
+        }
+      };
   
   return (
     <div>
@@ -309,6 +358,102 @@ function HomeEdit() {
               </div>
             </div>
           </div>
+
+          {/* TESTIMONIALS */}
+              <div className='flex justify-between my-7'>
+                      <h3 className='font-medium text-[16px] my-7'> Testimonial Section</h3>
+                      <button onClick={() => setShowModal(true)} className='text-primary_dash font-medium text-[16px] underline'>Add new</button>
+                    </div>
+          
+                    <div className='grid grid-cols-2 gap-10 mx-auto'>
+                      {team.map(member => (
+                        <div key={member.id} className='flex gap-4 items-center'>
+                          <div className='flex flex-col gap-2'>
+                            <div className='flex justify-between'>
+                              <h3 className='text-[14px] text-gray-400'>Testimonial</h3>
+                              <button onClick={() => handleDelete(member.id)} className='text-[14px] text-red-400'>Delete</button>
+                            </div>
+                            {member.editing ? (
+                              <textarea className='border border-gray-300 p-2 w-full' value={member.description} onChange={(e) => setTeam(team.map(m => m.id === member.id ? { ...m, description: e.target.value } : m))} />
+                            ) : (
+                              <p className='flex gap-2 text-[14px]'>{member.description} <RiEdit2Fill className='text-5xl' onClick={() => handleEdit(member.id, 'editing')} /></p>
+                            )}
+                            <div className='flex justify-between'>
+                              <div className='flex flex-col gap-1'>
+                                <h1 className='text-[13px] text-gray-400'>Name</h1>
+                                {member.editing ? (
+                                  <input type='text' className='border border-gray-300 p-1' value={member.name} onChange={(e) => setTeam(team.map(m => m.id === member.id ? { ...m, name: e.target.value } : m))} />
+                                ) : (
+                                  <p className='flex items-center gap-3 text-[14px]'>{member.name} <RiEdit2Fill className='text-[17px]' onClick={() => handleEdit(member.id, 'editing')} /></p>
+                                )}
+                              </div>
+                              <div className='flex flex-col gap-1'>
+                                <h1 className='text-[13px] text-gray-400'>Position</h1>
+                                {member.editing ? (
+                                  <input type='text' className='border border-gray-300 p-1' value={member.position} onChange={(e) => setTeam(team.map(m => m.id === member.id ? { ...m, position: e.target.value } : m))} />
+                                ) : (
+                                  <p className='flex items-center gap-3 text-[14px]'>{member.position} <RiEdit2Fill className='text-[17px]' onClick={() => handleEdit(member.id, 'editing')} /></p>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                          <Image src={member.image} width={100} height={100} alt='pic' className='w-44' />
+                        </div>
+                      ))}
+                    </div>
+                    
+                    {showModal && (
+                      <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50'>
+                        <div className='bg-white p-5 rounded-md w-[50%]'>
+                          <div className='flex justify-between items-center mb-2'>
+                            <h3 className='text-xl font-medium text-primary_dash mb-3'>Add New Testimonial</h3>
+                            <button onClick={() => setShowModal(false)} className="text-white bg-primary_dash rounded-full p-2">
+                              <IoMdClose className="text-2xl" />
+                            </button>
+                         </div>
+          
+                         <div className='flex justify-between'>
+                          <div className='w-[55%]'>
+                            <label className='text-[15px] text-gray-600 mb-2'>Testimonial</label>
+                            <textarea
+                           className="border border-gray-300 p-2 w-full h-28 mb-3"
+                           value={newMember.description}
+                           onChange={(e) => setNewMember({ ...newMember, description: e.target.value })}
+                         />
+                          </div>
+                          <label htmlFor="file-upload" className="cursor-pointer border border-gray-300 p-2 mb-3 w-[40%] flex justify-center items-center">
+                          <IoMdCamera className="text-primary_dash text-3xl" />
+                          <input type="file" id="file-upload" onChange={handleImageUpload} className="hidden"/>
+                          </label> 
+                         </div>
+          
+                         <div className='flex flex-col'>
+                         <label className='text-[15px] text-gray-600'>Name</label>
+                          <input
+                          type="text"
+                          placeholder="Enter name"
+                          className="border border-gray-300 mt-4 p-2 h-14 w-[55%] mb-3 placeholder:text-[13px]"
+                          value={newMember.name}
+                          onChange={(e) => setNewMember({ ...newMember, name: e.target.value })}
+                         />
+                         </div>
+                        
+                        <div className='flex flex-col'>
+                        <label className='text-[15px] text-gray-600'>Position</label>
+                         <input
+                         type="text"
+                         placeholder="Enter position"
+                         className="border border-gray-300 p-2 w-[55%] h-14 mt-4 mb-3 placeholder:text-[13px]"
+                         value={newMember.position}
+                         onChange={(e) => setNewMember({ ...newMember, position: e.target.value })}
+                         />
+                        </div>
+                         
+                        
+                      <button onClick={handleAddNew} className="bg-primary_dash text-white mt-4 p-2 w-[30%]">Save & Add</button>
+                    </div>
+                  </div>
+                 )}
           
         </div>
       </div>
