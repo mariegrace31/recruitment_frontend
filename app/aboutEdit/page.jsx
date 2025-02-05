@@ -62,7 +62,7 @@ function AboutEdit() {
         <Sidebar />
         <div className="w-full p-7">
           <div className="flex justify-between">
-            <h3 className="text-3xl font-semibold">Website - About Us</h3>
+            <h3 className="text-3xl font-medium">Website - About Us</h3>
             <button onClick={handleSave} className="text-[16px] text-white p-2 px-3 rounded-sm bg-lk_button">Save changes</button>
           </div>
           <hr className="w-full mt-2 mx-auto border-black/30" />

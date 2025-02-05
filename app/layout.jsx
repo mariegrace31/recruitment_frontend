@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-      {!(pathname === '/dashboard' || pathname === '/AddJob' || pathname === '/edit' || pathname === '/jobs' || pathname === '/newHr' || pathname === '/aboutEdit') && <Navbar />}
+      {!(pathname === '/dashboard' || pathname === '/AddJob' || pathname === '/edit' || pathname === '/jobs' || pathname === '/newHr' || pathname === '/aboutEdit' || pathname === '/homeEdit') && <Navbar />}
         {children}
       </body>
     </html>
