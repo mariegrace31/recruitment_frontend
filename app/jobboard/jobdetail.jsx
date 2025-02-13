@@ -76,9 +76,9 @@ function Jobdetail() {
         <div className='flex flex-col gap-4 border border-gray-400 border-b-gray-400 py-5 p-3 mt-10 rounded-lg'>
         <h1 className="text-[16px] lg:text-xl">Job Description</h1>
       <p className="text-[12px] lg:text-[14px]">
-      As a Software Designer, you will be responsible for designing and implementing applications 
-      and software that meet specific client needs. You will work closely with development teams to translate technical
-       requirements into robust and performant software solutions. You will play a key role in creating intuitive and
+        As a Software Designer, you will be responsible for designing and implementing applications 
+        and software that meet specific client needs. You will work closely with development teams to translate technical
+        requirements into robust and performant software solutions. You will play a key role in creating intuitive and
         engaging user interfaces, ensuring an optimal user experience.</p>
         </div>
      
@@ -231,22 +231,21 @@ function Jobdetail() {
             </label>
           </div>
         </div>
+        
+        <button
+          type="submit"
+          className="bg-white text-black text-[14px] lg:text-[20px] w-full py-2 border border-black/80 hover:bg-yellow-500 hover:text-white hover:border-gray-400 font-medium rounded-3xl"
+          >
+          Apply Now
+        </button>
+      </form>
+    </div>
+  </div>
+)}
 
-              <button
-                type="submit"
-                className="bg-white text-black text-[14px] lg:text-[20px] w-full py-2 border border-black/80 hover:bg-yellow-500 hover:text-white hover:border-gray-400 font-medium rounded-3xl"
-              >
-                Apply Now
-              </button>
-            </form>
-          </div>
-        </div>
-      )}
-
-
-          {/* Submitted Confirmation Modal */}
-          {isSubmittedModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary/60 backdrop-blur-sm">
+{/* Submitted Confirmation Modal */}
+    {isSubmittedModalOpen && (
+       <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary/60 backdrop-blur-sm">
           <div className="bg-white w-[85%] lg:w-[100%] max-w-md p-4 lg:p-6 rounded-lg text-center">
             <div className="flex items-center gap-1 justify-center">
             <h2 className="text-xl lg:text-4xl text-secondary mb-4">Great Job </h2>
@@ -254,7 +253,7 @@ function Jobdetail() {
             </div>
             
             <p className="text-gray-800 mt-2 lg:mt-5 mb-4 lg:mb-6 text-[12px] lg:text-[19px] leading-8 lg:leading-9">
-            Thank you for applying to Lk Recruitment Rwanda. We are currently reviewing all applications and will reach out within four weeks if your qualifications match the position.
+            Thank you for applying to Lk Recruitment Rwanda. We are currently reviewing all applications and will reach out soon if your qualifications match the position.
              If you don't hear from us by then, we have carefully reviewed your application but may not 
              have selected you for this role. We encourage you to check our website for future opportunities. <br />
              Thank you again for your interest. <br />

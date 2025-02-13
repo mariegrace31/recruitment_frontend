@@ -12,7 +12,7 @@ function Jobs() {
       id: 1,
       title: 'Software Engineer',
       type: ['Full Time', 'Part Time'],
-      description: 'Join our tech team to develop innovative solutions. Minimum 3 years of experience required.',
+      description: 'Join our tech team to develop innovative solutions. Minimum 3 years of experience is required.',
     },
     {
       id: 2,
@@ -48,13 +48,13 @@ function Jobs() {
       id: 7,
       title: 'Caring Nanny Needed',
       type: ['Full Time', 'Part Time'],
-      description: 'Seeking a compassionate and dependable Nanny to provide exceptional care and support for child',
+      description: 'Seeking a compassionate and dependable nanny to provide exceptional care and support for children',
     },
     {
       id: 8,
       title: 'Reliable Maid Needed',
       type: ['Full Time', 'Part Time'],
-      description: 'Looking for a hardworking and trustworthy Maid to help maintain a clean and organized home.',
+      description: 'Looking for a hardworking and trustworthy maid to help maintain a clean and organized home.',
     },
   ]);
 
@@ -69,7 +69,7 @@ function Jobs() {
       <div className='flex'>
       <Sidebar />
       <div>
-        <h1 className="font-semibold text-2xl px-10 pt-10">Job listings</h1>
+        <h1 className="font-semibold text-2xl px-10 pt-10">Job listing</h1>
         <div className='grid grid-cols-4 gap-12 w-[100%] p-10 mx-auto'>
           {jobs.map((job) => (
             <div
