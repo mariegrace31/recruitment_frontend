@@ -90,7 +90,7 @@ function Page() {
                     <TbBriefcase /> Part Time
                   </p>
                 </div>
-                <p className="text-sm">{job.desc}</p>
+                <p className="text-sm w-full overflow-hidden break-words line-clamp-3">{job.desc}</p>
                 <Link
                   href={job.link}
                   className="bg-[#E0E6F7] p-2 rounded-md w-[40%] ml-auto text-[13px] text-secondary group-hover:bg-secondary group-hover:text-white text-center"

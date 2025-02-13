@@ -41,10 +41,9 @@ function AddJob({ addNewJob }) {
       email,
       overview,
       logo: uploadedFileName,
-      link: "/jobdetail", // Adjust if needed
+      link: "/jobdetail",
     };
 
-    // Save job to both "/jobs" and "/jobboard"
     const savedJobs = JSON.parse(localStorage.getItem("jobs")) || [];
     const savedJobboard = JSON.parse(localStorage.getItem("jobboard")) || [];
 
@@ -54,7 +53,6 @@ function AddJob({ addNewJob }) {
     localStorage.setItem("jobs", JSON.stringify(savedJobs));
     localStorage.setItem("jobboard", JSON.stringify(savedJobboard));
 
-    // Clear the form fields
     setUploadedFileName("");
     setPosition("");
     setJobType("");
@@ -66,7 +64,6 @@ function AddJob({ addNewJob }) {
     setContact("");
     setEmail("");
 
-    // Redirect to the jobboard
     router.push("/jobboard");
   };
 
@@ -102,12 +99,12 @@ function AddJob({ addNewJob }) {
                   onChange={(e) => setJobType(e.target.value)}
                 />
                 <h3 className="text-[15px]">Card Description</h3>
-                <input
-                  type="text"
-                  className="border border-black/30 p-1 rounded-sm pb-44 text-[14px] outline-primary_dash/30"
-                  value={description}
-                  onChange={(e) => setDescription(e.target.value)}
-                />
+                <textarea
+                   className="border border-black/30 p-1 rounded-sm text-[14px] outline-primary_dash/30 w-full resize-none overflow-hidden break-words"
+                   rows="5"
+                   value={description}
+                   onChange={(e) => setDescription(e.target.value)}
+                ></textarea>
               </div>
             </div>
             <div>

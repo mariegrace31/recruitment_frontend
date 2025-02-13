@@ -5,6 +5,7 @@ import { TbBriefcase } from "react-icons/tb";
 import { RiLoader2Line } from "react-icons/ri";
 import Link from "next/link";
 import Navbar2 from "../components/navbar2";
+import { v4 as uuidv4 } from "uuid";
 
 function Jobs() {
   const [jobs, setJobs] = useState([]);
@@ -13,50 +14,56 @@ function Jobs() {
     const savedJobs = JSON.parse(localStorage.getItem("jobs")) || [];
     const predefinedJobs = [
       {
+        id: uuidv4(), 
         title: "Software Engineer",
         desc: "Join our tech team to develop innovative solutions. Minimum 3 years of experience required.",
         link: "/jobdetail",
       },
       {
+        id: uuidv4(), 
         title: "Caring Nanny Needed",
         desc: "Seeking a compassionate and dependable Nanny to provide exceptional care and support for children.",
         link: "/job5",
       },
       {
+        id: uuidv4(), 
         title: "Content Creator",
         desc: "As a Content Creator, you will be the voice of our brand, responsible for developing and producing high-quality content.",
         link: "/job9",
       },
       {
+        id: uuidv4(), 
         title: "Tutor",
         desc: "As a Tutor, you will provide individualized academic support to students of various ages and levels.",
         link: "/job4",
       },
       {
+        id: uuidv4(), 
         title: "Graphic Designer",
         desc: "As a Graphic Designer, you will be the visual storyteller for our brand, crafting engaging and memorable designs.",
         link: "/job2",
       },
-      { title: "Web Designer", desc: "As a Web Designer, you will be responsible for the visual design and development of our website.", link: "/job3" },
-      { title: "Reliable Maid Needed", desc: "Looking for a hardworking and trustworthy Maid to help maintain a clean and organized home.", link: "/job6" },
-      { title: "Community Manager", desc: "Join us as a Community manager and make a lasting impact by fostering connections, promoting collaboration.", link: "/job8" },
-      { title: "Chef Cook", desc: "As a Chef Cook, you will be responsible for preparing and cooking high-quality meals for our clients.", link: "/job12" },
-      { title: "Admin assistant", desc: "As an Administrative Assistant, you will be responsible for providing comprehensive administrative support...", link: "/job10" },
-      { title: "Commercial Assistant", desc: "As a Commercial Assistant, you will play a crucial role in supporting our sales efforts and ensuring smooth business...", link: "/job11" },
-      { title: "Experienced Driver", desc: "Looking for a professional and reliable Driver to ensure smooth, safe, and timely transportation.", link: "/job7" },
+      { id: uuidv4(),
+        title: "Web Designer",
+        desc: "As a Web Designer, you will be responsible for the visual design and development of our website.",
+        link: "/job3",
+      },
+      { id: uuidv4(), title: "Reliable Maid Needed", desc: "Looking for a hardworking and trustworthy Maid to help maintain a clean and organized home.", link: "/job6" },
+      { id: uuidv4(), title: "Community Manager", desc: "Join us as a Community manager and make a lasting impact by fostering connections, promoting collaboration.", link: "/job8" },
+      { id: uuidv4(), title: "Chef Cook", desc: "As a Chef Cook, you will be responsible for preparing and cooking high-quality meals for our clients.", link: "/job12" },
+      { id: uuidv4(), title: "Admin assistant", desc: "As an Administrative Assistant, you will be responsible for providing comprehensive administrative support...", link: "/job10" },
+      { id: uuidv4(), title: "Commercial Assistant", desc: "As a Commercial Assistant, you will play a crucial role in supporting our sales efforts and ensuring smooth business...", link: "/job11" },
+      { id: uuidv4(), title: "Experienced Driver", desc: "Looking for a professional and reliable Driver to ensure smooth, safe, and timely transportation.", link: "/job7" },
     ];
 
-    // Merge predefined jobs with saved jobs, avoiding duplicates
     const allJobs = [...predefinedJobs, ...savedJobs];
-
-    // Remove duplicates based on job title
     const uniqueJobs = Array.from(new Map(allJobs.map(job => [job.title, job])).values());
 
     setJobs(uniqueJobs);
   }, []);
 
-  const handleDeleteJob = (jobId) => {
-    const updatedJobs = jobs.filter(job => job.id !== jobId);
+   const handleDeleteJob = (jobId) => {
+    const updatedJobs = jobs.filter((job) => job.id !== jobId);
     setJobs(updatedJobs);
     localStorage.setItem("jobs", JSON.stringify(updatedJobs));
   };
@@ -95,7 +102,7 @@ function Jobs() {
                           <TbBriefcase /> Part Time
                         </p>
                          </div>
-                    <p className="text-sm">{job.desc || job.description}</p>
+                    <p className="text-sm w-full overflow-hidden break-words">{job.desc || job.description}</p>
                   </div>
                   <div className="flex justify-between items-center">
                     <button
@@ -116,7 +123,7 @@ function Jobs() {
               ))
             )}
           </div>
-          <button className="flex items-center gap-1 border border-primary_dash/50 py-2 px-4 rounded-3xl text-[17px] mx-auto mt-4">
+          <button className="flex items-center gap-1 border border-primary_dash/50 py-2 px-4 mb-10 rounded-3xl text-[17px] mx-auto mt-4">
             <RiLoader2Line /> Load more
           </button>
         </div>
