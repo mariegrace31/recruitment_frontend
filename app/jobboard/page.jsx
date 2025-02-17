@@ -39,23 +39,39 @@ function Page() {
       desc: "As a Web Designer, you will be responsible for the visual design and development of our website.", 
       link: "/job3",
     },
-    { title: "Reliable Maid Needed", desc: "Looking for a hardworking and trustworthy Maid to help maintain a clean and organized home.", link: "/job6" },
-    { title: "Community Manager", desc: "Join us as a Community manager and make a lasting impact by fostering connections, promoting collaboration.", link: "/job8" },
-    { title: "Chef Cook", desc: "As a Chef Cook, you will be responsible for preparing and cooking high-quality meals for our clients.", link: "/job12" },
-    { title: "Admin assistant", desc: "As an Administrative Assistant, you will be responsible for providing comprehensive administrative support...", link: "/job10" },
-    { title: "Commercial Assistant", desc: "As a Commercial Assistant, you will play a crucial role in supporting our sales efforts and ensuring smooth business...", link: "/job11" },
-    { title: "Experienced Driver", desc: "Looking for a professional and reliable Driver to ensure smooth, safe, and timely transportation.", link: "/job7" },
+    { title: "Reliable Maid Needed", 
+      desc: "Looking for a hardworking and trustworthy Maid to help maintain a clean and organized home.", 
+      link: "/job6",
+    },
+    { title: "Community Manager", 
+      desc: "Join us as a Community manager and make a lasting impact by fostering connections, promoting collaboration.", 
+      link: "/job8",
+     },
+    { title: "Chef Cook", 
+      desc: "As a Chef Cook, you will be responsible for preparing and cooking high-quality meals for our clients.", 
+      link: "/job12",
+    },
+    { title: "Admin assistant", 
+      desc: "As an Administrative Assistant, you will be responsible for providing comprehensive administrative support...", 
+      link: "/job10",
+     },
+    { title: "Commercial Assistant", 
+      desc: "As a Commercial Assistant, you will play a crucial role in supporting our sales efforts and ensuring smooth business...",
+       link: "/job11",
+    },
+    { title: "Experienced Driver",
+      desc: "Looking for a professional and reliable Driver to ensure smooth, safe, and timely transportation.", 
+      link: "/job7" 
+    },
  
   ]);
 
   useEffect(() => {
     const savedJobs = JSON.parse(localStorage.getItem("jobs")) || [];
-    
-    // Merge default jobs with saved ones, avoiding duplicates
+  
     setJobs((prevJobs) => {
       const allJobs = [...prevJobs, ...savedJobs];
   
-      // Remove duplicates based on job title
       const uniqueJobs = Array.from(new Map(allJobs.map(job => [job.title, job])).values());
   
       return uniqueJobs;
